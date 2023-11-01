@@ -1,0 +1,108 @@
+{% extends 'base.html' %} 
+{% block title %}Crawling Data{% endblock title %}
+{% block content %}
+
+<div class="col-md-12 col-sm-12">
+  <div class="bs-callout bs-callout-primary mt-0">
+    <div class="d-inline-flex">
+      <h3>Data Crawling</h3>
+    </div>
+    <p class="text-muted">Pengumpulan data bersumber pada media sosial Twitter</p>
+    <ul>
+      <li>P1 : Kemudahan akses kendaraan menuju lokasi</li>
+      <li>P2 : Tempat parkir</li>
+      <li>P3 : Kebersihan tempat</li>
+      <li>P4 : Pelayanan yang didapat</li>
+      <li>P5 : Kualitas Produk</li>
+    </ul>
+  </div>
+
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      {% for message in messages %}
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          {{ message }}
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+
+  <div class="d-flex flex-row mb-3">
+    <button type="button" class="btn btn-success mx-1" data-bs-toggle="modal" data-bs-target="#modalImport"><i class='bx bxs-file-plus' ></i> <em>Import</em> Data</button>
+    <button type="button" class="btn btn-danger mx-1 ms-auto" data-bs-toggle="modal" data-bs-target="#modalHapusDataCrawling"><i class='bx bx-trash'></i> Hapus Data Crawling</button>
+  </div>
+
+  <!-- Modal Import Excel -->
+  <div class="modal fade" tabindex="-1" id="modalImport">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Import Crawling Data</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form action="/import-crawling" method="POST" enctype="multipart/form-data">
+          <div class="modal-body px-5">
+            <label>File Excel (.xls atau .xlsx)</label>
+            <div class="custom-file">
+              <input type="file" name="excel_file" id="file_input" class="form-control" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" required />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+            <button type="submit" class="btn btn-primary">Import</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-responsive-sm">
+    <table class="table table-bordered table-striped w-100" id="table_dataCrawling">
+      <thead class="w-100">
+        <tr>
+          <th width="5%" class="text-center">No.</th>
+          <th width="10%" class="text-center">Nama</th>
+          <!-- <th width="5%" class="text-center">Kemudahan akses kendaraan menuju lokasi</th> -->
+          <th width="5%" class="text-center">P1</th>
+          <th width="5%" class="text-center">Nilai 1</th>
+          <!-- <th width="5%" class="text-center">Tempat parkir</th> -->
+          <th width="5%" class="text-center">P2</th>
+          <th width="5%" class="text-center">Nilai 2</th>
+          <!-- <th width="5%" class="text-center">Kebersihan tempat</th> -->
+          <th width="5%" class="text-center">P3</th>
+          <th width="5%" class="text-center">Nilai 3</th>
+          <!-- <th width="5%" class="text-center">Pelayanan yang didapat</th> -->
+          <th width="5%" class="text-center">P4</th>
+          <th width="5%" class="text-center">Nilai 4</th>
+          <!-- <th width="5%" class="text-center">Kualitas produk</th> -->
+          <th width="5%" class="text-center">P5</th>
+          <th width="5%" class="text-center">Nilai 5</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in data %}
+        <tr>
+          <td class="text-center">{{ loop.index }}</td>
+          <td class="text-center">{{ row['name'] }}</td>
+          <td>{{ row['answer_1'] }}</td>
+          <td class="text-center">{{ row['label_1'] }}</td>
+          <td>{{ row['answer_2'] }}</td>
+          <td class="text-center">{{ row['label_2'] }}</td>
+          <td>{{ row['answer_3'] }}</td>
+          <td class="text-center">{{ row['label_3'] }}</td>
+          <td>{{ row['answer_4'] }}</td>
+          <td class="text-center">{{ row['label_4'] }}</td>
+          <td>{{ row['answer_5'] }}</td>
+          <td class="text-center">{{ row['label_5'] }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+    
+</div>
+
+{% endblock content %}

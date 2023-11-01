@@ -1,0 +1,456 @@
+{% extends 'base.html' %}
+{% block title %}Splitting Data{% endblock title %}
+{% block content %}
+
+<div class="col-md-12 col-sm-12" id="content_split">
+  <div class="bs-callout bs-callout-primary mt-0">
+    <div class="d-inline-flex">
+      <h3>Pembagian Data</h3>
+    </div>
+    <p class="text-muted">Membagi data ber<em>label</em> menjadi Data Uji dan Data Latih</p>
+  </div>
+
+  {% with messages = get_flashed_messages(category_filter=["success"]) %}
+    {% if messages %}
+      {% for message in messages %}
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          {{ message }}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+
+  {% with messages = get_flashed_messages(category_filter=["error"]) %}
+    {% if messages %}
+      {% for message in messages %}
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          {{ message }}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+
+    <div class="d-flex flex-row mb-3">
+      <button type="button" class="btn btn-success mx-1" data-bs-toggle="modal" data-bs-target="#modalSplitting"><i class="bx bx-columns"></i> <em>Splitting</em> Data</button>
+      <button type="button" class="btn btn-danger mx-1 ms-auto" data-bs-toggle="modal" data-bs-target="#modalHapusDataSplit"><i class='bx bx-trash'></i> Hapus Data Split</button>
+    </div>
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs nav-fill" id="myTabQ" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="q1-tab" data-bs-toggle="tab" href="#q1" data-bs-target="#q1" role="tab" aria-controls="q1" aria-selected="true">Q1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="q2-tab" data-bs-toggle="tab" href="#q2" data-bs-target="#q2" role="tab" aria-controls="q2" aria-selected="false">Q2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="q3-tab" data-bs-toggle="tab" href="#q3" data-bs-target="#q3" role="tab"  aria-controls="q3" aria-selected="false">Q3</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="q4-tab" data-bs-toggle="tab" href="#q4" data-bs-target="#q4" role="tab" aria-controls="q4" aria-selected="false">Q4</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="q5-tab" data-bs-toggle="tab" href="#q5" data-bs-target="#q5" role="tab" aria-controls="q5" aria-selected="false">Q5</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content" id="myTabContentQ">
+      <div class="tab-pane active" id="q1" role="tabpanel" aria-labelledby="q1-tab">
+        <div>
+          <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="data-train-tab" data-bs-toggle="tab" data-bs-target="#data-train-tab-pane" type="button" role="tab" aria-controls="data-train-tab-pane" aria-selected="true">Data Train</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="data-test-tab" data-bs-toggle="tab" data-bs-target="#data-test-tab-pane" type="button" role="tab" aria-controls="data-test-tab-pane" aria-selected="false">Data Test</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tab-content p-3" id="myTabContent">
+          <div class="tab-pane fade show active" id="data-train-tab-pane" role="tabpanel" aria-labelledby="data-train-tab" tabindex="0">
+            
+            <div class="table-responsive-sm">
+              <table class="table table-bordered table-striped w-100" id="table_dataTrainQ1">
+                <thead class="w-100">
+                  <tr>
+                    <th width="5%" class="text-center">No.</th>
+                    <th width="15%" class="text-center">ID</th>
+                    <th width="35%" class="text-center">Teks</th>
+                    <th width="15%" class="text-center">Pengguna</th>
+                    <th width="15%" class="text-center">Dibuat pada</th>
+                    <th width="15%" class="text-center">Label</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+
+          </div>
+
+          <div class="tab-pane fade" id="data-test-tab-pane" role="tabpanel" aria-labelledby="data-test-tab" tabindex="0">
+            
+            <div class="table-responsive-sm">
+              <table class="table table-bordered table-striped w-100" id="table_dataTestQ1">
+                <thead class="w-100">
+                  <tr>
+                    <th width="5%" class="text-center">No.</th>
+                    <th width="15%" class="text-center">ID</th>
+                    <th width="35%" class="text-center">Teks</th>
+                    <th width="15%" class="text-center">Pengguna</th>
+                    <th width="15%" class="text-center">Dibuat pada</th>
+                    <th width="15%" class="text-center">Label</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="q2" role="tabpanel" aria-labelledby="q2-tab">
+        <div>
+          <ul class="nav nav-tabs nav-fill" id="myTabQ2" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="data-train-q2-tab" data-bs-toggle="tab" data-bs-target="#data-train-q2-tab-pane" type="button" role="tab" aria-controls="data-train-q2-tab-pane" aria-selected="true">Data Train</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="data-test-q2-tab" data-bs-toggle="tab" data-bs-target="#data-test-q2-tab-pane" type="button" role="tab" aria-controls="data-test-q2-tab-pane" aria-selected="false">Data Test</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tab-content p-3" id="myTabContent">
+          <div class="tab-pane fade show active" id="data-train-q2-tab-pane" role="tabpanel" aria-labelledby="data-train-q2-tab" tabindex="0">
+            
+            <div class="table-responsive-sm">
+              <table class="table table-bordered table-striped w-100" id="table_dataTrainQ2">
+                <thead class="w-100">
+                  <tr>
+                    <th width="5%" class="text-center">No.</th>
+                    <th width="15%" class="text-center">ID</th>
+                    <th width="35%" class="text-center">Teks</th>
+                    <th width="15%" class="text-center">Pengguna</th>
+                    <th width="15%" class="text-center">Dibuat pada</th>
+                    <th width="15%" class="text-center">Label</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+
+          </div>
+
+          <div class="tab-pane fade" id="data-test-q2-tab-pane" role="tabpanel" aria-labelledby="data-test-q2-tab" tabindex="0">
+            
+            <div class="table-responsive-sm">
+              <table class="table table-bordered table-striped w-100" id="table_dataTestQ2">
+                <thead class="w-100">
+                  <tr>
+                    <th width="5%" class="text-center">No.</th>
+                    <th width="15%" class="text-center">ID</th>
+                    <th width="35%" class="text-center">Teks</th>
+                    <th width="15%" class="text-center">Pengguna</th>
+                    <th width="15%" class="text-center">Dibuat pada</th>
+                    <th width="15%" class="text-center">Label</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="q3" role="tabpanel" aria-labelledby="q3-tab">
+        <div>
+          <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="data-train-q3-tab" data-bs-toggle="tab" data-bs-target="#data-train-q3-tab-pane" type="button" role="tab" aria-controls="data-train-q3-tab-pane" aria-selected="true">Data Train</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="data-test-q3-tab" data-bs-toggle="tab" data-bs-target="#data-test-q3-tab-pane" type="button" role="tab" aria-controls="data-test-q3-tab-pane" aria-selected="false">Data Test</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tab-content p-3" id="myTabContent">
+          <div class="tab-pane fade show active" id="data-train-q3-tab-pane" role="tabpanel" aria-labelledby="data-train-q3-tab" tabindex="0">
+            
+            <div class="table-responsive-sm">
+              <table class="table table-bordered table-striped w-100" id="table_dataTrainQ3">
+                <thead class="w-100">
+                  <tr>
+                    <th width="5%" class="text-center">No.</th>
+                    <th width="15%" class="text-center">ID</th>
+                    <th width="35%" class="text-center">Teks</th>
+                    <th width="15%" class="text-center">Pengguna</th>
+                    <th width="15%" class="text-center">Dibuat pada</th>
+                    <th width="15%" class="text-center">Label</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+
+          </div>
+
+          <div class="tab-pane fade" id="data-test-q3-tab-pane" role="tabpanel" aria-labelledby="data-test-q3-tab" tabindex="0">
+            
+            <div class="table-responsive-sm">
+              <table class="table table-bordered table-striped w-100" id="table_dataTestQ3">
+                <thead class="w-100">
+                  <tr>
+                    <th width="5%" class="text-center">No.</th>
+                    <th width="15%" class="text-center">ID</th>
+                    <th width="35%" class="text-center">Teks</th>
+                    <th width="15%" class="text-center">Pengguna</th>
+                    <th width="15%" class="text-center">Dibuat pada</th>
+                    <th width="15%" class="text-center">Label</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="q4" role="tabpanel" aria-labelledby="q4-tab">
+        <div>
+          <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="data-train-q4-tab" data-bs-toggle="tab" data-bs-target="#data-train-q4-tab-pane" type="button" role="tab" aria-controls="data-train-q4-tab-pane" aria-selected="true">Data Train</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="data-test-q4-tab" data-bs-toggle="tab" data-bs-target="#data-test-q4-tab-pane" type="button" role="tab" aria-controls="data-test-q4-tab-pane" aria-selected="false">Data Test</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tab-content p-3" id="myTabContent">
+          <div class="tab-pane fade show active" id="data-train-q4-tab-pane" role="tabpanel" aria-labelledby="data-train-q4-tab" tabindex="0">
+            
+            <div class="table-responsive-sm">
+              <table class="table table-bordered table-striped w-100" id="table_dataTrainQ4">
+                <thead class="w-100">
+                  <tr>
+                    <th width="5%" class="text-center">No.</th>
+                    <th width="15%" class="text-center">ID</th>
+                    <th width="35%" class="text-center">Teks</th>
+                    <th width="15%" class="text-center">Pengguna</th>
+                    <th width="15%" class="text-center">Dibuat pada</th>
+                    <th width="15%" class="text-center">Label</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+
+          </div>
+
+          <div class="tab-pane fade" id="data-test-q4-tab-pane" role="tabpanel" aria-labelledby="data-test-q4-tab" tabindex="0">
+            
+            <div class="table-responsive-sm">
+              <table class="table table-bordered table-striped w-100" id="table_dataTestQ4">
+                <thead class="w-100">
+                  <tr>
+                    <th width="5%" class="text-center">No.</th>
+                    <th width="15%" class="text-center">ID</th>
+                    <th width="35%" class="text-center">Teks</th>
+                    <th width="15%" class="text-center">Pengguna</th>
+                    <th width="15%" class="text-center">Dibuat pada</th>
+                    <th width="15%" class="text-center">Label</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="q5" role="tabpanel" aria-labelledby="q5-tab">
+        <div>
+          <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="data-train-q5-tab" data-bs-toggle="tab" data-bs-target="#data-train-q5-tab-pane" type="button" role="tab" aria-controls="data-train-q5-tab-pane" aria-selected="true">Data Train</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="data-test-q5-tab" data-bs-toggle="tab" data-bs-target="#data-test-q5-tab-pane" type="button" role="tab" aria-controls="data-test-q5-tab-pane" aria-selected="false">Data Test</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tab-content p-3" id="myTabContent">
+          <div class="tab-pane fade show active" id="data-train-q5-tab-pane" role="tabpanel" aria-labelledby="data-train-q5-tab" tabindex="0">
+            
+            <div class="table-responsive-sm">
+              <table class="table table-bordered table-striped w-100" id="table_dataTrainQ5">
+                <thead class="w-100">
+                  <tr>
+                    <th width="5%" class="text-center">No.</th>
+                    <th width="15%" class="text-center">ID</th>
+                    <th width="35%" class="text-center">Teks</th>
+                    <th width="15%" class="text-center">Pengguna</th>
+                    <th width="15%" class="text-center">Dibuat pada</th>
+                    <th width="15%" class="text-center">Label</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+
+          </div>
+
+          <div class="tab-pane fade" id="data-test-q5-tab-pane" role="tabpanel" aria-labelledby="data-test-q5-tab" tabindex="0">
+            
+            <div class="table-responsive-sm">
+              <table class="table table-bordered table-striped w-100" id="table_dataTestQ5">
+                <thead class="w-100">
+                  <tr>
+                    <th width="5%" class="text-center">No.</th>
+                    <th width="15%" class="text-center">ID</th>
+                    <th width="35%" class="text-center">Teks</th>
+                    <th width="15%" class="text-center">Pengguna</th>
+                    <th width="15%" class="text-center">Dibuat pada</th>
+                    <th width="15%" class="text-center">Label</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal Splitting -->
+    <div class="modal fade" tabindex="-1" id="modalSplitting">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Splitting Data</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form>
+            <div class="modal-body px-5">
+              <label class="text-muted d-inline-flex align-items-center mb-1">Pembagian data dilakukan dengan Stratified Random Sampling</label>
+              <label class="text-muted d-inline-flex align-items-center mb-1">Sebanyak <h5 class="text-info mx-2 mb-0" id="jumlah_dataWithLabel">{{ count_data_with_label }}</h5> data ber<em>label</em> akan dibagi</label>
+              <label class="text-muted d-inline-flex align-items-center mb-1">Pembagian data sebanyak: </label>
+              <label class="text-muted d-inline-flex align-items-center mb-1">Q1: </label>
+              <ul>
+                {% for k, v in count_data_q1_label.items() %}
+                <li>
+                  {{ k.replace("_", " ").title() }} : <h5 class="text-info mx-2 mb-0" id="jumlah_dataQ1Label">{{ v }} ({{ ((v/count_data_with_label) * 100)|round }}%)</h5>
+                </li>
+                {% endfor %}
+              </ul>
+              <label class="text-muted d-inline-flex align-items-center mb-1">Q2: </label>
+              <ul>
+                {% for k, v in count_data_q2_label.items() %}
+                <li>
+                  {{ k.replace("_", " ").title() }} : <h5 class="text-info mx-2 mb-0" id="jumlah_dataQ2Label">{{ v }} ({{ ((v/count_data_with_label) * 100)|round }}%)</h5>
+                </li>
+                {% endfor %}
+              </ul>
+              <label class="text-muted d-inline-flex align-items-center mb-1">Q3: </label>
+              <ul>
+                {% for k, v in count_data_q3_label.items() %}
+                <li>
+                  {{ k.replace("_", " ").title() }} : <h5 class="text-info mx-2 mb-0" id="jumlah_dataQ3Label">{{ v }} ({{ ((v/count_data_with_label) * 100)|round }}%)</h5>
+                </li>
+                {% endfor %}
+              </ul>
+              <label class="text-muted d-inline-flex align-items-center mb-1">Q4: </label>
+              <ul>
+                {% for k, v in count_data_q4_label.items() %}
+                <li>
+                  {{ k.replace("_", " ").title() }} : <h5 class="text-info mx-2 mb-0" id="jumlah_dataQ4Label">{{ v }} ({{ ((v/count_data_with_label) * 100)|round }}%)</h5>
+                </li>
+                {% endfor %}
+              </ul>
+              <label class="text-muted d-inline-flex align-items-center mb-1">Q5: </label>
+              <ul>
+                {% for k, v in count_data_q5_label.items() %}
+                <li>
+                  {{ k.replace("_", " ").title() }} : <h5 class="text-info mx-2 mb-0" id="jumlah_dataQ5Label">{{ v }} ({{ ((v/count_data_with_label) * 100)|round }}%)</h5>
+                </li>
+                {% endfor %}
+              </ul>
+              
+              <label class="text-muted d-inline-flex align-items-center mb-0"><h5 class="text-info mx-2 mb-0" id="jumlah_dataWithLabelPos">{{ percentage_pos }}%</h5> Positif <h5 class="text-info mx-2 mb-0" id="jumlah_dataWithLabelNeg">{{ percentage_neg }}%</h5> Negatif</label>
+              <br />
+              <small class="text-info d-none fadeIn" id="validasi_split">
+                <i class="fa fa-info-circle"></i> Silakan lakukan proses '<em>Labeling</em>' terlebih dahulu
+              </small>
+              <div class="container-fluid text-left mt-3">
+                <label class="text-muted">Pilih rasio pembagian data (Data Uji : Data Latih):</label>
+                <br />
+                <small class="text-info d-none fadeIn" id="validasi_rasio">
+                  <i class="fa fa-info-circle"></i> Pilih rasio pembagian data(di bawah) terlebih dahulu
+                </small>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="rasio" value="2:8" id="rasio1" onclick="cariRasio(this.value)">
+                  <label class="form-check-label" for="rasio1">
+                    2 : 8
+                    <span class="text-muted ml-3" id="rasio1-hasil"></span>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="rasio" value="1:9" id="rasio2" onclick="cariRasio(this.value)">
+                  <label class="form-check-label" for="rasio2">
+                    1 : 9
+                    <span class="text-muted ml-3" id="rasio2-hasil"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="modal-footer">
+            <form>
+              <input type="hidden" name="jumlah_data" value="{{ count_data_with_label }}" required readonly />
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+              <button type="button" id="split_data" class="btn btn-primary">Mulai</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Tweet Asli -->
+    <div class="modal fade" tabindex="-1" id="modalLihatTweetAsli">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Detail Tweet</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body mx-3">
+            <h6 class="mb-2">Tweet Asli:</h6>
+            <p id="tweetAsli"></p>
+            <hr />
+            <h6 class="mb-2">Tweet Bersih:</h6>
+            <p id="tweetBersih"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Hapus semua Data Split -->
+    <div class="modal fade" tabindex="-1" id="modalHapusDataSplit">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Hapus Data</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body mx-3">
+            <p class="my-2">Apakah Anda yakin ingin menghapus seluruh Data Split?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+            <form action="/split/hapus" method="POST">
+              <input type="hidden" name="id" required readonly>
+              <button type="submit" class="btn btn-danger">Hapus</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
