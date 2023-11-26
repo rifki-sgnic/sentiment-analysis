@@ -531,13 +531,6 @@ var table_dataTrain = $('#table_dataTrainQ1').DataTable({
         },
         {
             data: null,
-            className: 'text-center',
-            "render": function(data, type, full, meta) {
-                return BigInt(data.id).toString();
-            }
-        },
-        {
-            data: null,
             className: 'text-left',
             "render": function (data, type, full, meta) {
                 return data.clean_text +`<br />
@@ -602,13 +595,6 @@ var table_dataTrain = $('#table_dataTrainQ2').DataTable({
             className: 'text-center',
             "render": function (data, type, full, meta) {
                 return  meta.row + 1;
-            }
-        },
-        {
-            data: null,
-            className: 'text-center',
-            "render": function(data, type, full, meta) {
-                return BigInt(data.id).toString();
             }
         },
         {
@@ -679,13 +665,7 @@ var table_dataTrain = $('#table_dataTrainQ3').DataTable({
                 return  meta.row + 1;
             }
         },
-        {
-            data: null,
-            className: 'text-center',
-            "render": function(data, type, full, meta) {
-                return BigInt(data.id).toString();
-            }
-        },
+    
         {
             data: null,
             className: 'text-left',
@@ -754,13 +734,7 @@ var table_dataTrain = $('#table_dataTrainQ4').DataTable({
                 return  meta.row + 1;
             }
         },
-        {
-            data: null,
-            className: 'text-center',
-            "render": function(data, type, full, meta) {
-                return BigInt(data.id).toString();
-            }
-        },
+    
         {
             data: null,
             className: 'text-left',
@@ -829,13 +803,7 @@ var table_dataTrain = $('#table_dataTrainQ5').DataTable({
                 return  meta.row + 1;
             }
         },
-        {
-            data: null,
-            className: 'text-center',
-            "render": function(data, type, full, meta) {
-                return BigInt(data.id).toString();
-            }
-        },
+    
         {
             data: null,
             className: 'text-left',
@@ -905,13 +873,7 @@ var table_dataTest = $('#table_dataTestQ1').DataTable({
                 return  meta.row + 1;
             }
         },
-        {
-            data: null,
-            className: 'text-center',
-            "render": function(data, type, full, meta) {
-                return BigInt(data.id).toString();
-            }
-        },
+    
         {
             data: null,
             className: 'text-left',
@@ -980,13 +942,7 @@ var table_dataTest = $('#table_dataTestQ2').DataTable({
                 return  meta.row + 1;
             }
         },
-        {
-            data: null,
-            className: 'text-center',
-            "render": function(data, type, full, meta) {
-                return BigInt(data.id).toString();
-            }
-        },
+    
         {
             data: null,
             className: 'text-left',
@@ -1055,13 +1011,7 @@ var table_dataTest = $('#table_dataTestQ3').DataTable({
                 return  meta.row + 1;
             }
         },
-        {
-            data: null,
-            className: 'text-center',
-            "render": function(data, type, full, meta) {
-                return BigInt(data.id).toString();
-            }
-        },
+    
         {
             data: null,
             className: 'text-left',
@@ -1130,13 +1080,7 @@ var table_dataTest = $('#table_dataTestQ4').DataTable({
                 return  meta.row + 1;
             }
         },
-        {
-            data: null,
-            className: 'text-center',
-            "render": function(data, type, full, meta) {
-                return BigInt(data.id).toString();
-            }
-        },
+    
         {
             data: null,
             className: 'text-left',
@@ -1205,13 +1149,7 @@ var table_dataTest = $('#table_dataTestQ5').DataTable({
                 return  meta.row + 1;
             }
         },
-        {
-            data: null,
-            className: 'text-center',
-            "render": function(data, type, full, meta) {
-                return BigInt(data.id).toString();
-            }
-        },
+    
         {
             data: null,
             className: 'text-left',

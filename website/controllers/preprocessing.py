@@ -63,7 +63,7 @@ class PreprocessingController:
                         temp_casefold.append(result_text)
 
                         result_text = re.sub(r"http\S+|@\S+|#\S+|\d+", "", text)  # Remove mentions, hashtags, links, and numbers
-                        result_text = re.sub(r"[^a-z ]", " ", result_text)  # Replace non-letter characters with spaces
+                        # result_text = re.sub(r"[^a-z ]", " ", result_text)  # Replace non-letter characters with spaces
                         result_text = result_text.strip()  # Remove trailing and leading spaces
                         result_text = re.sub("\s+", " ", result_text)  # Remove excessive spaces between words
                         temp_remove_non_char.append(result_text)

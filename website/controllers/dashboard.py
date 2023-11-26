@@ -20,10 +20,10 @@ class DashboardController:
         instance_model = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_1 IS NOT NULL')
         data['data_berlabel'] = instance_model.select()[0]['jumlah']
         
-        instance_model = Models('SELECT COUNT(id) as jumlah FROM tbl_data_train WHERE sentiment IS NOT NULL')
+        instance_model = Models('SELECT COUNT(id) as jumlah FROM tbl_data_train_q1 WHERE sentiment IS NOT NULL')
         data['data_train'] = instance_model.select()[0]['jumlah']
         
-        instance_model = Models('SELECT COUNT(id) as jumlah FROM tbl_data_test WHERE sentiment IS NOT NULL')
+        instance_model = Models('SELECT COUNT(id) as jumlah FROM tbl_data_test_q1 WHERE sentiment IS NOT NULL')
         data['data_test'] = instance_model.select()[0]['jumlah']
 
         instance_model = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_1 = "puas"')
