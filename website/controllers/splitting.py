@@ -202,6 +202,22 @@ class SplittingController:
         instance_model.query_delete_all()
         instance_model = Models('DELETE FROM tbl_data_test_q1')
         instance_model.query_delete_all()
+        instance_model = Models('DELETE FROM tbl_data_train_q2')
+        instance_model.query_delete_all()
+        instance_model = Models('DELETE FROM tbl_data_test_q2')
+        instance_model.query_delete_all()
+        instance_model = Models('DELETE FROM tbl_data_train_q3')
+        instance_model.query_delete_all()
+        instance_model = Models('DELETE FROM tbl_data_test_q3')
+        instance_model.query_delete_all()
+        instance_model = Models('DELETE FROM tbl_data_train_q4')
+        instance_model.query_delete_all()
+        instance_model = Models('DELETE FROM tbl_data_test_q4')
+        instance_model.query_delete_all()
+        instance_model = Models('DELETE FROM tbl_data_train_q5')
+        instance_model.query_delete_all()
+        instance_model = Models('DELETE FROM tbl_data_test_q5')
+        instance_model.query_delete_all()
         return None
 
     def add_dataSplit(self):

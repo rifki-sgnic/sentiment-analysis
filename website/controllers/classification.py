@@ -1,6 +1,8 @@
 from sklearn.metrics import confusion_matrix
 from website.models import Models
 from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.preprocessing import LabelBinarizer
 from sklearn.preprocessing import LabelBinarizer
 from flask import flash, json
 import pickle
@@ -12,20 +14,20 @@ from website.multinb import MultiNB
 class ClassificationController:
     def createModel(self):
 
-        instance_model = Models('SELECT COUNT(id) as jumlah FROM tbl_data_train WHERE clean_text IS NOT NULL AND sentiment IS NOT NULL')
-        sentiment_count = instance_model.select()
+        # instance_model = Models('SELECT COUNT(id) as jumlah FROM tbl_data_train WHERE clean_text IS NOT NULL AND sentiment IS NOT NULL')
+        # sentiment_count = instance_model.select()
 
-        instance_model = Models("SELECT COUNT(id) as positif FROM tbl_data_train WHERE clean_text IS NOT NULL AND sentiment = 'positif'")
-        sentiment_positif = instance_model.select()
+        # instance_model = Models("SELECT COUNT(id) as positif FROM tbl_data_train WHERE clean_text IS NOT NULL AND sentiment = 'positif'")
+        # sentiment_positif = instance_model.select()
 
-        instance_model = Models("SELECT COUNT(id) as negatif FROM tbl_data_train WHERE clean_text IS NOT NULL AND sentiment = 'negatif'")
-        sentiment_negatif = instance_model.select()
+        # instance_model = Models("SELECT COUNT(id) as negatif FROM tbl_data_train WHERE clean_text IS NOT NULL AND sentiment = 'negatif'")
+        # sentiment_negatif = instance_model.select()
 
         # Data Training
         list_text_training = []
         list_label_training = []
 
-        instance_model = Models('SELECT clean_text, sentiment FROM tbl_data_train')
+        instance_model = Models('SELECT clean_text, sentiment FROM tbl_data_train_q1 WHERE sentiment IN ("Puas", "Cukup Puas", "Sangat Puas")')
         data_train = instance_model.select()
 
         for i in range(len(data_train)):
@@ -36,15 +38,14 @@ class ClassificationController:
         list_text_testing = []
         list_label_testing = []
 
-        instance_model = Models('SELECT clean_text, sentiment FROM tbl_data_test')
+        instance_model = Models('SELECT clean_text, sentiment FROM tbl_data_test_q1 WHERE sentiment IN ("Puas", "Cukup Puas", "Sangat Puas")')
         data_test = instance_model.select()
-
         for i in range(len(data_test)):
             list_text_testing.append(data_test[i]['clean_text'])
             list_label_testing.append(data_test[i]['sentiment'])
 
         # Vectorize X_train X_test
-        vectorizer = TfidfVectorizer()
+        vectorizer = CountVectorizer()
         X_train = vectorizer.fit_transform(list_text_training).toarray()
         X_test = vectorizer.transform(list_text_testing).toarray()
         vocab = vectorizer.get_feature_names_out()
@@ -55,6 +56,13 @@ class ClassificationController:
         y_test = labelBinarizer.transform(list_label_testing).ravel()
 
         label = labelBinarizer.classes_
+
+        print(X_train.shape)
+        print(X_test.shape)
+        # print(y_train.shape)
+        # print(y_test.shape)
+        print(vocab)
+        print(label)
 
         # TRAIN MULTINOMIAL NAIVE BAYES
         model = MultiNB()
