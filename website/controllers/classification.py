@@ -1,8 +1,9 @@
-from sklearn.metrics import confusion_matrix
+from sklearn.calibration import LabelEncoder
+from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 from website.models import Models
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.preprocessing import LabelBinarizer
+from sklearn.naive_bayes import MultinomialNB
 from sklearn.preprocessing import LabelBinarizer
 from flask import flash, json
 import pickle
@@ -51,21 +52,21 @@ class ClassificationController:
         vocab = vectorizer.get_feature_names_out()
 
         # Vectorize y_train y_test
-        labelBinarizer = LabelBinarizer()
-        y_train = labelBinarizer.fit_transform(list_label_training).ravel()
-        y_test = labelBinarizer.transform(list_label_testing).ravel()
+        labelEncoder = LabelEncoder()
+        y_train = labelEncoder.fit_transform(list_label_training).ravel()
+        y_test = labelEncoder.transform(list_label_testing).ravel()
 
-        label = labelBinarizer.classes_
+        label = labelEncoder.classes_
 
         print(X_train.shape)
         print(X_test.shape)
-        # print(y_train.shape)
-        # print(y_test.shape)
-        print(vocab)
+        print(y_train.shape)
+        print(y_test.shape)
+        # print(vocab)
         print(label)
 
         # TRAIN MULTINOMIAL NAIVE BAYES
-        model = MultiNB()
+        model = MultinomialNB()
         model.fit(X_train, y_train)
 
         # SAVE MODEL as PKL
@@ -82,39 +83,51 @@ class ClassificationController:
 
         for i in range(len(y_pred)):
             if y_pred[i] == 0:
-                list_label_prediksi.append("negatif")
+                list_label_prediksi.append("Cukup Puas")
             elif y_pred[i] == 1:
-                list_label_prediksi.append("positif")
+                list_label_prediksi.append("Puas")
+            elif y_pred[i] == 2:
+                list_label_prediksi.append("Sangat Puas")
 
         # Mengambil hasil probabilitas prediksi label
         list_prob_prediksi = []
 
-        predict_prob = model.predict_proba
+        predict_prob = model.predict_proba(X_test)
         for i in range(len(predict_prob)):
             if predict_prob[i][0] > predict_prob[i][1]:
                 list_prob_prediksi.append(predict_prob[i][0])
             else:
                 list_prob_prediksi.append(predict_prob[i][1])
 
-        true_neg, false_pos, false_neg, true_pos = confusion_matrix(y_test, y_pred).ravel()
+        list_label_pred = labelEncoder.inverse_transform(y_pred)
 
-        akurasi = (true_pos + true_neg) / (true_pos + true_neg + false_pos + false_neg)
-        presisi = true_pos / (true_pos + false_pos)
-        recall = true_pos / (true_pos + false_neg)
+        conf_matrix = confusion_matrix(y_test, y_pred)
+        print(conf_matrix)
 
-        data_dict = {
-            "text_list" : list_text_testing,
-            "label_list" : list_label_testing,
-            "predict_label" : list_label_prediksi,
-            "prob_predict" : list_prob_prediksi,
-            "tp" : int(true_pos),
-            "tn" : int(true_neg),
-            "fp" : int(false_pos),
-            "fn" : int(false_neg),
-            "akurasi" : round(float(akurasi), 2),
-            "presisi" : round(float(presisi), 2),
-            "recall" : round(float(recall), 2)
-        }
+        accuracy = accuracy_score(y_test, y_pred)
+        report = classification_report(y_test, y_pred)
+        print(f"Accuracy: {accuracy}")
+        print("Classification Report:\n", report)
+
+        # true_neg, false_pos, false_neg, true_pos = confusion_matrix(y_test, y_pred).ravel()
+
+        # akurasi = (true_pos + true_neg) / (true_pos + true_neg + false_pos + false_neg)
+        # presisi = true_pos / (true_pos + false_pos)
+        # recall = true_pos / (true_pos + false_neg)
+
+        # data_dict = {
+        #     "text_list" : list_text_testing,
+        #     "label_list" : list_label_testing,
+        #     "predict_label" : list_label_prediksi,
+        #     "prob_predict" : list_prob_prediksi,
+        #     "tp" : int(true_pos),
+        #     "tn" : int(true_neg),
+        #     "fp" : int(false_pos),
+        #     "fn" : int(false_neg),
+        #     "akurasi" : round(float(akurasi), 2),
+        #     "presisi" : round(float(presisi), 2),
+        #     "recall" : round(float(recall), 2)
+        # }
 
         # Menyimpan hasil evaluasi dalam bentuk json
         with open(os.path.join(path, 'hasil_evaluasi_model.json'), 'w') as outfile:
