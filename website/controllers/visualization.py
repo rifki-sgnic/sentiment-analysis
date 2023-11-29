@@ -2,7 +2,7 @@ import json
 
 from flask import flash
 from website.models import Models
-# from wordcloud import WordCloud
+from wordcloud import WordCloud
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -16,7 +16,7 @@ class VisualizationController:
         waktu = datetime.today().strftime('%d-%m-%Y %H%M')
         
         try:
-            instance_model =  Models('SELECT DATE(created_at) as tanggal FROM tbl_data_clean WHERE clean_text IS NOT NULL AND sentiment IS NOT NULL')
+            instance_model =  Models('SELECT DATE(created_at) as tanggal FROM tbl_data_clean WHERE clean_answer_5 IS NOT NULL AND sentiment_5 IS NOT NULL')
             distribusi_waktu = instance_model.select()
 
             list_tanggal = [str(data['tanggal']) for data in distribusi_waktu]
@@ -35,10 +35,10 @@ class VisualizationController:
             plt.cla()
             plt.clf()
 
-            instance_model = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment = "positif"')
+            instance_model = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_5 = "Sangat Puas"')
             count_pos = instance_model.select()[0]['jumlah']
 
-            instance_model = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment = "negatif"')
+            instance_model = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_5 = "Puas"')
             count_neg = instance_model.select()[0]['jumlah']
 
             jumlah_data = count_pos + count_neg
@@ -48,7 +48,7 @@ class VisualizationController:
             list_countSentiment = [persentase_pos, persentase_neg]
 
             plt.subplots(figsize=(10, 10))
-            plt.pie(list_countSentiment, labels=['Positif ('+ str(persentase_pos) +'%)', 'Negatif ('+ str(persentase_neg) +'%)'], colors=['#00c853', '#ff1744'], startangle=90)
+            plt.pie(list_countSentiment, labels=['Sangat Puas ('+ str(persentase_pos) +'%)', 'Puas ('+ str(persentase_neg) +'%)'], colors=['#00c853', '#ff1744'], startangle=90)
             plt.legend(title="Data Tipe Sentimen")
 
             plt.savefig('website/static/visualisasi/pie_sentimen.png')
@@ -56,25 +56,25 @@ class VisualizationController:
             plt.cla()
             plt.clf()
 
-            instance_model = Models("SELECT clean_text FROM tbl_data_clean WHERE clean_text IS NOT NULL AND sentiment = 'positif'")
+            instance_model = Models("SELECT clean_answer_5 FROM tbl_data_clean WHERE clean_answer_5 IS NOT NULL AND sentiment_5 = 'Sangat Puas'")
             data_positif = instance_model.select()
                 
-            instance_model = Models("SELECT clean_text FROM tbl_data_clean WHERE clean_text IS NOT NULL AND sentiment = 'negatif'")
+            instance_model = Models("SELECT clean_answer_5 FROM tbl_data_clean WHERE clean_answer_5 IS NOT NULL AND sentiment_5 = 'Puas'")
             data_negatif = instance_model.select()
 
             string_positif = ""
             for data in data_positif:
-                string_positif += str(data['clean_text']) + " "
+                string_positif += str(data['clean_answer_5']) + " "
                 
             string_negatif = ""
             for data in data_negatif:
-                string_negatif += str(data['clean_text']) + " "
+                string_negatif += str(data['clean_answer_5']) + " "
 
-            # wordcloud = WordCloud(width=800, height=400, background_color='black', collocations=False).generate(string_positif)
-            # wordcloud.to_file('website/static/visualisasi/wordcloud_positif.png')
+            wordcloud = WordCloud(width=800, height=400, background_color='black', collocations=False).generate(string_positif)
+            wordcloud.to_file('website/static/visualisasi/wordcloud_positif.png')
 
-            # wordcloud = WordCloud(width=800, height=400, background_color='black', collocations=False).generate(string_negatif)
-            # wordcloud.to_file('website/static/visualisasi/wordcloud_negatif.png')
+            wordcloud = WordCloud(width=800, height=400, background_color='black', collocations=False).generate(string_negatif)
+            wordcloud.to_file('website/static/visualisasi/wordcloud_negatif.png')
 
         except:
             if os.path.exists('website/static/visualisasi/histogram_dist_waktu.png'):

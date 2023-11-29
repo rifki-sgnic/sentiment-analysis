@@ -1,132 +1,132 @@
 {
-  "jumlah_tweets": 60,
-  "jumlah_pos": 32,
-  "jumlah_neg": 28,
-  "persentase_pos": 53.33,
-  "persentase_neg": 46.67,
+  "jumlah_tweets": 286,
+  "jumlah_pos": 69,
+  "jumlah_neg": 215,
+  "persentase_pos": 24.3,
+  "persentase_neg": 75.7,
   "frekuensi_pos": [
     [
-      "borobudur",
+      "harga",
+      51
+    ],
+    [
+      "porsi",
       39
     ],
     [
-      "tiket",
-      37
+      "kualitas",
+      34
     ],
     [
-      "candi",
-      28
+      "enak",
+      21
     ],
     [
-      "tuju",
-      25
+      "makan",
+      21
     ],
     [
-      "harga",
+      "kalo",
       19
     ],
     [
-      "masuk",
-      13
+      "worth",
+      18
     ],
     [
-      "budaya",
-      9
+      "mahasiswa",
+      18
     ],
     [
-      "sejarah",
-      9
+      "segi",
+      17
     ],
     [
-      "wisata",
-      8
+      "enakk",
+      17
     ],
     [
-      "jaga",
-      7
+      "sih",
+      17
+    ],
+    [
+      "produk",
+      16
     ],
     [
       "mahal",
-      7
+      15
     ],
     [
-      "ibadah",
-      6
+      "sun",
+      14
     ],
     [
-      "budha",
-      6
-    ],
-    [
-      "dunia",
-      5
-    ],
-    [
-      "unjung",
-      5
+      "turut",
+      14
     ]
   ],
   "frekuensi_neg": [
     [
-      "borobudur",
-      77
-    ],
-    [
-      "tiket",
-      67
-    ],
-    [
-      "candi",
-      45
-    ],
-    [
-      "tuju",
-      34
-    ],
-    [
       "harga",
-      32
+      206
     ],
     [
-      "masuk",
-      29
+      "enak",
+      191
     ],
     [
-      "mahal",
-      16
+      "gak",
+      166
     ],
     [
-      "sejarah",
-      12
+      "sih",
+      139
     ],
     [
-      "budaya",
-      10
+      "porsi",
+      138
     ],
     [
-      "wisata",
-      10
+      "kualitas",
+      108
     ],
     [
-      "jaga",
-      10
+      "lumayan",
+      88
     ],
     [
-      "ibadah",
-      10
+      "segi",
+      87
     ],
     [
-      "naik",
-      9
+      "sun",
+      79
     ],
     [
-      "iya",
-      9
+      "produk",
+      78
     ],
     [
-      "batas",
-      8
+      "worth",
+      75
+    ],
+    [
+      "sat",
+      75
+    ],
+    [
+      "makan",
+      73
+    ],
+    [
+      "almeaty",
+      71
+    ],
+    [
+      "service",
+      71
     ]
   ],
-  "waktu": "26-06-2022 1751"
+  "waktu": "29-11-2023 1746"
 }

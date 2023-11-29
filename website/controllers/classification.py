@@ -28,7 +28,7 @@ class ClassificationController:
         list_text_training = []
         list_label_training = []
 
-        instance_model = Models('SELECT clean_text, sentiment FROM tbl_data_train_q1 WHERE sentiment IN ("Puas", "Cukup Puas", "Sangat Puas")')
+        instance_model = Models('SELECT clean_text, sentiment FROM tbl_data_train_q5')
         data_train = instance_model.select()
 
         for i in range(len(data_train)):
@@ -39,7 +39,7 @@ class ClassificationController:
         list_text_testing = []
         list_label_testing = []
 
-        instance_model = Models('SELECT clean_text, sentiment FROM tbl_data_test_q1 WHERE sentiment IN ("Puas", "Cukup Puas", "Sangat Puas")')
+        instance_model = Models('SELECT clean_text, sentiment FROM tbl_data_test_q5')
         data_test = instance_model.select()
         for i in range(len(data_test)):
             list_text_testing.append(data_test[i]['clean_text'])
@@ -83,7 +83,7 @@ class ClassificationController:
 
         for i in range(len(y_pred)):
             if y_pred[i] == 0:
-                list_label_prediksi.append("Cukup Puas")
+                list_label_prediksi.append("Kurang Puas")
             elif y_pred[i] == 1:
                 list_label_prediksi.append("Puas")
             elif y_pred[i] == 2:
@@ -102,6 +102,7 @@ class ClassificationController:
         list_label_pred = labelEncoder.inverse_transform(y_pred)
 
         conf_matrix = confusion_matrix(y_test, y_pred)
+        print(conf_matrix.ravel())
         print(conf_matrix)
 
         accuracy = accuracy_score(y_test, y_pred)
@@ -109,25 +110,25 @@ class ClassificationController:
         print(f"Accuracy: {accuracy}")
         print("Classification Report:\n", report)
 
-        # true_neg, false_pos, false_neg, true_pos = confusion_matrix(y_test, y_pred).ravel()
+        true_neg, false_pos, false_neg, true_pos = confusion_matrix(y_test, y_pred).ravel()
 
-        # akurasi = (true_pos + true_neg) / (true_pos + true_neg + false_pos + false_neg)
-        # presisi = true_pos / (true_pos + false_pos)
-        # recall = true_pos / (true_pos + false_neg)
+        akurasi = (true_pos + true_neg) / (true_pos + true_neg + false_pos + false_neg)
+        presisi = true_pos / (true_pos + false_pos)
+        recall = true_pos / (true_pos + false_neg)
 
-        # data_dict = {
-        #     "text_list" : list_text_testing,
-        #     "label_list" : list_label_testing,
-        #     "predict_label" : list_label_prediksi,
-        #     "prob_predict" : list_prob_prediksi,
-        #     "tp" : int(true_pos),
-        #     "tn" : int(true_neg),
-        #     "fp" : int(false_pos),
-        #     "fn" : int(false_neg),
-        #     "akurasi" : round(float(akurasi), 2),
-        #     "presisi" : round(float(presisi), 2),
-        #     "recall" : round(float(recall), 2)
-        # }
+        data_dict = {
+            "text_list" : list_text_testing,
+            "label_list" : list_label_testing,
+            "predict_label" : list_label_prediksi,
+            "prob_predict" : list_prob_prediksi,
+            "tp" : int(true_pos),
+            "tn" : int(true_neg),
+            "fp" : int(false_pos),
+            "fn" : int(false_neg),
+            "akurasi" : round(float(akurasi), 2),
+            "presisi" : round(float(presisi), 2),
+            "recall" : round(float(recall), 2)
+        }
 
         # Menyimpan hasil evaluasi dalam bentuk json
         with open(os.path.join(path, 'hasil_evaluasi_model.json'), 'w') as outfile:

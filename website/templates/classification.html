@@ -67,15 +67,19 @@
                   <td>{{ loop.index }}</td>
                   <td>{{ data_eval.text_list[row] }}</td>
                   <td>
-                    {% if data_eval.label_list[row] == 'positif' %}
-                      <label class="btn btn-success disabled">{{ data_eval.label_list[row]|upper }}</label>
+                    {% if data_eval.predict_label[row] == 'Sangat Puas' %}
+                      <label class="btn btn-success disabled">{{ data_eval.predict_label[row]|upper }}</label>
+                    {% elif data_eval.predict_label[row] == 'Puas' %}
+                      <label class="btn btn-secondary disabled">{{ data_eval.predict_label[row]|upper }}</label>
                     {% else %}
-                      <label class="btn btn-danger disabled">{{ data_eval.label_list[row]|upper }}</label>
+                      <label class="btn btn-danger disabled">{{ data_eval.predict_label[row]|upper }}</label>
                     {% endif %}
                   </td>
                   <td>
-                    {% if data_eval.predict_label[row] == 'positif' %}
+                    {% if data_eval.predict_label[row] == 'Sangat Puas' %}
                       <label class="btn btn-success disabled">{{ data_eval.predict_label[row]|upper }}</label>
+                    {% elif data_eval.predict_label[row] == 'Puas' %}
+                      <label class="btn btn-secondary disabled">{{ data_eval.predict_label[row]|upper }}</label>
                     {% else %}
                       <label class="btn btn-danger disabled">{{ data_eval.predict_label[row]|upper }}</label>
                     {% endif %}
