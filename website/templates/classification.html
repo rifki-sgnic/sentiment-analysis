@@ -59,6 +59,7 @@
                 <th width="65%" class="text-center">Teks</th>
                 <th width="15%" class="text-center">Label Aktual</th>
                 <th width="15%" class="text-center">Label Prediksi</th>
+                <th width="15%" class="text-center">Nilai Prediksi</th>
               </tr>
             </thead>
             <tbody>
@@ -83,7 +84,16 @@
                     {% else %}
                       <label class="btn btn-danger disabled">{{ data_eval.predict_label[row]|upper }}</label>
                     {% endif %}
-                    <!-- {{ data_eval.prob_predict[row] }} -->
+                    <!-- {{ data_eval.predict_prob[row] }} -->
+                  </td>
+                  <td class="text-center">
+                    {% if data_eval.predict_label[row] == 'Sangat Puas' %}
+                      {{ data_eval.predict_prob[row][2] }}
+                    {% elif data_eval.predict_label[row] == 'Puas' %}
+                      {{ data_eval.predict_prob[row][1] }}
+                    {% else %}
+                      {{ data_eval.predict_prob[row][0] }}
+                    {% endif %}
                   </td>
                 </tr>
               {% endfor %}
@@ -101,33 +111,57 @@
                 <tbody>
                   <tr>
                     <td colspan="2" rowspan="2"></td>
-                    <td colspan="2" class="align-middle border-success border">Data Aktual</td>
+                    <td colspan="3" class="align-middle border-success border">Data Aktual</td>
                   </tr>
                   <tr>
-                    <td class="align-middle border-success border">Positif</td>
-                    <td class="align-middle border-success border">Negatif</td>
+                    <td class="align-middle border-success border">Kurang Puas</td>
+                    <td class="align-middle border-success border">Puas</td>
+                    <td class="align-middle border-success border">Sangat Puas</td>
                   </tr>
                   <tr>
-                    <td rowspan="2" class="align-middle p-0 border-success border">Data Prediksi</td>
-                    <td class="align-middle border-success border">Positif</td>
-                    <td>
-                      <h5 class="mb-0 text-dark">{{ data_eval.tp }}</h5>
-                      <small class="text-muted">TP (True Positive)</small>
+                    <td rowspan="3" class="align-middle p-0 border-success border">Data Prediksi</td>
+                    <td class="align-middle border-success border">Kurang Puas</td>
+                    <td class="table-primary">
+                      <h5 class="mb-0 text-dark">{{ data_eval.tneg }}</h5>
+                      <small class="text-muted">TNeg (True Kurang Puas)</small>
                     </td>
                     <td class="border-success border">
-                      <h5 class="mb-0 text-dark">{{ data_eval.fp }}</h5>
-                      <small cclass="text-muted">FP (False Positive)</small>
+                      <h5 class="mb-0 text-dark">{{ data_eval.fneg1 }}</h5>
+                      <small class="text-muted">FNeg1 (False Kurang Puas1)</small>
+                    </td>
+                    <td class="border-success border">
+                      <h5 class="mb-0 text-dark">{{ data_eval.fneg2 }}</h5>
+                      <small class="text-muted">FNeg2 (False Kurang Puas2)</small>
                     </td>
                   </tr>
                   <tr>
-                    <td class="align-middle border-success border">Negatif</td>
+                    <td class="align-middle border-success border">Puas</td>
                     <td class="border-success border">
-                      <h5 class="mb-0 text-dark">{{ data_eval.fn }}</h5>
-                      <small class="text-muted">FN (False Negatif)</small>
+                      <h5 class="mb-0 text-dark">{{ data_eval.fnet1 }}</h5>
+                      <small class="text-muted">FNet1 (False Puas1)</small>
+                    </td>
+                    <td class="border-success border table-primary">
+                      <h5 class="mb-0 text-dark">{{ data_eval.tnet }}</h5>
+                      <small class="text-muted">TNet (True Puas)</small>
                     </td>
                     <td class="border-success border">
-                      <h5 class="mb-0 text-dark">{{ data_eval.tn }}</h5>
-                      <small class="text-muted">TN (True Negatif)</small>
+                      <h5 class="mb-0 text-dark">{{ data_eval.fnet2 }}</h5>
+                      <small class="text-muted">FNet2 (False Puas2)</small>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="align-middle border-success border">Sangat Puas</td>
+                    <td class="border-success border">
+                      <h5 class="mb-0 text-dark">{{ data_eval.fpos1 }}</h5>
+                      <small class="text-muted">FPos1 (False Sangat Puas1)</small>
+                    </td>
+                    <td class="border-success border">
+                      <h5 class="mb-0 text-dark">{{ data_eval.fpos2 }}</h5>
+                      <small class="text-muted">FPos2 (False Sangat Puas2)</small>
+                    </td>
+                    <td class="border-success border table-primary">
+                      <h5 class="mb-0 text-dark">{{ data_eval.tpos }}</h5>
+                      <small class="text-muted">TN (True Sangat Puas)</small>
                     </td>
                   </tr>
                 </tbody>
@@ -142,44 +176,44 @@
                 <tbody>
                   <tr>
                     <td rowspan="4" class="text-right"><span class="h6">Akurasi</span></td>
-                    <td><span class="h6 text-muted">= (TP + TN) / (TP + TN + FP + FN)</span></td>
+                    <td><span class="h6 text-muted">= (TNeg + TNet + TPos) / (TNeg + FNeg1 + FNeg2 + FNet1 + TNet + FNet2 + FPos1 + FPos2 + TPos)</span></td>
                   </tr>
                   <tr>
-                    <td><span class="h6 text-muted">= ({{ data_eval.tp }} + {{ data_eval.tn }}) / ({{ data_eval.tp }} + {{ data_eval.tn }} + {{ data_eval.fp }} + {{ data_eval.fn }})</span></td>
+                    <td><span class="h6 text-muted">= ({{ data_eval.tneg }} + {{ data_eval.tnet }} + {{ data_eval.tpos }}) / ({{ data_eval.tneg }} + {{ data_eval.fneg1 }} + {{ data_eval.fneg2 }} + {{ data_eval.fnet1 }} + {{ data_eval.tnet }} + {{ data_eval.fnet2 }} + {{ data_eval.fpos1 }} + {{ data_eval.fpos2 }} + {{ data_eval.tpos }})</span></td>
                   </tr>
                   <tr>
-                    <td><span class="h6 text-muted">= ({{ data_eval.tp + data_eval.tn }}) / ({{ data_eval.tp + data_eval.tn + data_eval.fp + data_eval.fn }})</span></td>
+                    <td><span class="h6 text-muted">= ({{ data_eval.tneg + data_eval.tnet + data_eval.tpos }}) / ({{ data_eval.tneg + data_eval.fneg1 + data_eval.fneg2 + data_eval.fnet1 + data_eval.tnet + data_eval.fnet2 + data_eval.fpos1 + data_eval.fpos2 + data_eval.tpos }})</span></td>
                   </tr>
                   <tr>
-                    <td><span class="h6 text-muted">= {{ data_eval.akurasi }} * 100%</span><span class="h6">= {{ data_eval.akurasi * 100 }}%</span></td>
+                    <td><span class="h6 text-muted">= {{ data_eval.akurasi }} * 100%</span><span class="h6">= {{ data_eval.akurasi * 100 }} %</span></td>
                   </tr>
                   <tr><td colspan="3"></td></tr>
                   <tr>
                     <td rowspan="4" class="text-right"><span class="h6">Presisi</span></td>
-                    <td><span class="h6 text-muted">= TP / ( TP + FP )</span></td>
+                    <td><span class="h6 text-muted">= (Presisi Negatif + Presisi Netral + Presisi Positif) / Jumlah Kelas</span></td>
                   </tr>
                   <tr>
-                    <td><span class="h6 text-muted">= {{ data_eval.tp }} / ({{ data_eval.tp }} + {{ data_eval.fp }})</span></td>
+                    <td><span class="h6 text-muted">= ({{ data_eval.presisi_negatif }} + {{ data_eval.presisi_netral }} + {{ data_eval.presisi_positif }}) / {{ data_eval.jumlah_kelas }}</span></td>
                   </tr>
                   <tr>
-                    <td><span class="h6 text-muted">= {{ data_eval.tp }} / ({{ data_eval.tp + data_eval.fp }})</span></td>
+                    <td><span class="h6 text-muted">= ({{ data_eval.presisi_negatif + data_eval.presisi_netral + data_eval.presisi_positif }}) / {{ data_eval.jumlah_kelas }}</span></td>
                   </tr>
                   <tr>
-                    <td><span class="h6 text-muted">= {{ data_eval.presisi }} * 100%</span><span class="h6">= {{ data_eval.presisi * 100 }}%</span></td>
+                    <td><span class="h6 text-muted">= {{ data_eval.presisi }} * 100%</span><span class="h6">= {{ data_eval.presisi * 100 }} %</span></td>
                   </tr>
                   <tr><td colspan="3"></td></tr>
                   <tr>
                     <td rowspan="4" class="text-right"><span class="h6">Recall</span></td>
-                    <td><span class="h6 text-muted">= TP / ( TP + FN )</span></td>
+                    <td><span class="h6 text-muted">= (Recall Negatif + Recall Netral + Recall Positif) / Jumlah Kelas</span></td>
                   </tr>
                   <tr>
-                    <td><span class="h6 text-muted">= {{ data_eval.tp }} / ({{ data_eval.tp }} + {{ data_eval.fn }})</span></td>
+                    <td><span class="h6 text-muted">= ({{ data_eval.recall_negatif }} + {{ data_eval.recall_netral }} + {{ data_eval.recall_positif }}) / {{ data_eval.jumlah_kelas }}</span></td>
                   </tr>
                   <tr>
-                    <td><span class="h6 text-muted">= {{ data_eval.tp }} / ({{ data_eval.tp + data_eval.fn }})</span></td>
+                    <td><span class="h6 text-muted">= ({{ data_eval.recall_negatif + data_eval.recall_netral + data_eval.recall_positif }}) / {{ data_eval.jumlah_kelas }}</span></td>
                   </tr>
                   <tr>
-                    <td><span class="h6 text-muted">= {{ data_eval.recall }} * 100%</span><span class="h6">= {{ data_eval.recall * 100 }}%</span></td>
+                    <td><span class="h6 text-muted">= {{ data_eval.recall }} * 100%</span><span class="h6">= {{ data_eval.recall * 100 }} %</span></td>
                   </tr>
                 </tbody>
               </table>
