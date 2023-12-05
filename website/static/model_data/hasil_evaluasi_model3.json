@@ -1,0 +1,501 @@
+{
+  "akurasi": 0.81,
+  "fneg1": 1,
+  "fneg2": 2,
+  "fnet1": 0,
+  "fnet2": 4,
+  "fpos1": 0,
+  "fpos2": 4,
+  "jumlah_kelas": 3,
+  "label_list": [
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Kurang Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Kurang Puas",
+    "Kurang Puas"
+  ],
+  "predict_label": [
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas"
+  ],
+  "predict_prob": [
+    [
+      0.0,
+      0.978,
+      0.022
+    ],
+    [
+      0.0,
+      0.505,
+      0.495
+    ],
+    [
+      0.0,
+      0.999,
+      0.001
+    ],
+    [
+      0.039,
+      0.0,
+      0.961
+    ],
+    [
+      0.0,
+      0.994,
+      0.006
+    ],
+    [
+      0.0,
+      0.225,
+      0.775
+    ],
+    [
+      0.006,
+      0.931,
+      0.063
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.001,
+      0.999
+    ],
+    [
+      0.001,
+      0.0,
+      0.999
+    ],
+    [
+      0.006,
+      0.0,
+      0.994
+    ],
+    [
+      0.0,
+      0.997,
+      0.003
+    ],
+    [
+      0.0,
+      0.996,
+      0.004
+    ],
+    [
+      0.0,
+      0.837,
+      0.163
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.008,
+      0.103,
+      0.889
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.056,
+      0.0,
+      0.944
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.001,
+      0.001,
+      0.998
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.049,
+      0.488,
+      0.463
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.231,
+      0.002,
+      0.766
+    ],
+    [
+      0.002,
+      0.957,
+      0.041
+    ]
+  ],
+  "presisi": 0.5,
+  "presisi_negatif": 0.0,
+  "presisi_netral": 0.88,
+  "presisi_positif": 0.62,
+  "recall": 0.54,
+  "recall_negatif": 0.0,
+  "recall_netral": 0.9,
+  "recall_positif": 0.71,
+  "text_list": [
+    "bersih ramah ramah kerja sat n sun selesai guna sih",
+    "segi bersih saar unjung sat and sun letak kasir bersih enak liat buat unjung nyaman dalam kunjung sut and sun kamar mandi bersih buat nyaman customer pergi toilet",
+    "dari segi bersih sut sun area customer bersih menyenagkan segi toilet bagus kalo lampu terang bar mes bersih bagus harap tahan",
+    "bersihhh banget estetik toilet warna biruuu bikin pusing wkwk baguss kadang dalem kamar mandi habis tisyu",
+    "turut dapat sat sun almeaty service bersih buat konsumen nyaman",
+    "bersih area customer toilet bar bersih higienis buat konsumen nyaman",
+    "turut bersih rapi bersih tarik dgn rapi nyaman mungkin jatuh daun bikin agak sera",
+    "bersih sihh kayak gak mungkin gak sih kalok makan udah nyewa bangun kotor",
+    "bersih amann sih ga concern - hygine blm nyoba masuk area toilet gatau",
+    "puas aja sih kalo ga annoying segi bersih kalo toilet tau sih",
+    "beberapa kesini oke ajaa ga nemuin hygine nya",
+    "buat bersih toilet area makannyaa all good panass banget ac nya ga ngaruh toilet foto mayan instagramable pusing gegara lampu biru",
+    "bersih area customer toilet bar lumayan oke banget bersih wangi kinclong",
+    "meja bersih lantai bersih sampah sebar toilet sedia sabun harum bersih tisu toilet sedia",
+    "area customer toilet bar bersih bangettttt okeeee wangiiiy warna warni lucuu",
+    "resto higienis nya mantepp perlaatan makan so far aman bersihh ga perkara annoying bersih sihh",
+    "kemari bersih sih ga masalah bersih sini konsisten resto rame parah",
+    "bersih tempat udah bersih sihh kalok kotor aneh sihh t-t",
+    "buat bersih toilet area makannyaa all good panass banget toilet foto mayan instagramable pusing gegara lampu biru aja sii",
+    "overall tempat bersih banget sihh gak mikir jelek kotor toilet udah bagus banget",
+    "overall tempat bersih banget sihh gak mikir jelek kotor toilet udah bagus banget sukak",
+    "overall tempat bersih banget sihh gak mikir jelek kotor toilet udah bagus banget sukak",
+    "bersih oke jaga banget ga serampang gtuu tata dekorasi oke all guwd dr",
+    "all gudd sihh gada issue kebersihann smuanya higienis emg blm tau kalo toilet bcs blm perna make",
+    "bersihhh banget smuanya dr masuk smpe pas makan n mampit toilet smuanyaa bersih",
+    "tempat bersih banget toilet bersih nyaman buang hajat turut udah wajar kafe bersih sih",
+    "seingetku udah bersih gak liat kayak kotor meja beranta toilet udah oke banget",
+    "sat sun the almeaty service segi bersih bersihhh toilet bersihhhhh wangi jugaa",
+    "sat sun the almeaty service segi bersih okeeeee bersihh wangi sampah",
+    "sat sun the almeaty service segi bersih bersihhh wangi unyukk ambiencenyaaa",
+    "at sun the almeaty service segi bersih bersihhh wangiiiiiiiii bangettttt",
+    "seingetku udah bersih gak liat kayak kotor meja beranta toilet udah oke banget",
+    "seingetku udah bersih gak liat kayak kotor meja beranta toilet udah oke banget",
+    "seingetku udah bersih gak liat kayak kotor meja beranta toilet udah oke banget",
+    "overall tempat bersih banget sihh gak mikir jelek kotor toilet udah bagus banget sukak",
+    "overall tempat bersih banget sihh gak mikir jelek kotor toilet udah bagus banget sukak",
+    "overall tempat bersih banget sihh gak mikir jelek kotor toilet udah bagus banget sukak",
+    "seingetku udah bersih gak liat kayak kotor meja beranta toilet udah oke banget",
+    "sat sun the almeaty service segi bersih okee bersih mayan laaah",
+    "tempat bersih banget toilet bersih nyaman buang hajat turut udah wajar kafe bersih sih",
+    "sat sun the almeaty service segi bersih bersihhh emanggg sih wangi lampu lucu lucu",
+    "tempat bersih banget toilet bersih nyaman buang hajat turut udah wajar kafe bersih sih",
+    "sat sun the almeaty service segi bersih bersih wangi toilet bersih",
+    "sat sun the almeaty service segi bersih oke sihh bersihhh gercep dibersihin",
+    "tempat bersih banget toilet bersih nyaman buang hajat turut udah wajar kafe bersih sih",
+    "tempat bersih banget toilet bersih nyaman buang hajat turut udah wajar kafe bersih sih",
+    "tempat bersih banget toilet bersih nyaman buang hajat turut udah wajar kafe bersih sih",
+    "seingetku udah bersih gak liat kayak kotor meja beranta toilet udah oke banget",
+    "seingetku udah bersih gak liat kayak kotor meja beranta toilet udah oke banget",
+    "tempatnyaa bersihh ga debu liat ga dibersihin regularly smua amaann",
+    "sat sun the almeaty service segi bersih bersih estetik tempat suka",
+    "seingetku udah bersih gak liat kayak kotor meja beranta toilet udah oke banget",
+    "tempat bersih banget toilet bersih nyaman buang hajat turut udah wajar kafe bersih sih",
+    "tempatnyaa bersihh ga debu liat ga dibersihin regularly smua amaann",
+    "tempatnyaa bersihh ga debu liat ga dibersihin regularly smua amaann",
+    "tempatnyaa bersihh ga debu liat ga dibersihin regularly smua amaann",
+    "sat sun the almeaty service segi bersih bersihh nyaman wangi debu",
+    "kamar mandi dibersihin kotor banget bekas jejak sepatu ga napsu makan",
+    "bagi outdoornya bersih puntung rokok sera meja abu rokok"
+  ],
+  "tneg": 0,
+  "tnet": 38,
+  "tpos": 10
+}

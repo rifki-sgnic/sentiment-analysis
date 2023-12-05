@@ -1,0 +1,493 @@
+{
+  "akurasi": 0.67,
+  "fneg1": 7,
+  "fneg2": 0,
+  "fnet1": 3,
+  "fnet2": 1,
+  "fpos1": 2,
+  "fpos2": 6,
+  "jumlah_kelas": 3,
+  "label_list": [
+    "Puas",
+    "Kurang Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Kurang Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Kurang Puas",
+    "Puas",
+    "Puas",
+    "Kurang Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Kurang Puas",
+    "Puas",
+    "Kurang Puas",
+    "Puas",
+    "Kurang Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Kurang Puas",
+    "Puas",
+    "Sangat Puas",
+    "Kurang Puas",
+    "Kurang Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Kurang Puas",
+    "Sangat Puas",
+    "Puas",
+    "Kurang Puas"
+  ],
+  "predict_label": [
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Kurang Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Kurang Puas",
+    "Puas",
+    "Kurang Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Kurang Puas",
+    "Puas",
+    "Kurang Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Kurang Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Kurang Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Kurang Puas",
+    "Puas",
+    "Kurang Puas",
+    "Puas",
+    "Kurang Puas"
+  ],
+  "predict_prob": [
+    [
+      0.044,
+      0.051,
+      0.905
+    ],
+    [
+      0.219,
+      0.74,
+      0.04
+    ],
+    [
+      0.002,
+      0.957,
+      0.042
+    ],
+    [
+      0.0,
+      0.002,
+      0.998
+    ],
+    [
+      0.0,
+      0.002,
+      0.998
+    ],
+    [
+      0.004,
+      0.0,
+      0.996
+    ],
+    [
+      0.863,
+      0.035,
+      0.102
+    ],
+    [
+      0.001,
+      0.121,
+      0.878
+    ],
+    [
+      0.007,
+      0.99,
+      0.004
+    ],
+    [
+      0.01,
+      0.965,
+      0.025
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.004,
+      0.976,
+      0.021
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.999,
+      0.001,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.954,
+      0.001,
+      0.045
+    ],
+    [
+      0.02,
+      0.002,
+      0.978
+    ],
+    [
+      0.333,
+      0.667,
+      0.0
+    ],
+    [
+      0.0,
+      0.999,
+      0.001
+    ],
+    [
+      0.0,
+      0.999,
+      0.001
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.999,
+      0.001,
+      0.0
+    ],
+    [
+      0.333,
+      0.667,
+      0.0
+    ],
+    [
+      0.999,
+      0.001,
+      0.0
+    ],
+    [
+      0.333,
+      0.667,
+      0.0
+    ],
+    [
+      0.333,
+      0.667,
+      0.0
+    ],
+    [
+      0.07,
+      0.871,
+      0.059
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.999,
+      0.001,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.999,
+      0.001
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.998,
+      0.002
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.333,
+      0.667,
+      0.0
+    ],
+    [
+      0.0,
+      0.999,
+      0.001
+    ],
+    [
+      0.0,
+      0.995,
+      0.005
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.999,
+      0.001
+    ],
+    [
+      0.333,
+      0.667,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.999,
+      0.001
+    ],
+    [
+      0.81,
+      0.003,
+      0.187
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.333,
+      0.667,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.009,
+      0.85,
+      0.141
+    ],
+    [
+      0.999,
+      0.001,
+      0.0
+    ],
+    [
+      0.333,
+      0.667,
+      0.0
+    ],
+    [
+      0.954,
+      0.001,
+      0.045
+    ],
+    [
+      0.333,
+      0.667,
+      0.0
+    ],
+    [
+      0.924,
+      0.008,
+      0.068
+    ]
+  ],
+  "presisi": 0.68,
+  "presisi_negatif": 0.5,
+  "presisi_netral": 0.68,
+  "presisi_positif": 0.88,
+  "recall": 0.53,
+  "recall_negatif": 0.26,
+  "recall_netral": 0.87,
+  "recall_positif": 0.47,
+  "text_list": [
+    "parkir enak ga enak bayar tukang parkir ajaaaaaaaa",
+    "kurang puas segi parkir jalan parkir",
+    "nyaman dalam segi parkir muas hal sebab karna lagan parkir luas",
+    "turut dapat sat sun almeaty service mudah dapat parkir",
+    "turut dapat sat sun almeaty service mudah dapat parkir",
+    "cukup loss pas kesini sepi ga puyeng parkir",
+    "space parkir oke kayak pas kesana rush hour agak crowded",
+    "tempat parkir luas banget gue sulit nyari parkir tempat parkir nyaman aja parkir",
+    "parkir sat and sun parkir lumayan mobil susah dalam parkit",
+    "parkir lumayan luas parkir oke",
+    "mnurutku aman sih lahan parkir ga gede banget cumaa enough",
+    "oke oke aja sih alam parkir barang aman parkir gk nampung lumayan kendara",
+    "sih oke aja gak ngerasain - nyaman mungkin pakek motor oke aja sih",
+    "turut parkir standart parkir kafe sih motor kalok mobil agak ribet",
+    "kesana gak alam markir gak enak sih oke oke aja seramenya dapet",
+    "kalo parkir sih turut agak luas kalo bawa mobil pas ramee",
+    "parkir jugaa amann ga kesana pas ramee bgt mah amannn",
+    "oke parkir motor mobil masuk cuman kayak kalok rame agak susah kalik mobil",
+    "sat sun the almeaty service segi parkir baikkk okee luass kang parkir",
+    "sat sun the almeaty service segi parkir luas sihh cafenyaaaaa",
+    "sat sun the almeaty service segi parkir nya luass mobil",
+    "sih oke aja gak ngerasain - nyaman mungkin pakek motor oke aja sih",
+    "sih oke aja gak ngerasain - nyaman mungkin pakek motor oke aja sih",
+    "turut parkir standart parkir kafe sih motor kalok mobil agak ribet",
+    "oke parkir motor mobil masuk cuman kayak kalok rame agak susah kalik mobil",
+    "turut parkir standart parkir kafe sih motor kalok mobil agak ribet",
+    "oke parkir motor mobil masuk cuman kayak kalok rame agak susah kalik mobil",
+    "oke parkir motor mobil masuk cuman kayak kalok rame agak susah kalik mobil",
+    "parkir oke brp satnsun gapernah parkir",
+    "sih oke aja gak ngerasain - nyaman mungkin pakek motor oke aja sih",
+    "sih oke aja gak ngerasain - nyaman mungkin pakek motor oke aja sih",
+    "turut parkir standart parkir kafe sih motor kalok mobil agak ribet",
+    "sat sun the almeaty service segi parkir oke bangett mayan luassssss",
+    "sat sun the almeaty service segi parkir okee kang parkir bayar",
+    "sat sun the almeaty service segi parkir mayan",
+    "sat sun the almeaty service segi parkir agak sempitt",
+    "sat sun the almeaty service segi parkir puas sih",
+    "oke parkir motor mobil masuk cuman kayak kalok rame agak susah kalik mobil",
+    "sat sun the almeaty service segi parkir luaass",
+    "sat sun the almeaty service segi parkir spacious",
+    "sat sun the almeaty service segi parkir mobil sih tempat",
+    "sih oke aja gak ngerasain - nyaman mungkin pakek motor oke aja sih",
+    "sat sun the almeaty service segi parkir oke sihh mayan luass",
+    "sat sun the almeaty service segi parkir kang parkir",
+    "oke parkir motor mobil masuk cuman kayak kalok rame agak susah kalik mobil",
+    "sih oke aja gak ngerasain - nyaman mungkin pakek motor oke aja sih",
+    "tempat parkir spacious kalo ga rame banget aman enak aja parkir",
+    "sat sun the almeaty service segi parkir luas",
+    "tempat parkir sih turut agak luas kalo bawa mobil pas crowded",
+    "sih oke aja gak ngerasain - nyaman mungkin pakek motor oke aja sih",
+    "oke parkir motor mobil masuk cuman kayak kalok rame agak susah kalik mobil",
+    "sat sun the almeaty service segi parkir puasss mayan luas",
+    "parkir oke aja mungkin kalo aga ribet pas rame aja lebih okay",
+    "turut parkir standart parkir kafe sih motor kalok mobil agak ribet",
+    "oke parkir motor mobil masuk cuman kayak kalok rame agak susah kalik mobil",
+    "kalo parkir sih turut agak luas kalo bawa mobil pas ramee",
+    "oke parkir motor mobil masuk cuman kayak kalok rame agak susah kalik mobil",
+    "parkir ga mobil abang parkir galak banget jutek"
+  ],
+  "tneg": 5,
+  "tnet": 27,
+  "tpos": 7
+}

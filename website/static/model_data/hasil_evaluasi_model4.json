@@ -1,0 +1,493 @@
+{
+  "akurasi": 0.71,
+  "fneg1": 0,
+  "fneg2": 2,
+  "fnet1": 0,
+  "fnet2": 11,
+  "fpos1": 0,
+  "fpos2": 4,
+  "jumlah_kelas": 3,
+  "label_list": [
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Kurang Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Kurang Puas"
+  ],
+  "predict_label": [
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas"
+  ],
+  "predict_prob": [
+    [
+      0.014,
+      0.963,
+      0.023
+    ],
+    [
+      0.0,
+      0.986,
+      0.014
+    ],
+    [
+      0.0,
+      0.973,
+      0.027
+    ],
+    [
+      0.217,
+      0.22,
+      0.563
+    ],
+    [
+      0.0,
+      0.474,
+      0.526
+    ],
+    [
+      0.0,
+      0.988,
+      0.012
+    ],
+    [
+      0.0,
+      0.998,
+      0.002
+    ],
+    [
+      0.0,
+      0.997,
+      0.003
+    ],
+    [
+      0.0,
+      0.976,
+      0.024
+    ],
+    [
+      0.0,
+      0.998,
+      0.002
+    ],
+    [
+      0.0,
+      0.038,
+      0.962
+    ],
+    [
+      0.001,
+      0.996,
+      0.003
+    ],
+    [
+      0.0,
+      0.98,
+      0.02
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.044,
+      0.001,
+      0.955
+    ],
+    [
+      0.001,
+      0.092,
+      0.907
+    ],
+    [
+      0.0,
+      0.999,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.191,
+      0.809
+    ],
+    [
+      0.0,
+      0.191,
+      0.809
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.085,
+      0.915
+    ],
+    [
+      0.0,
+      0.191,
+      0.809
+    ],
+    [
+      0.0,
+      0.191,
+      0.809
+    ],
+    [
+      0.0,
+      0.041,
+      0.959
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.191,
+      0.809
+    ],
+    [
+      0.0,
+      0.041,
+      0.959
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.191,
+      0.809
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.041,
+      0.959
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.191,
+      0.809
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.004,
+      0.0,
+      0.996
+    ],
+    [
+      0.0,
+      0.041,
+      0.959
+    ],
+    [
+      0.0,
+      0.191,
+      0.809
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.041,
+      0.959
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.006,
+      0.001,
+      0.994
+    ],
+    [
+      0.005,
+      0.003,
+      0.992
+    ],
+    [
+      0.0,
+      0.191,
+      0.809
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.041,
+      0.959
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.014,
+      0.165,
+      0.821
+    ]
+  ],
+  "presisi": 0.49,
+  "presisi_negatif": 0.0,
+  "presisi_netral": 0.81,
+  "presisi_positif": 0.65,
+  "recall": 0.49,
+  "recall_negatif": 0.0,
+  "recall_netral": 0.61,
+  "recall_positif": 0.86,
+  "text_list": [
+    "ramaah saji standar cepat layak burger product knowledge tawar produk best seller",
+    "layan pegawai ramah dapat product knowledge",
+    "barista sat sun ramah friendly layan customer knowledge tau gapernah ngobrol deep talk",
+    "puasss saji dalam antar jual saran beli pilih makan puas",
+    "layan cepat ramah arah menu",
+    "bagus kembang udah mantab segi layan ramah pktg cepat saji",
+    "segi layan sur and sun ramah layan sana detail produk mudah beli pilih produk makan minum beli sana",
+    "turut dapat sat sun almeaty service milik layan kualitas",
+    "lumayan yaaa ramah kalok cepat saji turut standart sih mrk masak dlu",
+    "tempat tanya milik segi layan aspek ramah product knowledge dapat",
+    "pegawai ramah suka bawah nama menu udah ditulisin menu tuh apa isi kalok cepetnya standart sih",
+    "dari segi layan puas layan mungkin ramah mungkin",
+    "puas kasih terang menu contain aja sukak sih kalok cepat saji standart aja sih",
+    "staffnya oke banget sih ramah ramah salty makan standar aja saji ga banget ato",
+    "soal service e sih aman gada masalahh mungkin rodok ae makan sampe mnurutku seh aman ga garai mangkel",
+    "kecepatannn penyajiann produk nyaa cepatt layan sangatt ramahh sekaliii sukaaakkk produk",
+    "ramah product knowledge dapat cepat saji okee karyawannya cakep cakepppppp",
+    "salut bangett staff nya ramah ramahh ga salty kalo tolongin makan cepet nyampenyaa kalo rame aga dikit tp big deal",
+    "ini salut bangett staff nya ramah ramahh ga salty kalo tolongin makan cepet nyampenyaa",
+    "poin plus banget bawah nama menu desc menu mudahin tau menu layan ramah banget jawabin",
+    "staff nya ramah ramahh ga salty kalo tolongin makan cepet nyampenya aman kalo service",
+    "pegawai ramah layan cepet terang menu udah tera enak aja sih kalok mesen",
+    "pegawai ramah layan cepet terang menu udah tera enak aja sih kalok mesen",
+    "pelayanann e okeee top banget staff nya bneran totalitas serving nya attitude nya oke ga cureng gtu",
+    "salut bangett staff nya ramah ramahh ga salty kalo tolongin makan cepet nyampenyaa kalo rame aga dikit tp big deal",
+    "pegawai banget pas ditanyain layanin suka sih menu deskripsi gak bingung pas mesen",
+    "pegawai ramah layan cepet terang menu udah tera enak aja sih kalok mesen",
+    "pegawai ramah layan cepet terang menu udah tera enak aja sih kalok mesen",
+    "pegawai banget pas ditanyain layanin suka banget sih menu deskripsi gak bingung pas mesen",
+    "poin plus banget bawah nama menu desc menu mudahin tau menu layan ramah banget jawabin",
+    "pegawai ramah layan cepet terang menu udah tera enak aja sih kalok mesen",
+    "pegawai banget pas ditanyain layanin suka banget sih menu deskripsi gak bingung pas mesen",
+    "sat sun the almeaty service segi layan dapat ramaaaaah ga jutekk semuaaaaaaa",
+    "poin plus banget bawah nama menu desc menu mudahin tau menu layan ramah banget jawabin",
+    "sat sun the almeaty service segi layan dapat mba mas senyummm semuaa baikk baikkkkkkk",
+    "pegawai ramah layan cepet terang menu udah tera enak aja sih kalok mesen",
+    "sat sun the almeaty service segi layan dapat layan baikkkk mas mba",
+    "pegawai banget pas ditanyain layanin suka banget sih menu deskripsi gak bingung pas mesen",
+    "sat sun the almeaty service segi layan dapat sekat baikk senyum teruss oke bgtt",
+    "sat sun the almeaty service segi layan dapat okeee sihh mba mas baikkk ramah jugaaaa",
+    "pegawai ramah layan cepet terang menu udah tera enak aja sih kalok mesen",
+    "sat sun the almeaty service segi layan dapat ramah ramah cekat jugaaaaaa",
+    "top bgt sihh karyawannya ramah smuaa bener bener responsif banget sm customernyaa nyajiinnya okeee",
+    "pegawai banget pas ditanyain layanin suka banget sih menu deskripsi gak bingung pas mesen",
+    "pegawai ramah layan cepet terang menu udah tera enak aja sih kalok mesen",
+    "sat sun the almeaty service segi layan dapat karyawannya murah senyum",
+    "pegawai banget pas ditanyain layanin suka banget sih menu deskripsi gak bingung pas mesen",
+    "sat sun the almeaty service segi layan dapat karyawannya customer",
+    "sat sun the almeaty service segi layan dapat baikk ga judes super helpfulllllll",
+    "staff nya need a raise ramah gece gada resek sih layan makan cepet",
+    "agak aja dateng makan tp klo ramah dkk sih mnurutku aman aman ajaa yaaa gada maslaah",
+    "okeee ajaa service menurutkuu aman amann ajaa ga bikin komplainn staffnya juaraa sihh ramah ramahh",
+    "pegawai ramah layan cepet terang menu udah tera enak aja sih kalok mesen",
+    "poin plus banget bawah nama menu desc menu mudahin tau menu layan ramah banget jawabin",
+    "pegawai banget pas ditanyain layanin suka banget sih menu deskripsi gak bingung pas mesen",
+    "salut bangett staff nya ramah ramahh ga salty kalo tolongin makan cepet nyampenyaa kalo rame aga dikit tp big deal",
+    "sat sun the almeaty service segi layan dapat karywaanyaa baikk good manner hospitality",
+    "pegawai ramah sen keluar banget lupa kaya skip"
+  ],
+  "tneg": 0,
+  "tnet": 17,
+  "tpos": 24
+}

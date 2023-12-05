@@ -30,7 +30,7 @@ class ClassificationController:
         data_train = instance_model.select()
 
         for i in range(len(data_train)):
-            list_text_training.append(data_train[i]['clean_text']+ 'splitdata'+data_train[i]['user'])
+            list_text_training.append(data_train[i]['clean_text'])
             list_label_training.append(data_train[i]['sentiment'])
 
         # Data Testing
@@ -40,23 +40,21 @@ class ClassificationController:
         instance_model = Models(f'SELECT clean_text, sentiment, user FROM tbl_data_test_q{num}')
         data_test = instance_model.select()
         for i in range(len(data_test)):
-            list_text_testing.append(data_test[i]['clean_text']+ 'splitdata'+data_test[i]['user'])
+            list_text_testing.append(data_test[i]['clean_text'])
             list_label_testing.append(data_test[i]['sentiment'])
 
         # Vectorize X_train X_test
         vectorizer = CountVectorizer()
-        X_train = vectorizer.fit_transform([' '.join(kalimat.split('splitdata')[:-1]) for kalimat in list_text_training]).toarray()
-        X_test = vectorizer.transform([' '.join(kalimat.split('splitdata')[:-1]) for kalimat in list_text_testing]).toarray()
+        X_train = vectorizer.fit_transform(list_text_training).toarray()
+        X_test = vectorizer.transform(list_text_testing).toarray()
         vocab = vectorizer.get_feature_names_out()
 
         # Vectorize y_train y_test
         labelEncoder = LabelEncoder()
-        print([' '.join(kalimat.split('splitdata')[:-1]) for kalimat in list_label_testing])
         y_train = labelEncoder.fit_transform(list_label_training).ravel()
         y_test = labelEncoder.transform(list_label_testing).ravel()
 
         label = labelEncoder.classes_
-        print(label)
 
         # TRAIN MULTINOMIAL NAIVE BAYES
         model = MultiNB()

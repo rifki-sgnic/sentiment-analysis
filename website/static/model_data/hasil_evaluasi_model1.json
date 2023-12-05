@@ -1,0 +1,493 @@
+{
+  "akurasi": 0.83,
+  "fneg1": 5,
+  "fneg2": 0,
+  "fnet1": 0,
+  "fnet2": 1,
+  "fpos1": 0,
+  "fpos2": 4,
+  "jumlah_kelas": 3,
+  "label_list": [
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Kurang Puas",
+    "Kurang Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Kurang Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Kurang Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Kurang Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas"
+  ],
+  "predict_label": [
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas"
+  ],
+  "predict_prob": [
+    [
+      0.001,
+      0.99,
+      0.009
+    ],
+    [
+      0.0,
+      0.999,
+      0.001
+    ],
+    [
+      0.001,
+      0.997,
+      0.002
+    ],
+    [
+      0.031,
+      0.033,
+      0.935
+    ],
+    [
+      0.267,
+      0.7,
+      0.033
+    ],
+    [
+      0.005,
+      0.616,
+      0.379
+    ],
+    [
+      0.001,
+      0.989,
+      0.009
+    ],
+    [
+      0.0,
+      0.998,
+      0.002
+    ],
+    [
+      0.0,
+      0.997,
+      0.003
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.003,
+      0.997
+    ],
+    [
+      0.023,
+      0.001,
+      0.975
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.001,
+      0.0,
+      0.999
+    ],
+    [
+      0.444,
+      0.554,
+      0.003
+    ],
+    [
+      0.001,
+      0.998,
+      0.001
+    ],
+    [
+      0.0,
+      0.999,
+      0.001
+    ],
+    [
+      0.027,
+      0.973,
+      0.0
+    ],
+    [
+      0.0,
+      0.004,
+      0.996
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.397,
+      0.603,
+      0.0
+    ],
+    [
+      0.397,
+      0.603,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.397,
+      0.603,
+      0.0
+    ],
+    [
+      0.397,
+      0.603,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.397,
+      0.603,
+      0.0
+    ],
+    [
+      0.397,
+      0.603,
+      0.0
+    ],
+    [
+      0.061,
+      0.427,
+      0.512
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.397,
+      0.603,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.397,
+      0.603,
+      0.0
+    ],
+    [
+      0.397,
+      0.603,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.058,
+      0.0,
+      0.942
+    ],
+    [
+      0.006,
+      0.933,
+      0.061
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.397,
+      0.603,
+      0.0
+    ],
+    [
+      0.254,
+      0.659,
+      0.088
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.062,
+      0.001,
+      0.937
+    ]
+  ],
+  "presisi": 0.57,
+  "presisi_negatif": 0.0,
+  "presisi_netral": 0.8,
+  "presisi_positif": 0.92,
+  "recall": 0.57,
+  "recall_negatif": 0.0,
+  "recall_netral": 0.97,
+  "recall_positif": 0.73,
+  "text_list": [
+    "puas akses kendara mudah akses mobil motor",
+    "mudah akses kendara tuju lokasi mudah jalan kendala",
+    "jalan tuju lokasi tempuh guna mobil mudah",
+    "mudah gampang temu maps accessibility susah",
+    "bagus kembang udah mantab",
+    "strategis mudah akses jalur mana",
+    "cukup mudah jangkau mudah dapat kendara online",
+    "turut dapat sat sun almeaty service lokasi mudah akses",
+    "turut dapat sat sun almeaty service mudah akses",
+    "aman lokasi ga ribet masuk gang area pusat kota gaperlu susah gmaps",
+    "akses gampang banget tempat pusat kota jadi repot pake maps kawatir munyer-munyer",
+    "okee aja big deal sih akses tempatnyaa liat gmaps bntar aja kalo uda apal jalan sby",
+    "akses kesana gampang pusat kota jugaa gaperlu pusing gmapsnya",
+    "aman kokk jalan ga kecil masuk masuk gang kosanku deket aman poll gampang",
+    "mudah nya lumayan pinggir jalan raya masuk lumayan oke",
+    "tuju lokasi lumayan gampang pake motor mobil grab gojek jalan luas",
+    "jalan tuju mudah akses kendara roda empat",
+    "akses kendara oke mobil motor masuk bolak gak gede banget jalan gk kecil",
+    "lokasi enak strategis mudah kalo akses kesana pusat kota ga bingung",
+    "- kota akses bilang mudah gak mblusuk jalan enak",
+    "enak enak aja sih akses gampang jalan masuk oke mungkin pilih lokasi kota kalok oke sih",
+    "akses oke sihh udah gampangin customer kesana nguntungin kafe sih",
+    "akses oke sihh udah gampangin customer kesana nguntungin kafe sih",
+    "akses kesana mudah sih gak bingungin jalan gak sempit banget mungkin kota",
+    "akses oke sihh udah gampangin customer kesana nguntungin kafe sih",
+    "akses oke sihh udah gampangin customer kesana nguntungin kafe sih",
+    "enak enak aja sih akses gampang jalan masuk oke mungkin pilih lokasi kota kalok oke sih",
+    "- kota akses bilang mudah gak mblusuk jalan enak",
+    "enak enak aja sih akses gampang jalan masuk oke mungkin pilih lokasi kota kalok oke sih",
+    "- kota akses bilang mudah gak mblusuk jalan enak",
+    "enak enak aja sih akses gampang jalan masuk oke mungkin pilih lokasi kota kalok oke sih",
+    "akses oke sihh udah gampangin customer kesana nguntungin kafe sih",
+    "akses oke sihh udah gampangin customer kesana nguntungin kafe sih",
+    "superr gampangg akses sananyaa gada maslaah sih kalo akses",
+    "- kota akses bilang mudah gak mblusuk jalan enak",
+    "sat sun the almeaty service segi mudah akses kendara tuju lokasi okee bangett ga macetttt",
+    "akses oke sihh udah gampangin customer kesana nguntungin kafe sih",
+    "sat sun the almeaty service segi mudah akses kendara tuju lokasi okee sihh mayan gampang akses gmaps",
+    "sat sun the almeaty service segi mudah akses kendara tuju lokasi pas pake gojek mudah sih",
+    "sat sun the almeaty service segi mudah akses kendara tuju lokasi jalan aspal",
+    "sat sun the almeaty service segi mudah akses kendara tuju lokasi mudaah",
+    "sat sun the almeaty service segi mudah akses kendara tuju lokasi accessable",
+    "sat sun the almeaty service segi mudah akses kendara tuju lokasi mudah",
+    "akses oke sihh udah gampangin customer kesana nguntungin kafe sih",
+    "akses oke sihh udah gampangin customer kesana nguntungin kafe sih",
+    "akses kesana gampang pusat kota jugaa gaperlu pusing gmapsnya",
+    "sat sun the almeaty service segi mudah akses kendara tuju lokasi kesasar",
+    "aksess gampangg gada sih kalo ini lokasi ga susah masuk gang naik bukit sm turun lembah wkwkw",
+    "akses tuju lokasi crowded area lintas padat",
+    "- kota akses bilang mudah gak mblusuk jalan enak",
+    "enak enak aja sih akses gampang jalan masuk oke mungkin pilih lokasi kota kalok oke sih",
+    "enak enak aja sih akses gampang jalan masuk oke mungkin pilih lokasi kota kalok oke sih",
+    "akses oke sihh udah gampangin customer kesana nguntungin kafe sih",
+    "aman akses ga sihh overall pas kesana oke oke ajaaa",
+    "enak enak aja sih akses gampang jalan masuk oke mungkin pilih lokasi kota kalok oke sih",
+    "akses kesana gampang pusat kota jugaa gaperlu pusing gmapsnya",
+    "enak enak aja sih akses gampang jalan masuk oke mungkin pilih lokasi kota kalok oke sih",
+    "mudah jangkau ajaa sihh lokasinyaa ga ngemaps masuk gang gituu"
+  ],
+  "tneg": 0,
+  "tnet": 37,
+  "tpos": 11
+}

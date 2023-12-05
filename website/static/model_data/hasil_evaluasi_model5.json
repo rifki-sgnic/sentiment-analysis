@@ -1,0 +1,501 @@
+{
+  "akurasi": 0.83,
+  "fneg1": 2,
+  "fneg2": 0,
+  "fnet1": 0,
+  "fnet2": 5,
+  "fpos1": 0,
+  "fpos2": 3,
+  "jumlah_kelas": 3,
+  "label_list": [
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Kurang Puas",
+    "Kurang Puas"
+  ],
+  "predict_label": [
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Sangat Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas"
+  ],
+  "predict_prob": [
+    [
+      0.0,
+      0.258,
+      0.742
+    ],
+    [
+      0.001,
+      0.854,
+      0.146
+    ],
+    [
+      0.0,
+      0.961,
+      0.039
+    ],
+    [
+      0.0,
+      0.96,
+      0.04
+    ],
+    [
+      0.02,
+      0.013,
+      0.967
+    ],
+    [
+      0.0,
+      0.518,
+      0.482
+    ],
+    [
+      0.006,
+      0.993,
+      0.001
+    ],
+    [
+      0.0,
+      0.003,
+      0.997
+    ],
+    [
+      0.0,
+      0.142,
+      0.858
+    ],
+    [
+      0.0,
+      0.992,
+      0.008
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.001,
+      0.999
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.001,
+      0.999
+    ],
+    [
+      0.0,
+      0.001,
+      0.999
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.982,
+      0.018
+    ],
+    [
+      0.127,
+      0.85,
+      0.023
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.196,
+      0.804
+    ],
+    [
+      0.0,
+      0.999,
+      0.001
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.993,
+      0.007
+    ],
+    [
+      0.0,
+      0.999,
+      0.001
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.02,
+      0.98
+    ],
+    [
+      0.0,
+      0.999,
+      0.001
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.992,
+      0.008
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.999,
+      0.001
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.998,
+      0.002
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.005,
+      0.04,
+      0.955
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.051,
+      0.949
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.999,
+      0.001
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.012,
+      0.606,
+      0.381
+    ],
+    [
+      0.101,
+      0.728,
+      0.171
+    ]
+  ],
+  "presisi": 0.52,
+  "presisi_negatif": 0.0,
+  "presisi_netral": 0.88,
+  "presisi_positif": 0.69,
+  "recall": 0.56,
+  "recall_negatif": 0.0,
+  "recall_netral": 0.88,
+  "recall_positif": 0.79,
+  "text_list": [
+    "minum okayyyy porsi harga nya lumayan pricey tp memang ambience oke",
+    "porsi enak menu burger favorit makan singgah sana",
+    "bagus kembang udah mantab segi kualitas produk besar porsi harga jual baik",
+    "untuk enak harga pricey kelas mahasiswa ajar kunjung sat n sun",
+    "harga menu menu nya enak tampil nya tarik cocok abadi sosial media",
+    "untuk besar porsi harga sut sun kalo saran besar porsi agak banyak",
+    "besar porsi harga imbang karna enakkk bikin kenyang suka burgernyaa kasih tambah slice daging juicy bentuk makan karna lumer cheese burgernya enak",
+    "untuk rasak enakk harga ramah kantong porsi lumayan eyang harga ramah kantong",
+    "turut dapat sat sun almeaty service milik kualitas produk muas konsumen",
+    "sat sun almeaty service milik kualitas produk saji produk kualitas",
+    "sih harga walopun agak pricey kaum mahasiswa mendang-mending okelahhh",
+    "oke sih makan sen enak enak aja bersih mas fresh anget harga bit pricey kantong mahasiswa kalo nyoba doang worth to try",
+    "porsi oke enak worth it gk harga gantung orang sih worth it aja sih",
+    "enakk worthy kokk suka banget menu brisket enak parahh yaa harga mayan pricey yaa gabisa ssring mampir",
+    "porsi okee rasanyaa wenakkpoll must try poll yaa paleng emg harga rodok larang mahasiswa kalo nyoba ae sih okee",
+    "mnurut gw mahal sih mahasiswa alias gabisa kalo dr segi worth rekomen porsi harga sebandingg",
+    "kisar harga segitu sih oke yaa porsi oke enak banding harga high quality",
+    "harga segitu kyaknya udah patut enak pokok walopun gtu spent uang gk nyesel gtu",
+    "harga gk murah gak mahal worth it kalok kesini kayak sih kyak klok gak dlu",
+    "harga gk murah gak mahal worth it kalok kesini kayak sih kyak klok gak dlu",
+    "enak porsi lumayan banding harga lumayan mahasiswa kaum mendang-mending kyaknya gak sih",
+    "enak sih kyaknya udah wajar harga gak bilang jangkau dapet makan minum enak porsi gak kenyang",
+    "semua dish sen gadaa fail enak enak smuanyaa porsi sm harga mmurutku agak mahal kualitas gin rekomenn",
+    "sebenernya porisnya banget bikin kenyang enak cuman harga agak hmzzz kyak buka kafe option nongki sih",
+    "buat porsi sm gada masalahh oke smua enakk smuaa kalo liat harga sihh golong mahal anak kosan",
+    "enak sih kyaknya udah wajar harga gak bilang jangkau dapet makan minum enak porsi gak kenyang",
+    "sat sun the almeaty service segi kualitas produk enakk enakkk high qualityyyyy tp agak mahal",
+    "at sun the almeaty service segi kualitas produk baikkk good qualityy enakk cm agak mahall",
+    "sat sun the almeaty service segi kualitas produk baikk high qualityyyyy tp emg agak mahaaaaaaal",
+    "harga gk murah gak mahal worth it kalok kesini kayak sih kyak klok gak dlu",
+    "enak porsi lumayan banding harga lumayan mahasiswa kaum mendang-mending kyaknya gak sih",
+    "harga gk murah gak mahal worth it kalok kesini kayak sih kyak klok gak dlu",
+    "enak sih kyaknya udah wajar harga gak bilang jangkau dapet makan minum enak porsi gak kenyang",
+    "enak porsi lumayan banding harga lumayan mahasiswa kaum mendang-mending kyaknya gak sih",
+    "gudd bangett rekomen mahasiswa nyoba kualitas makan sm porsi banding harga okee banget sih mnurutkuu",
+    "sat sun the almeaty service segi kualitas produk enakk sihh worth to tryyyyyyyyyyyyyyyyyyyy",
+    "sat sun the almeaty service segi kualitas produk enak enak agak mahaaalllllllllllllllll",
+    "sat sun the almeaty service segi kualitas produk okeeee maya laaah harga segituuuuuuuuu",
+    "sat sun the almeaty service segi kualitas produk okeee sihhh worth itt enak enak semuaaaaa coba",
+    "enak sih kyaknya udah wajar harga gak bilang jangkau dapet makan minum enak porsi gak kenyang",
+    "sat sun the almeaty service segi kualitas produk enak enak sih makan minum worth",
+    "enak sih kyaknya udah wajar harga gak bilang jangkau dapet makan minum enak porsi gak kenyang",
+    "sat sun the almeaty service segi kualitas produk oke oke bangett sihh mayan laah harga segituuu",
+    "harga gk murah gak mahal worth it kalok kesini kayak sih kyak klok gak dlu",
+    "enak sih kyaknya udah wajar harga gak bilang jangkau dapet makan minum enak porsi gak kenyang",
+    "buat mungkin gara gara western food cocok my personal tastebuds yaa so so kalo ngajak temen rekomen sihh kesini harga sm kualitas okee",
+    "sat sun the almeaty service segi kualitas produk enak enak bangett must go banget deh cafe iniii",
+    "rekomen harga porsi kualitas gue fair worth to try ken nyoba western food dgn ambience ala s american",
+    "sat sun the almeaty service segi kualitas produk porsi mayan kecil harga segitu tapi enakkkkk",
+    "oke aja mungkin ekspektasiku gara gara resto sempet hype harga agak mahal mnurutku wkw pasar aja sih mungkin tp yaa mas okee",
+    "harga gk murah gak mahal worth it kalok kesini kayak sih kyak klok gak dlu",
+    "superr guddd right up to my alleyy okee bangettt woylahhh rekomennnnn ga pricey worthh it parahhh",
+    "enak porsi lumayan banding harga lumayan mahasiswa kaum mendang-mending kyaknya gak sih",
+    "harga agak mahal banding kualitas ditawarin satnsun porsi oke ga bikin kesel gara gara dapet dikit",
+    "sat sun the almeaty service segi kualitas produk high qualityy sihh yaaa mantapp enak enakkk",
+    "sat sun the almeaty service segi kualitas produk maki bahan bahan premium enakkkk semuaaaaa",
+    "sat sun the almeaty service segi kualitas produk okee banget enak enaaaak poko mantaaap",
+    "sih aja lumayan overprice anak kuliah",
+    "hambar mahal mungkin apes aja kesini ga kayak gin"
+  ],
+  "tneg": 0,
+  "tnet": 38,
+  "tpos": 11
+}
