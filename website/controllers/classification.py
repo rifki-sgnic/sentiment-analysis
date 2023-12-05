@@ -11,7 +11,7 @@ import numpy as np
 from website.multinb import MultiNB
 
 class ClassificationController:
-    def createModel(self):
+    def createModel(self, num = ""):
 
         # instance_model = Models('SELECT COUNT(id) as jumlah FROM tbl_data_train WHERE clean_text IS NOT NULL AND sentiment IS NOT NULL')
         # sentiment_count = instance_model.select()
@@ -26,42 +26,44 @@ class ClassificationController:
         list_text_training = []
         list_label_training = []
 
-        instance_model = Models('SELECT clean_text, sentiment FROM tbl_data_train_q4')
+        instance_model = Models(f'SELECT clean_text, sentiment, user FROM tbl_data_train_q{num}')
         data_train = instance_model.select()
 
         for i in range(len(data_train)):
-            list_text_training.append(data_train[i]['clean_text'])
+            list_text_training.append(data_train[i]['clean_text']+ 'splitdata'+data_train[i]['user'])
             list_label_training.append(data_train[i]['sentiment'])
 
         # Data Testing
         list_text_testing = []
         list_label_testing = []
 
-        instance_model = Models('SELECT clean_text, sentiment FROM tbl_data_test_q4')
+        instance_model = Models(f'SELECT clean_text, sentiment, user FROM tbl_data_test_q{num}')
         data_test = instance_model.select()
         for i in range(len(data_test)):
-            list_text_testing.append(data_test[i]['clean_text'])
+            list_text_testing.append(data_test[i]['clean_text']+ 'splitdata'+data_test[i]['user'])
             list_label_testing.append(data_test[i]['sentiment'])
 
         # Vectorize X_train X_test
         vectorizer = CountVectorizer()
-        X_train = vectorizer.fit_transform(list_text_training).toarray()
-        X_test = vectorizer.transform(list_text_testing).toarray()
+        X_train = vectorizer.fit_transform([' '.join(kalimat.split('splitdata')[:-1]) for kalimat in list_text_training]).toarray()
+        X_test = vectorizer.transform([' '.join(kalimat.split('splitdata')[:-1]) for kalimat in list_text_testing]).toarray()
         vocab = vectorizer.get_feature_names_out()
 
         # Vectorize y_train y_test
         labelEncoder = LabelEncoder()
+        print([' '.join(kalimat.split('splitdata')[:-1]) for kalimat in list_label_testing])
         y_train = labelEncoder.fit_transform(list_label_training).ravel()
         y_test = labelEncoder.transform(list_label_testing).ravel()
 
         label = labelEncoder.classes_
+        print(label)
 
         # TRAIN MULTINOMIAL NAIVE BAYES
         model = MultiNB()
         model.fit(X_train, y_train)
 
         # SAVE MODEL as PKL
-        filename = 'mnb_model.pkl'
+        filename = f'mnb_model{num}.pkl'
         path = 'website/static/model_data/'
         with open(os.path.join(path, filename), 'wb') as out_name:
             pickle.dump(model, out_name, pickle.HIGHEST_PROTOCOL)
@@ -154,7 +156,7 @@ class ClassificationController:
         }
 
         # Menyimpan hasil evaluasi dalam bentuk json
-        with open(os.path.join(path, 'hasil_evaluasi_model.json'), 'w') as outfile:
+        with open(os.path.join(path, f'hasil_evaluasi_model{num}.json'), 'w') as outfile:
             json.dump(data_dict, outfile, indent=2)
 
         flash('Berhasil melakukan klasifikasi data.', 'success')
@@ -163,7 +165,7 @@ class ClassificationController:
 
     def getEvaluation(self):
         path = 'website/static/model_data/'
-        filename = 'hasil_evaluasi_model.json'
+        filename = 'hasil_evaluasi_model1.json'
         
         try:
             data = json.load(open(path+filename))

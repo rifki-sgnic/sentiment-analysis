@@ -256,8 +256,9 @@ def classification():
         return render_template("classification.html", data_eval=data_eval)
 
     if request.method == 'POST':
-        response = controller_classification.createModel()
-        return response
+        for num in range(1, 6):
+            controller_classification.createModel(num)
+        return controller_classification.createModel(1)
 
 @views.route('/classification/hapus-data', methods=['POST'])
 def hapus_evaluation():
