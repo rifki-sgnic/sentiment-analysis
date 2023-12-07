@@ -163,13 +163,15 @@ class ClassificationController:
 
     def getEvaluation(self):
         path = 'website/static/model_data/'
-        filename = 'hasil_evaluasi_model1.json'
-        
-        try:
-            data = json.load(open(path+filename))
-        except:
-            data = None
-        
+        data = {}
+        for num in range(1, 6):
+            filename = f'hasil_evaluasi_model{num}.json'
+
+            try:
+                data[f"eval_{num}"] = json.load(open(path+filename))
+            except:
+                data = {}
+
         return data
 
 

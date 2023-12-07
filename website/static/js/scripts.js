@@ -8,7 +8,11 @@ btn_menu.onclick = function () {
 // Data Table
 $(document).ready(function () {
   $("#table_dataCrawling").DataTable();
-  $("#table_dataPredict").DataTable();
+  $("#table_dataPredict-1").DataTable();
+  $("#table_dataPredict-2").DataTable();
+  $("#table_dataPredict-3").DataTable();
+  $("#table_dataPredict-4").DataTable();
+  $("#table_dataPredict-5").DataTable();
 });
 
 // Mencari rasio data tes dan data latih
