@@ -15,6 +15,10 @@ $(document).ready(function () {
   $("#table_dataPredict-5").DataTable();
 });
 
+$(document).ready(function() {
+  $('#q1').addClass('active');
+})
+
 // Mencari rasio data tes dan data latih
 function cariRasio(kode) {
   $("#validasi_rasio").addClass("d-none");

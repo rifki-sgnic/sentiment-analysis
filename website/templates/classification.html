@@ -39,8 +39,6 @@
     </div>
 
     {% if data_eval != None %}
-    
-
     <ul class="nav nav-tabs nav-fill" id="myTabQ" role="tablist">
       <li class="nav-item">
         <a class="nav-link active" id="q1-tab" data-bs-toggle="tab" href="#q1" data-bs-target="#q1" role="tab" aria-controls="q1" aria-selected="true">Q1</a>
@@ -61,7 +59,7 @@
 
     <div class="tab-content" id="myTabContentQ">
       {% for eval in data_eval %}
-      <div class="tab-pane active" id="q{{ loop.index }}" role="tabpanel" aria-labelledby="q{{ loop.index }}-tab">
+      <div class="tab-pane" id="q{{ loop.index }}" role="tabpanel" aria-labelledby="q{{ loop.index }}-tab">
         <div>
           <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
