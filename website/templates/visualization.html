@@ -8,6 +8,13 @@
       <h3>Visualisasi Data</h3>
     </div>
     <p class="text-muted">Menampilkan data hasil penelitian</p>
+    <ul>
+      <li>Q1 : Kemudahan akses kendaraan menuju lokasi</li>
+      <li>Q2 : Tempat parkir</li>
+      <li>Q3 : Kebersihan tempat</li>
+      <li>Q4 : Pelayanan yang didapat</li>
+      <li>Q5 : Kualitas Produk</li>
+    </ul>
   </div>
 
   {% with messages = get_flashed_messages(category_filter=["success"]) %}
@@ -42,34 +49,31 @@
 
     <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
       <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="hist-distribusi-tab" data-bs-toggle="tab" data-bs-target="#hist-distribusi-tab-pane" type="button" role="tab" aria-controls="hist-distribusi-tab-pane" aria-selected="true">Histogram Distribusi</button>
+        <button class="nav-link active" id="pie-chart-sentimen-tab" data-bs-toggle="tab" data-bs-target="#pie-chart-sentimen-tab-pane" type="button" role="tab" aria-controls="pie-chart-sentimen-tab-pane" aria-selected="false">Piechart Sentimen</button>
       </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pie-chart-sentimen-tab" data-bs-toggle="tab" data-bs-target="#pie-chart-sentimen-tab-pane" type="button" role="tab" aria-controls="pie-chart-sentimen-tab-pane" aria-selected="false">Piechart Sentimen</button>
-      </li>
-      <li class="nav-item" role="presentation">
+      <!-- <li class="nav-item" role="presentation">
         <button class="nav-link" id="wordcloud-tab" data-bs-toggle="tab" data-bs-target="#wordcloud-tab-pane" type="button" role="tab" aria-controls="wordcloud-tab-pane" aria-selected="false">Wordcloud</button>
-      </li>
+      </li> -->
     </ul>
 
     <div class="tab-content p-3" id="myTabContent">
-      <div class="tab-pane fade show active" id="hist-distribusi-tab-pane" role="tabpanel" aria-labelledby="hist-distribusi-tab" tabindex="0">
+      <div class="tab-pane fade show active" id="pie-chart-sentimen-tab-pane" role="tabpanel" aria-labelledby="pie-chart-sentimen-tab" tabindex="0">
         <div class="col-md-12 m-2">
-          <h4 class="text-center">Grafik distribusi tweet berdasarkan waktu perolehan.<br /> {{ data.jumlah_tweets }} Data Tweet</h4>
-          <div>
-            <img src="../static/visualisasi/histogram_dist_waktu.png" alt="histogram" class="img-fluid">
+          <div class="container mx-auto">
+            <div class="row row-cols-3 justify-content-center">
+              {% for i in range(0, 5) %}
+              <div class="col">
+                <h5 class="text-center">Pie Chart sentimen pada data Q{{ loop.index }}. <br />{{ data.jumlah_sp[i] }} sentimen Sangat Puas ({{ data.persentase_sp[i] }} %) <br /> {{ data.jumlah_p[i] }} sentimen Puas ({{ data.persentase_p[i] }} %) <br /> {{ data.jumlah_kp[i] }} sentimen Kurang Puas ({{ data.persentase_kp[i] }} %)</h5>
+                <div>
+                  <img src="../static/visualisasi/pie_sentimen_{{ loop.index }}.png" alt="piechart sentimen" class="img-fluid mx-auto d-block">
+                </div>
+              </div>
+              {% endfor %}
+            </div>
           </div>
         </div>
       </div>
-      <div class="tab-pane fade" id="pie-chart-sentimen-tab-pane" role="tabpanel" aria-labelledby="pie-chart-sentimen-tab" tabindex="0">
-        <div class="col-md-12 m-2">
-          <h4 class="text-center">Pie Chart persentase sentimen pada {{ data.jumlah_tweets }} Data Tweet. <br />{{ data.jumlah_pos }} tweet positif ({{ data.persentase_pos }} %) & {{ data.jumlah_neg }} tweet negatif ({{ data.persentase_neg }} %)</h4>
-          <div>
-            <img src="../static/visualisasi/pie_sentimen.png" alt="piechart sentimen" class="img-fluid mx-auto d-block">
-          </div>
-        </div>
-      </div>
-      <div class="tab-pane fade" id="wordcloud-tab-pane" role="tabpanel" aria-labelledby="wordcloud-tab" tabindex="0">
+      <!-- <div class="tab-pane fade" id="wordcloud-tab-pane" role="tabpanel" aria-labelledby="wordcloud-tab" tabindex="0">
         <div class="row mt-4">
           <div class="col-md-6">
             <h4 class="text-center"><em>Word Cloud</em> dataset <em>tweet</em> bersentimen positif</h4>
@@ -124,7 +128,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
     </div>
     {% else %}

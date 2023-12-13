@@ -1,9 +1,47 @@
 {
-  "jumlah_tweets": 286,
-  "jumlah_pos": 69,
-  "jumlah_neg": 215,
-  "persentase_pos": 24.3,
-  "persentase_neg": 75.7,
+  "jumlah_tweets": 292,
+  "jumlah_sp": [
+    77,
+    76,
+    71,
+    142,
+    69
+  ],
+  "jumlah_p": [
+    192,
+    156,
+    208,
+    140,
+    215
+  ],
+  "jumlah_kp": [
+    23,
+    60,
+    13,
+    10,
+    8
+  ],
+  "persentase_sp": [
+    26.37,
+    26.03,
+    24.32,
+    48.63,
+    23.63
+  ],
+  "persentase_p": [
+    65.75,
+    53.42,
+    71.23,
+    47.95,
+    73.63
+  ],
+  "persentase_kp": [
+    7.88,
+    20.55,
+    4.45,
+    3.42,
+    2.74
+  ],
   "frekuensi_pos": [
     [
       "harga",
@@ -127,6 +165,5 @@
       "service",
       71
     ]
-  ],
-  "waktu": "29-11-2023 1746"
+  ]
 }

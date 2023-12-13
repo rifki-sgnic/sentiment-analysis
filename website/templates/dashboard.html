@@ -110,9 +110,9 @@ block content %}
         <h4 class="card-title text-center">Chart Pembagian Data</h4>
         <canvas id="chart-split-data"></canvas>
         {% if (data.data_train and data.data_test) %}
-        <p>
-          {{ data.data_train / (data.data_train + data.data_test) }} : {{
-          data.data_test / (data.data_train + data.data_test) }}
+        <p class="text-center">Uji : Latih <br />
+          {{ "%.2f"|format(data.data_train / (data.data_train + data.data_test) * 100) }} % : {{
+          "%.2f"|format(data.data_test / (data.data_train + data.data_test) * 100) }} %
         </p>
         {% endif %}
       </div>

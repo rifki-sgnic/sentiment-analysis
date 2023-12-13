@@ -13,48 +13,46 @@ import os
 
 class VisualizationController:
     def createVisualisasi(self):
-        waktu = datetime.today().strftime('%d-%m-%Y %H%M')
-        
         try:
-            instance_model =  Models('SELECT DATE(created_at) as tanggal FROM tbl_data_clean WHERE clean_answer_5 IS NOT NULL AND sentiment_5 IS NOT NULL')
-            distribusi_waktu = instance_model.select()
+            list_count_sp = []
+            list_count_p = []
+            list_count_kp = []
+            list_persentase_sp = []
+            list_persentase_p = []
+            list_persentase_kp = []
 
-            list_tanggal = [str(data['tanggal']) for data in distribusi_waktu]
+            for num in range(1, 6):
 
-            plt.subplots(figsize=(25, 10))
-            plt.hist(list_tanggal, bins=125)
+                instance_model = Models(f'SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_{num} = "Sangat Puas"')
+                count_sp = instance_model.select()[0]['jumlah']
 
-            plt.ylabel('Jumlah Tweet', fontsize=18)
-            plt.xlabel('Tanggal Perolehan', fontsize=18)
-            plt.xticks(rotation=45)
+                instance_model = Models(f'SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_{num} = "Puas"')
+                count_p = instance_model.select()[0]['jumlah']
 
-            plt.grid()
+                instance_model = Models(f'SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_{num} = "Kurang Puas"')
+                count_kp = instance_model.select()[0]['jumlah']
 
-            plt.savefig('website/static/visualisasi/histogram_dist_waktu.png')
+                jumlah_data = count_sp + count_p + count_kp
+                persentase_sp = round((count_sp / jumlah_data) * 100, 2)
+                persentase_p = round((count_p / jumlah_data) * 100, 2)
+                persentase_kp = round((count_kp / jumlah_data) * 100, 2)
 
-            plt.cla()
-            plt.clf()
+                list_count_sp.append(count_sp)
+                list_count_p.append(count_p)
+                list_count_kp.append(count_kp)
+                list_persentase_sp.append(persentase_sp)
+                list_persentase_p.append(persentase_p)
+                list_persentase_kp.append(persentase_kp)
 
-            instance_model = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_5 = "Sangat Puas"')
-            count_pos = instance_model.select()[0]['jumlah']
+                list_countSentiment = [persentase_sp, persentase_p, persentase_kp]
 
-            instance_model = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_5 = "Puas"')
-            count_neg = instance_model.select()[0]['jumlah']
+                plt.subplots(figsize=(10, 10))
+                plt.pie(list_countSentiment, labels=['Sangat Puas ('+ str(persentase_sp) +'%)', 'Puas ('+ str(persentase_p) +'%)', 'Kurang Puas ('+ str(persentase_p) +'%)'], colors=['#00c853', '#CACACA', '#ff1744'], startangle=90)
+                plt.legend(title="Data Tipe Sentimen")
+                plt.savefig(f'website/static/visualisasi/pie_sentimen_{num}.png')
 
-            jumlah_data = count_pos + count_neg
-            persentase_pos = round((count_pos / jumlah_data) * 100, 2)
-            persentase_neg = round((count_neg / jumlah_data) * 100, 2)
-
-            list_countSentiment = [persentase_pos, persentase_neg]
-
-            plt.subplots(figsize=(10, 10))
-            plt.pie(list_countSentiment, labels=['Sangat Puas ('+ str(persentase_pos) +'%)', 'Puas ('+ str(persentase_neg) +'%)'], colors=['#00c853', '#ff1744'], startangle=90)
-            plt.legend(title="Data Tipe Sentimen")
-
-            plt.savefig('website/static/visualisasi/pie_sentimen.png')
-
-            plt.cla()
-            plt.clf()
+                plt.cla()
+                plt.clf()
 
             instance_model = Models("SELECT clean_answer_5 FROM tbl_data_clean WHERE clean_answer_5 IS NOT NULL AND sentiment_5 = 'Sangat Puas'")
             data_positif = instance_model.select()
@@ -103,14 +101,15 @@ class VisualizationController:
         frekuensi_neg = dict(sorted(counts.items(), key=operator.itemgetter(1), reverse=True))
 
         data = {
-            'jumlah_tweets': len(list_tanggal),
-            'jumlah_pos': count_pos,
-            'jumlah_neg': count_neg,
-            'persentase_pos': persentase_pos,
-            'persentase_neg': persentase_neg,
+            'jumlah_tweets': jumlah_data,
+            'jumlah_sp': list_count_sp,
+            'jumlah_p': list_count_p,
+            'jumlah_kp': list_count_kp,
+            'persentase_sp': list_persentase_sp,
+            'persentase_p': list_persentase_p,
+            'persentase_kp': list_persentase_kp,
             'frekuensi_pos': list(frekuensi_pos.items())[:15],
             'frekuensi_neg': list(frekuensi_neg.items())[:15],
-            'waktu': waktu
         }
 
         # Menyimpan hasil visualisasi dalam bentuk json
