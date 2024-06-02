@@ -557,18 +557,14 @@ var table_dataTrain = $('#table_dataTrainQ1').DataTable({
             className: 'text-center',
             "render": function (data, type, full, meta) {
                 switch (data.sentiment) {
-                  case "Sangat Puas":
-                    return '<label class="btn btn-success disabled">Sangat Puas</label>';
                   case "Puas":
                     return '<label class="btn btn-success disabled">Puas</label>';
-                  case "Cukup Puas":
-                    return '<label class="btn btn-secondary disabled">Cukup Puas</label>';
-                  case "Kurang Puas":
-                    return '<label class="btn btn-danger disabled">Kurang Puas</label>';
+                  case "Cukup":
+                    return '<label class="btn btn-secondary disabled">Cukup</label>';
                   case "Tidak Puas":
                     return '<label class="btn btn-danger disabled">Tidak Puas</label>';
                   default:
-                    return '<label class="btn btn-secondary disabled">NETRAL</label>';
+                    return '<label class="btn btn-secondary disabled">Cukup</label>';
                 }
             },
         },
@@ -625,18 +621,14 @@ var table_dataTrain = $('#table_dataTrainQ2').DataTable({
             className: 'text-center',
             "render": function (data, type, full, meta) {
                 switch (data.sentiment) {
-                  case "Sangat Puas":
-                    return '<label class="btn btn-success disabled">Sangat Puas</label>';
-                  case "Puas":
-                    return '<label class="btn btn-success disabled">Puas</label>';
-                  case "Cukup Puas":
-                    return '<label class="btn btn-secondary disabled">Cukup Puas</label>';
-                  case "Kurang Puas":
-                    return '<label class="btn btn-danger disabled">Kurang Puas</label>';
-                  case "Tidak Puas":
-                    return '<label class="btn btn-danger disabled">Tidak Puas</label>';
-                  default:
-                    return '<label class="btn btn-secondary disabled">NETRAL</label>';
+                    case "Puas":
+                        return '<label class="btn btn-success disabled">Puas</label>';
+                      case "Cukup":
+                        return '<label class="btn btn-secondary disabled">Cukup</label>';
+                      case "Tidak Puas":
+                        return '<label class="btn btn-danger disabled">Tidak Puas</label>';
+                      default:
+                        return '<label class="btn btn-secondary disabled">Cukup</label>';
                 }
             },
         },
@@ -694,18 +686,14 @@ var table_dataTrain = $('#table_dataTrainQ3').DataTable({
             className: 'text-center',
             "render": function (data, type, full, meta) {
                 switch (data.sentiment) {
-                  case "Sangat Puas":
-                    return '<label class="btn btn-success disabled">Sangat Puas</label>';
-                  case "Puas":
-                    return '<label class="btn btn-success disabled">Puas</label>';
-                  case "Cukup Puas":
-                    return '<label class="btn btn-secondary disabled">Cukup Puas</label>';
-                  case "Kurang Puas":
-                    return '<label class="btn btn-danger disabled">Kurang Puas</label>';
-                  case "Tidak Puas":
-                    return '<label class="btn btn-danger disabled">Tidak Puas</label>';
-                  default:
-                    return '<label class="btn btn-secondary disabled">NETRAL</label>';
+                    case "Puas":
+                        return '<label class="btn btn-success disabled">Puas</label>';
+                      case "Cukup":
+                        return '<label class="btn btn-secondary disabled">Cukup</label>';
+                      case "Tidak Puas":
+                        return '<label class="btn btn-danger disabled">Tidak Puas</label>';
+                      default:
+                        return '<label class="btn btn-secondary disabled">Cukup</label>';
                 }
             },
         },
@@ -763,18 +751,14 @@ var table_dataTrain = $('#table_dataTrainQ4').DataTable({
             className: 'text-center',
             "render": function (data, type, full, meta) {
                 switch (data.sentiment) {
-                  case "Sangat Puas":
-                    return '<label class="btn btn-success disabled">Sangat Puas</label>';
                   case "Puas":
                     return '<label class="btn btn-success disabled">Puas</label>';
-                  case "Cukup Puas":
-                    return '<label class="btn btn-secondary disabled">Cukup Puas</label>';
-                  case "Kurang Puas":
-                    return '<label class="btn btn-danger disabled">Kurang Puas</label>';
+                  case "Cukup":
+                    return '<label class="btn btn-secondary disabled">Cukup</label>';
                   case "Tidak Puas":
                     return '<label class="btn btn-danger disabled">Tidak Puas</label>';
                   default:
-                    return '<label class="btn btn-secondary disabled">NETRAL</label>';
+                    return '<label class="btn btn-secondary disabled">Cukup</label>';
                 }
             },
         },
@@ -832,18 +816,14 @@ var table_dataTrain = $('#table_dataTrainQ5').DataTable({
             className: 'text-center',
             "render": function (data, type, full, meta) {
                 switch (data.sentiment) {
-                  case "Sangat Puas":
-                    return '<label class="btn btn-success disabled">Sangat Puas</label>';
                   case "Puas":
                     return '<label class="btn btn-success disabled">Puas</label>';
-                  case "Cukup Puas":
-                    return '<label class="btn btn-secondary disabled">Cukup Puas</label>';
-                  case "Kurang Puas":
-                    return '<label class="btn btn-danger disabled">Kurang Puas</label>';
+                  case "Cukup":
+                    return '<label class="btn btn-secondary disabled">Cukup</label>';
                   case "Tidak Puas":
                     return '<label class="btn btn-danger disabled">Tidak Puas</label>';
                   default:
-                    return '<label class="btn btn-secondary disabled">NETRAL</label>';
+                    return '<label class="btn btn-secondary disabled">Cukup</label>';
                 }
             },
         },
@@ -902,18 +882,14 @@ var table_dataTest = $('#table_dataTestQ1').DataTable({
             className: 'text-center',
             "render": function (data, type, full, meta) {
                 switch (data.sentiment) {
-                    case "Sangat Puas":
-                        return '<label class="btn btn-success disabled">Sangat Puas</label>';
                     case "Puas":
-                        return '<label class="btn btn-success disabled">Puas</label>';
-                    case "Cukup Puas":
-                        return '<label class="btn btn-secondary disabled">Cukup Puas</label>';
-                    case "Kurang Puas":
-                        return '<label class="btn btn-danger disabled">Kurang Puas</label>';
-                    case "Tidak Puas":
-                        return '<label class="btn btn-danger disabled">Tidak Puas</label>';
-                    default:
-                        return '<label class="btn btn-secondary disabled">NETRAL</label>';
+                    return '<label class="btn btn-success disabled">Puas</label>';
+                  case "Cukup":
+                    return '<label class="btn btn-secondary disabled">Cukup</label>';
+                  case "Tidak Puas":
+                    return '<label class="btn btn-danger disabled">Tidak Puas</label>';
+                  default:
+                    return '<label class="btn btn-secondary disabled">Cukup</label>';
                 }
             },
         },
@@ -971,18 +947,14 @@ var table_dataTest = $('#table_dataTestQ2').DataTable({
             className: 'text-center',
             "render": function (data, type, full, meta) {
                 switch (data.sentiment) {
-                    case "Sangat Puas":
-                        return '<label class="btn btn-success disabled">Sangat Puas</label>';
                     case "Puas":
-                        return '<label class="btn btn-success disabled">Puas</label>';
-                    case "Cukup Puas":
-                        return '<label class="btn btn-secondary disabled">Cukup Puas</label>';
-                    case "Kurang Puas":
-                        return '<label class="btn btn-danger disabled">Kurang Puas</label>';
-                    case "Tidak Puas":
-                        return '<label class="btn btn-danger disabled">Tidak Puas</label>';
-                    default:
-                        return '<label class="btn btn-secondary disabled">NETRAL</label>';
+                    return '<label class="btn btn-success disabled">Puas</label>';
+                  case "Cukup":
+                    return '<label class="btn btn-secondary disabled">Cukup</label>';
+                  case "Tidak Puas":
+                    return '<label class="btn btn-danger disabled">Tidak Puas</label>';
+                  default:
+                    return '<label class="btn btn-secondary disabled">Cukup</label>';
                 }
             },
         },
@@ -1040,18 +1012,14 @@ var table_dataTest = $('#table_dataTestQ3').DataTable({
             className: 'text-center',
             "render": function (data, type, full, meta) {
                 switch (data.sentiment) {
-                    case "Sangat Puas":
-                        return '<label class="btn btn-success disabled">Sangat Puas</label>';
                     case "Puas":
-                        return '<label class="btn btn-success disabled">Puas</label>';
-                    case "Cukup Puas":
-                        return '<label class="btn btn-secondary disabled">Cukup Puas</label>';
-                    case "Kurang Puas":
-                        return '<label class="btn btn-danger disabled">Kurang Puas</label>';
-                    case "Tidak Puas":
-                        return '<label class="btn btn-danger disabled">Tidak Puas</label>';
-                    default:
-                        return '<label class="btn btn-secondary disabled">NETRAL</label>';
+                    return '<label class="btn btn-success disabled">Puas</label>';
+                  case "Cukup":
+                    return '<label class="btn btn-secondary disabled">Cukup</label>';
+                  case "Tidak Puas":
+                    return '<label class="btn btn-danger disabled">Tidak Puas</label>';
+                  default:
+                    return '<label class="btn btn-secondary disabled">Cukup</label>';
                 }
             },
         },
@@ -1109,18 +1077,14 @@ var table_dataTest = $('#table_dataTestQ4').DataTable({
             className: 'text-center',
             "render": function (data, type, full, meta) {
                 switch (data.sentiment) {
-                    case "Sangat Puas":
-                        return '<label class="btn btn-success disabled">Sangat Puas</label>';
                     case "Puas":
-                        return '<label class="btn btn-success disabled">Puas</label>';
-                    case "Cukup Puas":
-                        return '<label class="btn btn-secondary disabled">Cukup Puas</label>';
-                    case "Kurang Puas":
-                        return '<label class="btn btn-danger disabled">Kurang Puas</label>';
-                    case "Tidak Puas":
-                        return '<label class="btn btn-danger disabled">Tidak Puas</label>';
-                    default:
-                        return '<label class="btn btn-secondary disabled">NETRAL</label>';
+                    return '<label class="btn btn-success disabled">Puas</label>';
+                  case "Cukup":
+                    return '<label class="btn btn-secondary disabled">Cukup</label>';
+                  case "Tidak Puas":
+                    return '<label class="btn btn-danger disabled">Tidak Puas</label>';
+                  default:
+                    return '<label class="btn btn-secondary disabled">Cukup</label>';
                 }
             },
         },
@@ -1178,18 +1142,14 @@ var table_dataTest = $('#table_dataTestQ5').DataTable({
             className: 'text-center',
             "render": function (data, type, full, meta) {
                 switch (data.sentiment) {
-                    case "Sangat Puas":
-                        return '<label class="btn btn-success disabled">Sangat Puas</label>';
                     case "Puas":
-                        return '<label class="btn btn-success disabled">Puas</label>';
-                    case "Cukup Puas":
-                        return '<label class="btn btn-secondary disabled">Cukup Puas</label>';
-                    case "Kurang Puas":
-                        return '<label class="btn btn-danger disabled">Kurang Puas</label>';
-                    case "Tidak Puas":
-                        return '<label class="btn btn-danger disabled">Tidak Puas</label>';
-                    default:
-                        return '<label class="btn btn-secondary disabled">NETRAL</label>';
+                    return '<label class="btn btn-success disabled">Puas</label>';
+                  case "Cukup":
+                    return '<label class="btn btn-secondary disabled">Cukup</label>';
+                  case "Tidak Puas":
+                    return '<label class="btn btn-danger disabled">Tidak Puas</label>';
+                  default:
+                    return '<label class="btn btn-secondary disabled">Cukup</label>';
                 }
             },
         },

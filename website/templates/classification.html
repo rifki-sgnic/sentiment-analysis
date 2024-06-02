@@ -97,25 +97,25 @@
                       <td>{{ loop.index }}</td>
                       <td>{{ data_eval[eval].text_list[row] }}</td>
                       <td>
-                        {% if data_eval[eval].predict_label[row] == 'Sangat Puas' %}
+                        {% if data_eval[eval].predict_label[row] == 'Puas' %}
                           <label class="btn btn-success disabled">{{ data_eval[eval].predict_label[row]|upper }}</label>
-                        {% elif data_eval[eval].predict_label[row] == 'Puas' %}
+                        {% elif data_eval[eval].predict_label[row] == 'Cukup' %}
                           <label class="btn btn-secondary disabled">{{ data_eval[eval].predict_label[row]|upper }}</label>
                         {% else %}
                           <label class="btn btn-danger disabled">{{ data_eval[eval].predict_label[row]|upper }}</label>
                         {% endif %}
                       </td>
                       <td>
-                        {% if data_eval[eval].predict_label[row] == 'Sangat Puas' %}
+                        {% if data_eval[eval].predict_label[row] == 'Puas' %}
                           <label class="btn btn-success disabled">{{ data_eval[eval].predict_label[row]|upper }}</label>
-                        {% elif data_eval[eval].predict_label[row] == 'Puas' %}
+                        {% elif data_eval[eval].predict_label[row] == 'Cukup' %}
                           <label class="btn btn-secondary disabled">{{ data_eval[eval].predict_label[row]|upper }}</label>
                         {% else %}
                           <label class="btn btn-danger disabled">{{ data_eval[eval].predict_label[row]|upper }}</label>
                         {% endif %}
                       </td>
                       <td class="text-center">
-                        {% if data_eval[eval].predict_label[row] == 'Sangat Puas' %}
+                        {% if data_eval[eval].predict_label[row] == 'Puas' %}
                           {{ data_eval[eval].predict_prob[row][2] }}
                         {% elif data_eval[eval].predict_label[row] == 'Puas' %}
                           {{ data_eval[eval].predict_prob[row][1] }}
@@ -142,24 +142,39 @@
                         <td colspan="3" class="align-middle border-success border">Data Aktual</td>
                       </tr>
                       <tr>
-                        <td class="align-middle border-success border">Kurang Puas</td>
+                        <td class="align-middle border-success border">Tidak Puas</td>
                         <td class="align-middle border-success border">Puas</td>
                         <td class="align-middle border-success border">Sangat Puas</td>
                       </tr>
                       <tr>
                         <td rowspan="3" class="align-middle p-0 border-success border">Data Prediksi</td>
-                        <td class="align-middle border-success border">Kurang Puas</td>
+                        <td class="align-middle border-success border">Tidak Puas</td>
                         <td class="table-primary">
                           <h5 class="mb-0 text-dark">{{ data_eval[eval].tneg }}</h5>
-                          <small class="text-muted">TNeg (True Kurang Puas)</small>
+                          <small class="text-muted">TNeg (True Tidak Puas)</small>
                         </td>
                         <td class="border-success border">
                           <h5 class="mb-0 text-dark">{{ data_eval[eval].fneg1 }}</h5>
-                          <small class="text-muted">FNeg1 (False Kurang Puas1)</small>
+                          <small class="text-muted">FNeg1 (False Tidak Puas1)</small>
                         </td>
                         <td class="border-success border">
                           <h5 class="mb-0 text-dark">{{ data_eval[eval].fneg2 }}</h5>
-                          <small class="text-muted">FNeg2 (False Kurang Puas2)</small>
+                          <small class="text-muted">FNeg2 (False Tidak Puas2)</small>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="align-middle border-success border">Cukup</td>
+                        <td class="border-success border">
+                          <h5 class="mb-0 text-dark">{{ data_eval[eval].fnet1 }}</h5>
+                          <small class="text-muted">FNet1 (False Cukup1)</small>
+                        </td>
+                        <td class="border-success border table-primary">
+                          <h5 class="mb-0 text-dark">{{ data_eval[eval].tnet }}</h5>
+                          <small class="text-muted">TNet (True Cukup)</small>
+                        </td>
+                        <td class="border-success border">
+                          <h5 class="mb-0 text-dark">{{ data_eval[eval].fnet2 }}</h5>
+                          <small class="text-muted">FNet2 (False Cukup2)</small>
                         </td>
                       </tr>
                       <tr>
@@ -175,21 +190,6 @@
                         <td class="border-success border">
                           <h5 class="mb-0 text-dark">{{ data_eval[eval].fnet2 }}</h5>
                           <small class="text-muted">FNet2 (False Puas2)</small>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="align-middle border-success border">Sangat Puas</td>
-                        <td class="border-success border">
-                          <h5 class="mb-0 text-dark">{{ data_eval[eval].fpos1 }}</h5>
-                          <small class="text-muted">FPos1 (False Sangat Puas1)</small>
-                        </td>
-                        <td class="border-success border">
-                          <h5 class="mb-0 text-dark">{{ data_eval[eval].fpos2 }}</h5>
-                          <small class="text-muted">FPos2 (False Sangat Puas2)</small>
-                        </td>
-                        <td class="border-success border table-primary">
-                          <h5 class="mb-0 text-dark">{{ data_eval[eval].tpos }}</h5>
-                          <small class="text-muted">TN (True Sangat Puas)</small>
                         </td>
                       </tr>
                     </tbody>

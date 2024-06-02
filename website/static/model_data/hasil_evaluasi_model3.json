@@ -1,38 +1,75 @@
 {
-  "akurasi": 0.81,
-  "fneg1": 1,
-  "fneg2": 2,
-  "fnet1": 0,
-  "fnet2": 4,
-  "fpos1": 0,
-  "fpos2": 4,
+  "akurasi": 0.54,
+  "fneg1": 57,
+  "fneg2": 0,
+  "fnet1": 26,
+  "fnet2": 5,
+  "fpos1": 3,
+  "fpos2": 2,
   "jumlah_kelas": 3,
   "label_list": [
-    "Puas",
-    "Sangat Puas",
-    "Sangat Puas",
-    "Puas",
-    "Sangat Puas",
-    "Sangat Puas",
+    "Tidak Puas",
+    "Cukup",
     "Puas",
     "Puas",
+    "Cukup",
     "Puas",
-    "Puas",
-    "Sangat Puas",
-    "Kurang Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Sangat Puas",
-    "Sangat Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
     "Puas",
     "Puas",
     "Puas",
+    "Cukup",
     "Puas",
     "Puas",
-    "Sangat Puas",
-    "Sangat Puas",
-    "Sangat Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
     "Puas",
     "Puas",
     "Puas",
@@ -41,129 +78,419 @@
     "Puas",
     "Puas",
     "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Cukup",
     "Puas",
     "Puas",
     "Puas",
     "Puas",
     "Puas",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
     "Puas",
     "Puas",
     "Puas",
     "Puas",
     "Puas",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Cukup",
     "Puas",
     "Puas",
     "Puas",
     "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Cukup",
     "Puas",
     "Puas",
-    "Sangat Puas",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
     "Puas",
     "Puas",
     "Puas",
-    "Sangat Puas",
-    "Sangat Puas",
-    "Sangat Puas",
+    "Cukup",
+    "Cukup",
     "Puas",
-    "Kurang Puas",
-    "Kurang Puas"
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas"
   ],
   "predict_label": [
+    "Cukup",
+    "Cukup",
+    "Cukup",
     "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
     "Puas",
+    "Tidak Puas",
     "Puas",
-    "Sangat Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
     "Puas",
-    "Sangat Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
     "Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
     "Puas",
-    "Sangat Puas",
-    "Sangat Puas",
-    "Sangat Puas",
-    "Sangat Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
     "Puas",
-    "Puas",
-    "Puas",
-    "Sangat Puas",
-    "Sangat Puas",
-    "Puas",
-    "Sangat Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Sangat Puas",
-    "Sangat Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Sangat Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Sangat Puas",
-    "Sangat Puas",
-    "Sangat Puas",
-    "Puas",
-    "Sangat Puas",
-    "Puas"
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas"
   ],
   "predict_prob": [
     [
-      0.0,
-      0.978,
-      0.022
+      0.249,
+      0.436,
+      0.315
     ],
     [
-      0.0,
-      0.505,
-      0.495
+      0.226,
+      0.746,
+      0.028
     ],
     [
+      0.335,
+      0.61,
+      0.055
+    ],
+    [
+      0.038,
       0.0,
+      0.962
+    ],
+    [
+      0.314,
+      0.686,
+      0.0
+    ],
+    [
+      0.072,
+      0.928,
+      0.0
+    ],
+    [
+      0.314,
+      0.686,
+      0.0
+    ],
+    [
+      0.314,
+      0.686,
+      0.0
+    ],
+    [
+      0.807,
+      0.193,
+      0.0
+    ],
+    [
+      0.626,
+      0.091,
+      0.284
+    ],
+    [
+      0.127,
+      0.751,
+      0.122
+    ],
+    [
+      0.797,
+      0.202,
+      0.0
+    ],
+    [
+      0.879,
+      0.121,
+      0.0
+    ],
+    [
+      0.007,
+      0.001,
+      0.992
+    ],
+    [
       0.999,
-      0.001
+      0.001,
+      0.0
     ],
     [
-      0.039,
-      0.0,
-      0.961
-    ],
-    [
-      0.0,
-      0.994,
-      0.006
-    ],
-    [
-      0.0,
-      0.225,
-      0.775
-    ],
-    [
-      0.006,
-      0.931,
-      0.063
+      0.001,
+      0.497,
+      0.503
     ],
     [
       0.0,
@@ -171,331 +498,1132 @@
       0.0
     ],
     [
+      1.0,
       0.0,
-      0.0,
-      1.0
+      0.0
     ],
     [
+      1.0,
       0.0,
-      0.001,
-      0.999
+      0.0
     ],
     [
-      0.001,
+      1.0,
       0.0,
-      0.999
+      0.0
     ],
     [
-      0.006,
-      0.0,
-      0.994
+      0.173,
+      0.34,
+      0.487
     ],
     [
+      1.0,
       0.0,
-      0.997,
-      0.003
+      0.0
     ],
     [
+      1.0,
       0.0,
+      0.0
+    ],
+    [
+      0.995,
+      0.005,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
       0.996,
+      0.004,
+      0.0
+    ],
+    [
+      0.993,
+      0.007,
+      0.0
+    ],
+    [
+      0.993,
+      0.007,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.782,
+      0.218,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.948,
+      0.052,
+      0.0
+    ],
+    [
+      0.0,
+      0.003,
+      0.997
+    ],
+    [
+      0.997,
+      0.003,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.924,
+      0.076,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.085,
+      0.45,
+      0.465
+    ],
+    [
+      0.976,
+      0.024,
+      0.0
+    ],
+    [
+      0.001,
+      0.513,
+      0.486
+    ],
+    [
+      0.921,
+      0.079,
+      0.0
+    ],
+    [
+      0.035,
+      0.86,
+      0.105
+    ],
+    [
+      0.0,
+      0.161,
+      0.839
+    ],
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.972,
+      0.028,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.828,
+      0.172,
+      0.0
+    ],
+    [
+      0.617,
+      0.383,
+      0.0
+    ],
+    [
+      0.086,
+      0.891,
+      0.023
+    ],
+    [
+      0.163,
+      0.803,
+      0.034
+    ],
+    [
+      0.585,
+      0.41,
       0.004
     ],
     [
-      0.0,
-      0.837,
-      0.163
+      0.018,
+      0.948,
+      0.035
     ],
     [
-      0.0,
-      0.0,
-      1.0
-    ],
-    [
-      0.008,
-      0.103,
-      0.889
-    ],
-    [
-      0.0,
-      1.0,
+      0.582,
+      0.418,
       0.0
     ],
     [
-      0.056,
-      0.0,
-      0.944
+      0.478,
+      0.519,
+      0.003
     ],
     [
-      0.0,
-      1.0,
+      0.069,
+      0.723,
+      0.208
+    ],
+    [
+      0.096,
+      0.904,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.45,
+      0.549,
+      0.001
+    ],
+    [
+      0.073,
+      0.922,
+      0.005
+    ],
+    [
+      0.595,
+      0.404,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.238,
+      0.753,
+      0.009
+    ],
+    [
+      0.063,
+      0.851,
+      0.086
+    ],
+    [
+      0.285,
+      0.715,
       0.0
     ],
     [
-      0.001,
-      0.001,
-      0.998
+      0.186,
+      0.814,
+      0.0
     ],
     [
-      0.0,
-      0.0,
-      1.0
+      0.076,
+      0.924,
+      0.0
     ],
     [
-      0.049,
+      0.451,
+      0.549,
+      0.0
+    ],
+    [
+      0.541,
+      0.459,
+      0.0
+    ],
+    [
+      0.517,
+      0.483,
+      0.0
+    ],
+    [
+      0.248,
+      0.752,
+      0.0
+    ],
+    [
+      0.575,
+      0.425,
+      0.0
+    ],
+    [
+      0.248,
+      0.752,
+      0.0
+    ],
+    [
+      0.425,
+      0.575,
+      0.0
+    ],
+    [
+      0.111,
+      0.888,
+      0.001
+    ],
+    [
+      0.121,
+      0.879,
+      0.0
+    ],
+    [
+      0.279,
+      0.721,
+      0.0
+    ],
+    [
+      0.512,
       0.488,
-      0.463
-    ],
-    [
-      0.0,
-      1.0,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.058,
+      0.937,
+      0.005
+    ],
+    [
+      0.575,
+      0.425,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.267,
+      0.733,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.279,
+      0.721,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.283,
+      0.717,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.517,
+      0.483,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.248,
+      0.752,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.059,
+      0.941,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.517,
+      0.483,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.156,
+      0.844,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.283,
+      0.717,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.059,
+      0.941,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.541,
+      0.459,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.248,
+      0.752,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.414,
+      0.585,
+      0.001
+    ],
+    [
+      0.575,
+      0.425,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.425,
+      0.575,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.414,
+      0.585,
+      0.001
+    ],
+    [
+      0.575,
+      0.425,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.279,
+      0.721,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.517,
+      0.483,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.414,
+      0.585,
+      0.001
+    ],
+    [
+      0.512,
+      0.488,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.248,
+      0.752,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.414,
+      0.585,
+      0.001
+    ],
+    [
+      0.517,
+      0.483,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.492,
+      0.508,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.174,
+      0.826,
       0.0
     ],
     [
-      0.0,
-      0.0,
-      1.0
-    ],
-    [
-      0.0,
-      1.0,
+      0.327,
+      0.673,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.073,
+      0.927,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.359,
+      0.641,
       0.0
     ],
     [
-      0.0,
-      0.0,
-      1.0
-    ],
-    [
-      0.0,
-      0.0,
-      1.0
-    ],
-    [
-      0.0,
-      0.0,
-      1.0
-    ],
-    [
-      0.0,
-      1.0,
+      0.064,
+      0.936,
       0.0
     ],
     [
-      0.231,
-      0.002,
-      0.766
+      0.121,
+      0.879,
+      0.0
     ],
     [
-      0.002,
-      0.957,
-      0.041
+      0.111,
+      0.889,
+      0.0
+    ],
+    [
+      0.424,
+      0.576,
+      0.0
+    ],
+    [
+      0.881,
+      0.118,
+      0.0
+    ],
+    [
+      0.783,
+      0.216,
+      0.002
+    ],
+    [
+      0.079,
+      0.921,
+      0.0
+    ],
+    [
+      0.076,
+      0.924,
+      0.0
+    ],
+    [
+      0.152,
+      0.848,
+      0.0
+    ],
+    [
+      0.167,
+      0.832,
+      0.001
+    ],
+    [
+      0.197,
+      0.803,
+      0.0
+    ],
+    [
+      0.377,
+      0.623,
+      0.0
+    ],
+    [
+      0.262,
+      0.738,
+      0.0
+    ],
+    [
+      0.484,
+      0.515,
+      0.0
+    ],
+    [
+      0.501,
+      0.499,
+      0.0
+    ],
+    [
+      0.377,
+      0.623,
+      0.0
+    ],
+    [
+      0.538,
+      0.462,
+      0.0
+    ],
+    [
+      0.014,
+      0.986,
+      0.0
+    ],
+    [
+      0.173,
+      0.827,
+      0.0
+    ],
+    [
+      0.599,
+      0.401,
+      0.0
+    ],
+    [
+      0.23,
+      0.77,
+      0.0
+    ],
+    [
+      0.337,
+      0.663,
+      0.0
+    ],
+    [
+      0.65,
+      0.35,
+      0.0
+    ],
+    [
+      0.262,
+      0.738,
+      0.0
+    ],
+    [
+      0.268,
+      0.732,
+      0.0
+    ],
+    [
+      0.916,
+      0.084,
+      0.0
+    ],
+    [
+      0.484,
+      0.515,
+      0.0
+    ],
+    [
+      0.916,
+      0.084,
+      0.0
+    ],
+    [
+      0.014,
+      0.986,
+      0.0
+    ],
+    [
+      0.538,
+      0.462,
+      0.0
+    ],
+    [
+      0.262,
+      0.738,
+      0.0
+    ],
+    [
+      0.706,
+      0.294,
+      0.0
+    ],
+    [
+      0.484,
+      0.515,
+      0.0
+    ],
+    [
+      0.599,
+      0.401,
+      0.0
+    ],
+    [
+      0.916,
+      0.084,
+      0.0
+    ],
+    [
+      0.337,
+      0.663,
+      0.0
+    ],
+    [
+      0.251,
+      0.749,
+      0.0
+    ],
+    [
+      0.377,
+      0.623,
+      0.0
+    ],
+    [
+      0.035,
+      0.965,
+      0.0
+    ],
+    [
+      0.501,
+      0.499,
+      0.0
+    ],
+    [
+      0.173,
+      0.827,
+      0.0
+    ],
+    [
+      0.014,
+      0.986,
+      0.0
+    ],
+    [
+      0.538,
+      0.462,
+      0.0
+    ],
+    [
+      0.65,
+      0.35,
+      0.0
+    ],
+    [
+      0.484,
+      0.515,
+      0.0
+    ],
+    [
+      0.164,
+      0.836,
+      0.0
+    ],
+    [
+      0.601,
+      0.399,
+      0.0
+    ],
+    [
+      0.266,
+      0.734,
+      0.0
+    ],
+    [
+      0.266,
+      0.734,
+      0.0
+    ],
+    [
+      0.601,
+      0.399,
+      0.0
+    ],
+    [
+      0.185,
+      0.815,
+      0.0
+    ],
+    [
+      0.146,
+      0.854,
+      0.0
+    ],
+    [
+      0.663,
+      0.337,
+      0.0
+    ],
+    [
+      0.541,
+      0.459,
+      0.0
+    ],
+    [
+      0.111,
+      0.889,
+      0.0
+    ],
+    [
+      0.451,
+      0.549,
+      0.0
+    ],
+    [
+      0.685,
+      0.315,
+      0.0
+    ],
+    [
+      0.317,
+      0.683,
+      0.0
+    ],
+    [
+      0.352,
+      0.648,
+      0.0
+    ],
+    [
+      0.541,
+      0.459,
+      0.0
+    ],
+    [
+      0.255,
+      0.745,
+      0.0
+    ],
+    [
+      0.26,
+      0.74,
+      0.0
+    ],
+    [
+      0.254,
+      0.746,
+      0.0
+    ],
+    [
+      0.289,
+      0.711,
+      0.0
+    ],
+    [
+      0.311,
+      0.689,
+      0.0
+    ],
+    [
+      0.601,
+      0.399,
+      0.0
+    ],
+    [
+      0.111,
+      0.889,
+      0.0
+    ],
+    [
+      0.248,
+      0.752,
+      0.0
+    ],
+    [
+      0.352,
+      0.648,
+      0.0
+    ],
+    [
+      0.289,
+      0.711,
+      0.0
+    ],
+    [
+      0.601,
+      0.399,
+      0.0
+    ],
+    [
+      0.601,
+      0.399,
+      0.0
+    ],
+    [
+      0.317,
+      0.683,
+      0.0
+    ],
+    [
+      0.248,
+      0.752,
+      0.0
+    ],
+    [
+      0.111,
+      0.889,
+      0.0
+    ],
+    [
+      0.289,
+      0.711,
+      0.0
+    ],
+    [
+      0.541,
+      0.459,
+      0.0
+    ],
+    [
+      0.663,
+      0.337,
+      0.0
+    ],
+    [
+      0.295,
+      0.705,
+      0.0
+    ],
+    [
+      0.451,
+      0.549,
+      0.0
+    ],
+    [
+      0.26,
+      0.74,
+      0.0
+    ],
+    [
+      0.311,
+      0.689,
+      0.0
+    ],
+    [
+      0.601,
+      0.399,
+      0.0
+    ],
+    [
+      0.111,
+      0.889,
+      0.0
+    ],
+    [
+      0.56,
+      0.44,
+      0.0
     ]
   ],
-  "presisi": 0.5,
-  "presisi_negatif": 0.0,
-  "presisi_netral": 0.88,
-  "presisi_positif": 0.62,
-  "recall": 0.54,
-  "recall_negatif": 0.0,
-  "recall_netral": 0.9,
-  "recall_positif": 0.71,
+  "presisi": 0.47,
+  "presisi_negatif": 0.65,
+  "presisi_netral": 0.46,
+  "presisi_positif": 0.29,
+  "recall": 0.41,
+  "recall_negatif": 0.32,
+  "recall_netral": 0.62,
+  "recall_positif": 0.29,
   "text_list": [
-    "bersih ramah ramah kerja sat n sun selesai guna sih",
-    "segi bersih saar unjung sat and sun letak kasir bersih enak liat buat unjung nyaman dalam kunjung sut and sun kamar mandi bersih buat nyaman customer pergi toilet",
-    "dari segi bersih sut sun area customer bersih menyenagkan segi toilet bagus kalo lampu terang bar mes bersih bagus harap tahan",
+    "bersih dukung foto konten toilet bersih tissue",
+    "lihat perhati kebersihannyaa waktunitu pipis kamar mandi tu bersih",
+    "bersih lighting kamar mandi baik ganti normal silau",
     "bersihhh banget estetik toilet warna biruuu bikin pusing wkwk baguss kadang dalem kamar mandi habis tisyu",
-    "turut dapat sat sun almeaty service bersih buat konsumen nyaman",
+    "turut dapat sat sun almeaty service bersih area customer toilet bar higienis",
     "bersih area customer toilet bar bersih higienis buat konsumen nyaman",
+    "turut dapat sat sun almeaty service bersih area customer toilet bar higienis",
+    "turut dapat sat sun almeaty service bersih area customer toilet bar higienis",
+    "tempat milik bersih muas segi area customer mesan",
     "turut bersih rapi bersih tarik dgn rapi nyaman mungkin jatuh daun bikin agak sera",
-    "bersih sihh kayak gak mungkin gak sih kalok makan udah nyewa bangun kotor",
-    "bersih amann sih ga concern - hygine blm nyoba masuk area toilet gatau",
-    "puas aja sih kalo ga annoying segi bersih kalo toilet tau sih",
-    "beberapa kesini oke ajaa ga nemuin hygine nya",
-    "buat bersih toilet area makannyaa all good panass banget ac nya ga ngaruh toilet foto mayan instagramable pusing gegara lampu biru",
+    "okee bersih aja kokk turut gada disturbing bersih tempat area kamar mandi foto tp ngga meratiin sih bersih nya",
+    "bersih banget bro area langgan toilet bar jaga bersih jadi gue nyaman makan",
+    "bersih banget area customer sampe toilet bar mereka beneran jaga bersih nyaman makan ngobrol",
+    "buat bersih toilet area makannyaa all good panass banget toilet foto mayan instagramable",
     "bersih area customer toilet bar lumayan oke banget bersih wangi kinclong",
-    "meja bersih lantai bersih sampah sebar toilet sedia sabun harum bersih tisu toilet sedia",
-    "area customer toilet bar bersih bangettttt okeeee wangiiiy warna warni lucuu",
-    "resto higienis nya mantepp perlaatan makan so far aman bersihh ga perkara annoying bersih sihh",
-    "kemari bersih sih ga masalah bersih sini konsisten resto rame parah",
-    "bersih tempat udah bersih sihh kalok kotor aneh sihh t-t",
-    "buat bersih toilet area makannyaa all good panass banget toilet foto mayan instagramable pusing gegara lampu biru aja sii",
-    "overall tempat bersih banget sihh gak mikir jelek kotor toilet udah bagus banget",
-    "overall tempat bersih banget sihh gak mikir jelek kotor toilet udah bagus banget sukak",
-    "overall tempat bersih banget sihh gak mikir jelek kotor toilet udah bagus banget sukak",
-    "bersih oke jaga banget ga serampang gtuu tata dekorasi oke all guwd dr",
-    "all gudd sihh gada issue kebersihann smuanya higienis emg blm tau kalo toilet bcs blm perna make",
-    "bersihhh banget smuanya dr masuk smpe pas makan n mampit toilet smuanyaa bersih",
+    "soal bersih gw gaperna nemuin issue sih so far enjoy aja gada disturbing hygine",
+    "salut sih uda tempat estetik american style higienis nya mantepp alat makan so far aman bersihh",
     "tempat bersih banget toilet bersih nyaman buang hajat turut udah wajar kafe bersih sih",
     "seingetku udah bersih gak liat kayak kotor meja beranta toilet udah oke banget",
+    "overall tempat bersih banget sihh gak mikir jelek kotor toilet udah bagus banget sukak",
+    "hmm agak srek dikit mungkin kamar mandi mnurutku agak bersihh ditingkatin mungkinn",
+    "seingetku udah bersih gak liat kayak kotor meja beranta toilet udah oke banget",
+    "tempat bersih banget toilet bersih nyaman buang hajat turut udah wajar kafe bersih sih",
     "sat sun the almeaty service segi bersih bersihhh toilet bersihhhhh wangi jugaa",
-    "sat sun the almeaty service segi bersih okeeeee bersihh wangi sampah",
-    "sat sun the almeaty service segi bersih bersihhh wangi unyukk ambiencenyaaa",
-    "at sun the almeaty service segi bersih bersihhh wangiiiiiiiii bangettttt",
-    "seingetku udah bersih gak liat kayak kotor meja beranta toilet udah oke banget",
+    "tempat bersih banget toilet bersih nyaman buang hajat turut udah wajar kafe bersih sih",
+    "overall tempat bersih banget sihh gak mikir jelek kotor toilet udah bagus banget sukak",
+    "tempat bersih banget toilet bersih nyaman buang hajat turut udah wajar kafe bersih sih",
     "seingetku udah bersih gak liat kayak kotor meja beranta toilet udah oke banget",
     "seingetku udah bersih gak liat kayak kotor meja beranta toilet udah oke banget",
     "overall tempat bersih banget sihh gak mikir jelek kotor toilet udah bagus banget sukak",
-    "overall tempat bersih banget sihh gak mikir jelek kotor toilet udah bagus banget sukak",
-    "overall tempat bersih banget sihh gak mikir jelek kotor toilet udah bagus banget sukak",
-    "seingetku udah bersih gak liat kayak kotor meja beranta toilet udah oke banget",
+    "at sun the almeaty service segi bersih bersihhh wangi kinclonggg kereen",
+    "sat sun the almeaty service segi bersih okeee sihh bersih wangi enak lihat",
     "sat sun the almeaty service segi bersih okee bersih mayan laaah",
+    "sat sun the almeaty service segi bersih bersihhh banget wangi ac an jugaaa",
+    "sat sun the almeaty service segi bersih bersihh bangett enak dingin jugaaa nyamannnn",
     "tempat bersih banget toilet bersih nyaman buang hajat turut udah wajar kafe bersih sih",
+    "sat sun the almeaty service segi bersih bersihh siihh puasss memang wangi",
+    "bersih bersih aja si gue gada problem sanitary all okay all good maybe staff better pake masker aja",
     "sat sun the almeaty service segi bersih bersihhh emanggg sih wangi lampu lucu lucu",
-    "tempat bersih banget toilet bersih nyaman buang hajat turut udah wajar kafe bersih sih",
-    "sat sun the almeaty service segi bersih bersih wangi toilet bersih",
-    "sat sun the almeaty service segi bersih oke sihh bersihhh gercep dibersihin",
-    "tempat bersih banget toilet bersih nyaman buang hajat turut udah wajar kafe bersih sih",
+    "overall tempat bersih banget sihh gak mikir jelek kotor toilet udah bagus banget sukak",
+    "sat sun the almeaty service segi bersih bersih semuaa rapi estetikkk",
     "tempat bersih banget toilet bersih nyaman buang hajat turut udah wajar kafe bersih sih",
     "tempat bersih banget toilet bersih nyaman buang hajat turut udah wajar kafe bersih sih",
+    "overall tempat bersih banget sihh gak mikir jelek kotor toilet udah bagus banget sukak",
+    "soal bersih mnurut gw uda oke scr tp kamar mandi mas pr sih eval maybe",
+    "sat sun the almeaty service segi bersih bersihh wangi rapi estetikk semuaaa",
+    "oke aja si so far blm bersih ajaa kalo toilet sih blm tau gimananya gabisa komen hehe",
+    "sat sun the almeaty service segi bersih bersih puas bangetttt",
+    "no spots area okay kalo bersih ga keluh sih",
+    "good ga komen bersih gue agak clean freak tp makam sini ga annoying good job satnsun",
+    "overall tempat bersih banget sihh gak mikir jelek kotor toilet udah bagus banget sukak",
+    "tempat bersih banget toilet bersih nyaman buang hajat turut udah wajar kafe bersih sih",
+    "sat sun the almeaty service segi bersih bersih wangi estetik bgt lagi",
     "seingetku udah bersih gak liat kayak kotor meja beranta toilet udah oke banget",
-    "seingetku udah bersih gak liat kayak kotor meja beranta toilet udah oke banget",
-    "tempatnyaa bersihh ga debu liat ga dibersihin regularly smua amaann",
-    "sat sun the almeaty service segi bersih bersih estetik tempat suka",
-    "seingetku udah bersih gak liat kayak kotor meja beranta toilet udah oke banget",
     "tempat bersih banget toilet bersih nyaman buang hajat turut udah wajar kafe bersih sih",
-    "tempatnyaa bersihh ga debu liat ga dibersihin regularly smua amaann",
-    "tempatnyaa bersihh ga debu liat ga dibersihin regularly smua amaann",
-    "tempatnyaa bersihh ga debu liat ga dibersihin regularly smua amaann",
     "sat sun the almeaty service segi bersih bersihh nyaman wangi debu",
-    "kamar mandi dibersihin kotor banget bekas jejak sepatu ga napsu makan",
-    "bagi outdoornya bersih puntung rokok sera meja abu rokok"
+    "alat makan meja bersih awat buat beli nyaman",
+    "guna masker sarung tangan karyawan tekan jaga standar bersih",
+    "tidak keluh bau sedap bersih muas",
+    "tidak lapor sehat kait kunjung makan",
+    "alat saji makan piring sendok-garpu dalam bersih",
+    "sanitasi sat sun the almeaty nilai tinggi unjung",
+    "karyawan serius dalam bersih area periksa bersih kala",
+    "guna masker sarung tangan karyawan perhati serius bersih",
+    "area duduk dalam jaga nyaman unjung",
+    "guna produk bersih kualitas fokus utama dalam jaga bersih",
+    "tata organisir jaga bersih efektif",
+    "bersih alat makan meja jaga cermin standar dalam sanitasi",
+    "toilet cenderung bersih awas ekstra ramai unjung",
+    "review sorot sanitasi serius ganggu alam makan",
+    "bersih sat sun jaga cipta suasana makan nyaman senang",
+    "tempat bersih nyaman milik estetika tarik alam makan senang kesan",
+    "bersih sat sun patut acung jempol area jaga alam makan",
+    "bersih sat sun area area makan toilet bar jaga",
+    "bersih cozy vintage sat sun nuansa makan beda tarik",
+    "bersih sat sun jaga area makan hingga toilet bersih nyaman",
+    "tempat bersih nyaman estetik alam makan senang kesan",
+    "bersih cozy vintage sat sun nuansa beda senang makan",
+    "tempat bersih nyaman estetik alam makan senang kesan",
+    "bersih muas area customer toilet bar jaga",
+    "dari segi bersih sat sun patut acung jempol area jaga nyaman",
+    "bersih sat sun patut acung jempol area makan hingga toilet jaga",
+    "bersih sat sun jaga buat alam makan nyaman senang",
+    "bersih sat sun area customer toilet bar jaga",
+    "tempat bersih cozy estetik cipta suasana nyaman tarik unjung hangout santa desain tarik atmosfer hangat buat sempurna kumpul teman keluarga",
+    "bersih cozy vintage sat sun nuansa beda senang makan",
+    "bersih sat sun muas buat suasana makan senang",
+    "bersih sat sun jaga buat alam makan nyaman senang",
+    "bersih cozy vintage sat sun alam makan unik kesan",
+    "bersih sat sun jaga area makan hingga toilet bersih nyaman",
+    "tempat bersih nyaman estetik alam makan senang kesan",
+    "bersih sat sun patut acung jempol area jaga buat alam makan",
+    "bersih sat sun jaga area makan hingga toilet bersih nyaman",
+    "bersih cozy estetik alam makan unik kesan",
+    "bersih cozy vintage sat sun alam makan unik kesan",
+    "bersih sat sun patut acung jempol area jaga buat alam makan",
+    "bersih cozy vintage sat sun nuansa makan beda tarik",
+    "tempat bersih nyaman estetik alam makan senang kesan",
+    "tempat bersih vintage cozy cocok foto instagramable alam makan beda",
+    "bersih cozy vintage sat sun nuansa beda senang makan",
+    "bersih muas area customer toilet bar jaga",
+    "tempat bersih vintage cozy cocok foto instagramable alam makan beda",
+    "bersih cozy vintage sat sun nuansa beda senang makan",
+    "bersih sat sun jaga buat alam makan nyaman senang",
+    "bersih sat sun jaga area makan hingga toilet bersih nyaman",
+    "tempat bersih vintage cozy cocok foto instagramable alam makan beda",
+    "bersih sat sun area customer toilet bar jaga",
+    "tempat bersih nyaman estetik alam makan senang kesan",
+    "tempat bersih vintage cozy cocok foto instagramable alam makan beda",
+    "bersih sat sun jaga area makan hingga toilet bersih nyaman",
+    "bersih sat sun area makan toilet bar jaga",
+    "meski ramai area customer sat sun the almeaty service jaga bersih profesionalisme dalam kelola",
+    "toilet sat sun the almeaty service bersih bau segar buat unjung nyaman puas",
+    "bersih area customer sat sun the almeaty service jaga saji suasana nyaman santa nikmat makan",
+    "toilet sat sun the almeaty service contoh bersih staf rajin jaga bersih",
+    "bar sat sun the almeaty service dalam ada bersih organisir mudah langgan dalam mes minum",
+    "kelola bersih sat sun the almeaty service cermin profesionalisme komitmen layan kualitas",
+    "sat sun the almeaty service benar perhati detail bersih area customer hingga toilet bar",
+    "toilet bersih harum salah buat nyaman unjung sat sun the almeaty service",
+    "mereka milik sistem kelola sampah jaga bersih lingkung",
+    "saya lihat laku bersih rutin area bar hindar sampah bekas minum cecer",
+    "bersih toilet jaga buat ragu guna meski kunjung ramai",
+    "unjung ajak tanggap positif bersih toilet mereka nyaman puas toilet",
+    "saya rapat bisnis bersih tempat jaga kesan profesionalisme",
+    "mereka perhati bersih alat makan ragu mes makan",
+    "toilet bersih awat kesan positif alam unjung sat sun the almeaty service",
+    "staf bersih area guna unjung jaga bersih",
+    "lama kunjung temu kait bersih jaga",
+    "staf latih respons bersih cepat efektif atur bersih tempat",
+    "bersih toilet jaga nyaman ekstra unjung sat sun the almeaty service teman",
+    "staf bersih area guna unjung jaga bersih",
+    "alam sat sun the almeaty service senang makan bersih tempat",
+    "saya harga dalam jaga bersih cermin profesionalisme dalam layan unjung",
+    "area customer bersih atur buat alam makan senang kesan",
+    "pilih bahan bersih kesan positif bersih",
+    "mereka guna bahan bersih bau sengat alam nyaman unjung",
+    "toilet bersih awat kesan positif alam toilet sat sun the almeaty service",
+    "saat mes minum bar lihat staf perhati bersih alat area kerja",
+    "lama kunjung temu kait bersih jaga",
+    "bersih toilet jaga nyaman ekstra unjung sat sun the almeaty service teman layan sat sun the almeaty service cermin perhati butuh langgan buat kunjung senang rasa makan sat sun the almeaty service lebih ekspektasi padu bumbu sempurna",
+    "mereka milik sistem kelola sampah jaga bersih lestari lingkung",
+    "staf latih respons bersih cepat efektif atur bersih tempat",
+    "mereka milik sistem kelola sampah jaga bersih lestari lingkung",
+    "saya harga dalam jaga bersih cermin profesionalisme dalam layan unjung",
+    "alam sat sun the almeaty service senang makan bersih tempat",
+    "lama kunjung temu kait bersih jaga",
+    "pilih bahan bersih ramah lingkung nilai dalam jaga bersih sat sun the almeaty service",
+    "staf latih respons bersih cepat efektif atur bersih tempat",
+    "pilih bahan bersih kesan positif bersih",
+    "mereka milik sistem kelola sampah jaga bersih lestari lingkung",
+    "toilet bersih awat kesan positif alam toilet sat sun the almeaty service",
+    "lama kunjung temu serius kait bersih jaga",
+    "staf bersih area guna unjung jaga bersih",
+    "saya apresiasi komitmen bersih faktor dalam alam unjung",
+    "bersih toilet jaga nyaman ekstra unjung sat sun the almeaty service teman",
+    "area customer bersih atur buat alam makan senang kesan",
+    "saya harga dalam jaga bersih cermin profesionalisme dalam layan unjung",
+    "alam sat sun the almeaty service senang makan bersih tempat",
+    "saat mes minum bar lihat staf perhati bersih alat area kerja",
+    "staf latih respons bersih cepat efektif atur bersih tempat",
+    "toilet sat sun the almeaty service bersih awat fasilitas lengkap unjung nyaman",
+    "bar mes minum sat sun the almeaty service jaga bersih staf responsif",
+    "saya puas bersih area customer sat sun the almeaty service buat unjung",
+    "toilet sat sun the almeaty service bersih mudah akses atur nyaman unjung",
+    "bar mes minum sat sun the almeaty service milik standar bersih alam mes senang",
+    "toilet sat sun the almeaty service bersih nyaman guna fasilitas lengkap mudah akses",
+    "toilet sat sun the almeaty service bersih awat buat unjung nyaman aman",
+    "bar mes minum sat sun the almeaty service bersih rapi staf ramah responsif",
+    "bar mes minum sat sun the almeaty service milik standar bersih buat proses mesan minum efisien",
+    "lama kunjung bersih area customer sat sun the almeaty service jaga kesan positif unjung",
+    "bar mes minum sat sun the almeaty service jaga bersih buat alam makan",
+    "bar mes minum sat sun the almeaty service milik standar bersih buat alam mes lancar",
+    "area customer sat sun the almeaty service jaga bersih kesan unjung",
+    "toilet sat sun the almeaty service bersih nyaman fasilitas lengkap jaga staf",
+    "bar mes minum sat sun the almeaty service milik standar bersih buat proses mesan minum efisien",
+    "alam unjung sat sun the almeaty service dalam jaga bersih area customer hingga toilet",
+    "toilet sat sun the almeaty service bersih nyaman guna fasilitas lengkap nyaman unjung",
+    "saya puas bersih area customer sat sun the almeaty service cipta suasana nyaman senang",
+    "toilet sat sun the almeaty service bersih nyaman guna cermin perhati nyaman unjung",
+    "toilet sat sun the almeaty service bersih awat staf responsif dalam jaga bersih",
+    "bar mes minum sat sun the almeaty service milik standar bersih alam mes senang",
+    "lama kunjung bersih area customer sat sun the almeaty service jaga kesan positif unjung",
+    "toilet sat sun the almeaty service bersih jaga fasilitas lengkap nyaman unjung",
+    "toilet sat sun the almeaty service bersih nyaman fasilitas lengkap jaga staf",
+    "toilet sat sun the almeaty service bersih nyaman guna cermin perhati nyaman unjung",
+    "bar mes minum sat sun the almeaty service milik standar bersih alam mes senang",
+    "bar mes minum sat sun the almeaty service milik standar bersih alam mes senang",
+    "area customer sat sun the almeaty service jaga bersih kesan unjung",
+    "toilet sat sun the almeaty service bersih jaga fasilitas lengkap nyaman unjung",
+    "lama kunjung bersih area customer sat sun the almeaty service jaga kesan positif unjung",
+    "toilet sat sun the almeaty service bersih nyaman guna cermin perhati nyaman unjung",
+    "bar mes minum sat sun the almeaty service milik standar bersih buat proses mesan minum efisien",
+    "bar mes minum sat sun the almeaty service bersih rapi staf ramah responsif",
+    "bersih area customer sat sun the almeaty service jaga cipta lingkung senang unjung",
+    "bar mes minum sat sun the almeaty service jaga bersih buat alam makan",
+    "toilet sat sun the almeaty service bersih nyaman guna fasilitas lengkap nyaman unjung",
+    "toilet sat sun the almeaty service bersih awat staf responsif dalam jaga bersih",
+    "bar mes minum sat sun the almeaty service milik standar bersih alam mes senang",
+    "lama kunjung bersih area customer sat sun the almeaty service jaga kesan positif unjung",
+    "bar mes minum sat sun the almeaty service jaga bersih buat proses mesan cepat efisien"
   ],
-  "tneg": 0,
-  "tnet": 38,
-  "tpos": 10
+  "tneg": 54,
+  "tnet": 51,
+  "tpos": 2
 }

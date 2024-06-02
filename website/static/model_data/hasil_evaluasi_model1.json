@@ -1,107 +1,244 @@
 {
-  "akurasi": 0.83,
-  "fneg1": 5,
-  "fneg2": 0,
-  "fnet1": 0,
-  "fnet2": 1,
-  "fpos1": 0,
-  "fpos2": 4,
+  "akurasi": 0.51,
+  "fneg1": 37,
+  "fneg2": 19,
+  "fnet1": 36,
+  "fnet2": 2,
+  "fpos1": 4,
+  "fpos2": 1,
   "jumlah_kelas": 3,
   "label_list": [
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
     "Puas",
-    "Sangat Puas",
+    "Cukup",
+    "Cukup",
     "Puas",
-    "Sangat Puas",
-    "Puas",
-    "Sangat Puas",
-    "Puas",
-    "Sangat Puas",
-    "Sangat Puas",
-    "Sangat Puas",
-    "Sangat Puas",
-    "Sangat Puas",
-    "Sangat Puas",
-    "Sangat Puas",
+    "Tidak Puas",
+    "Tidak Puas",
     "Puas",
     "Puas",
     "Puas",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Cukup",
     "Puas",
     "Puas",
     "Puas",
     "Puas",
-    "Kurang Puas",
-    "Kurang Puas",
+    "Cukup",
     "Puas",
     "Puas",
     "Puas",
-    "Kurang Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
     "Puas",
     "Puas",
+    "Cukup",
+    "Cukup",
     "Puas",
     "Puas",
-    "Puas",
-    "Puas",
-    "Sangat Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Sangat Puas",
-    "Kurang Puas",
-    "Sangat Puas",
+    "Cukup",
+    "Cukup",
     "Puas",
     "Puas",
     "Puas",
     "Puas",
     "Puas",
-    "Kurang Puas",
     "Puas",
-    "Sangat Puas",
     "Puas",
-    "Sangat Puas"
+    "Puas",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Puas"
   ],
   "predict_label": [
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Tidak Puas",
+    "Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
     "Puas",
     "Puas",
     "Puas",
-    "Sangat Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Sangat Puas",
-    "Sangat Puas",
-    "Sangat Puas",
-    "Sangat Puas",
-    "Sangat Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Sangat Puas",
-    "Puas",
-    "Puas",
+    "Cukup",
+    "Cukup",
     "Puas",
     "Puas",
     "Puas",
     "Puas",
+    "Tidak Puas",
+    "Puas",
+    "Cukup",
     "Puas",
     "Puas",
     "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Sangat Puas",
+    "Tidak Puas",
+    "Tidak Puas",
     "Puas",
     "Puas",
     "Puas",
@@ -111,383 +248,1382 @@
     "Puas",
     "Puas",
     "Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Puas",
+    "Tidak Puas",
+    "Puas",
+    "Tidak Puas",
+    "Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
     "Puas",
     "Puas",
-    "Sangat Puas",
-    "Puas",
-    "Sangat Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Sangat Puas",
-    "Puas",
-    "Sangat Puas"
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas"
   ],
   "predict_prob": [
     [
-      0.001,
-      0.99,
-      0.009
+      0.753,
+      0.234,
+      0.013
     ],
     [
-      0.0,
-      0.999,
+      0.214,
+      0.786,
+      0.0
+    ],
+    [
+      0.252,
+      0.747,
       0.001
     ],
     [
-      0.001,
-      0.997,
-      0.002
-    ],
-    [
-      0.031,
-      0.033,
-      0.935
-    ],
-    [
-      0.267,
-      0.7,
-      0.033
-    ],
-    [
-      0.005,
-      0.616,
-      0.379
-    ],
-    [
-      0.001,
-      0.989,
-      0.009
-    ],
-    [
-      0.0,
-      0.998,
-      0.002
-    ],
-    [
-      0.0,
-      0.997,
-      0.003
-    ],
-    [
-      0.0,
-      0.0,
-      1.0
-    ],
-    [
-      0.0,
-      0.003,
-      0.997
-    ],
-    [
-      0.023,
-      0.001,
-      0.975
-    ],
-    [
-      0.0,
-      0.0,
-      1.0
-    ],
-    [
-      0.001,
-      0.0,
-      0.999
-    ],
-    [
-      0.444,
-      0.554,
-      0.003
-    ],
-    [
-      0.001,
-      0.998,
+      0.472,
+      0.526,
       0.001
     ],
     [
-      0.0,
-      0.999,
-      0.001
+      0.222,
+      0.753,
+      0.024
     ],
     [
-      0.027,
-      0.973,
+      0.361,
+      0.128,
+      0.511
+    ],
+    [
+      0.361,
+      0.128,
+      0.511
+    ],
+    [
+      0.59,
+      0.41,
       0.0
     ],
     [
-      0.0,
-      0.004,
-      0.996
+      0.1,
+      0.008,
+      0.892
     ],
     [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.397,
-      0.603,
-      0.0
-    ],
-    [
-      0.397,
-      0.603,
-      0.0
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.397,
-      0.603,
-      0.0
-    ],
-    [
-      0.397,
-      0.603,
-      0.0
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.397,
-      0.603,
-      0.0
-    ],
-    [
-      0.397,
-      0.603,
-      0.0
-    ],
-    [
-      0.061,
-      0.427,
-      0.512
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.397,
-      0.603,
-      0.0
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.397,
-      0.603,
-      0.0
-    ],
-    [
-      0.397,
-      0.603,
-      0.0
-    ],
-    [
-      0.0,
-      0.0,
-      1.0
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.058,
-      0.0,
-      0.942
+      0.911,
+      0.084,
+      0.005
     ],
     [
       0.006,
-      0.933,
+      0.754,
+      0.24
+    ],
+    [
+      0.11,
+      0.559,
+      0.331
+    ],
+    [
+      0.033,
+      0.358,
+      0.609
+    ],
+    [
+      0.065,
+      0.0,
+      0.935
+    ],
+    [
+      0.18,
+      0.0,
+      0.82
+    ],
+    [
+      0.009,
+      0.99,
+      0.001
+    ],
+    [
+      0.0,
+      0.999,
+      0.001
+    ],
+    [
+      0.081,
+      0.0,
+      0.919
+    ],
+    [
+      0.081,
+      0.0,
+      0.919
+    ],
+    [
+      0.081,
+      0.0,
+      0.919
+    ],
+    [
+      0.003,
+      0.0,
+      0.997
+    ],
+    [
+      0.969,
+      0.0,
+      0.031
+    ],
+    [
+      0.081,
+      0.0,
+      0.919
+    ],
+    [
+      0.0,
+      0.992,
+      0.008
+    ],
+    [
+      0.001,
+      0.06,
+      0.939
+    ],
+    [
+      0.081,
+      0.0,
+      0.919
+    ],
+    [
+      0.003,
+      0.0,
+      0.997
+    ],
+    [
+      0.969,
+      0.0,
+      0.031
+    ],
+    [
+      0.969,
+      0.0,
+      0.031
+    ],
+    [
+      0.003,
+      0.0,
+      0.997
+    ],
+    [
+      0.081,
+      0.0,
+      0.919
+    ],
+    [
+      0.003,
+      0.0,
+      0.997
+    ],
+    [
+      0.081,
+      0.0,
+      0.919
+    ],
+    [
+      0.081,
+      0.0,
+      0.919
+    ],
+    [
+      0.081,
+      0.0,
+      0.919
+    ],
+    [
+      0.081,
+      0.0,
+      0.919
+    ],
+    [
+      0.003,
+      0.0,
+      0.997
+    ],
+    [
+      0.081,
+      0.0,
+      0.919
+    ],
+    [
+      0.994,
+      0.006,
+      0.0
+    ],
+    [
+      0.904,
+      0.096,
+      0.0
+    ],
+    [
+      0.992,
+      0.008,
+      0.0
+    ],
+    [
+      0.994,
+      0.006,
+      0.0
+    ],
+    [
+      0.993,
+      0.007,
+      0.0
+    ],
+    [
+      0.988,
+      0.012,
+      0.0
+    ],
+    [
+      0.99,
+      0.01,
+      0.0
+    ],
+    [
+      0.989,
+      0.01,
+      0.0
+    ],
+    [
+      0.969,
+      0.0,
+      0.031
+    ],
+    [
+      0.003,
+      0.0,
+      0.997
+    ],
+    [
+      0.991,
+      0.009,
+      0.0
+    ],
+    [
+      0.003,
+      0.0,
+      0.997
+    ],
+    [
+      0.969,
+      0.0,
+      0.031
+    ],
+    [
+      0.081,
+      0.0,
+      0.919
+    ],
+    [
+      0.993,
+      0.007,
+      0.0
+    ],
+    [
+      0.992,
+      0.008,
+      0.0
+    ],
+    [
+      0.993,
+      0.007,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.1,
+      0.838,
+      0.062
+    ],
+    [
+      0.081,
+      0.0,
+      0.919
+    ],
+    [
+      0.081,
+      0.0,
+      0.919
+    ],
+    [
+      0.0,
+      0.998,
+      0.002
+    ],
+    [
+      0.998,
+      0.002,
+      0.0
+    ],
+    [
+      0.997,
+      0.003,
+      0.0
+    ],
+    [
+      0.998,
+      0.002,
+      0.0
+    ],
+    [
+      0.908,
+      0.067,
+      0.025
+    ],
+    [
+      0.096,
+      0.903,
+      0.002
+    ],
+    [
+      0.646,
+      0.351,
+      0.003
+    ],
+    [
+      0.78,
+      0.22,
+      0.0
+    ],
+    [
+      0.29,
+      0.649,
       0.061
     ],
     [
-      0.0,
-      1.0,
+      0.309,
+      0.691,
+      0.001
+    ],
+    [
+      0.329,
+      0.669,
+      0.002
+    ],
+    [
+      0.062,
+      0.938,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.032,
+      0.968,
+      0.001
+    ],
+    [
+      0.714,
+      0.175,
+      0.11
+    ],
+    [
+      0.179,
+      0.82,
+      0.001
+    ],
+    [
+      0.324,
+      0.676,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.799,
+      0.201,
       0.0
     ],
     [
-      0.397,
-      0.603,
+      0.292,
+      0.708,
       0.0
     ],
     [
-      0.254,
-      0.659,
-      0.088
-    ],
-    [
-      0.0,
-      1.0,
+      0.344,
+      0.656,
       0.0
     ],
     [
-      0.0,
-      0.0,
-      1.0
+      0.631,
+      0.369,
+      0.0
     ],
     [
-      0.0,
-      1.0,
+      0.223,
+      0.777,
+      0.0
+    ],
+    [
+      0.156,
+      0.844,
+      0.0
+    ],
+    [
+      0.43,
+      0.57,
+      0.0
+    ],
+    [
+      0.173,
+      0.825,
+      0.003
+    ],
+    [
+      0.705,
+      0.288,
+      0.007
+    ],
+    [
+      0.844,
+      0.146,
+      0.009
+    ],
+    [
+      0.752,
+      0.243,
+      0.005
+    ],
+    [
+      0.635,
+      0.361,
+      0.004
+    ],
+    [
+      0.687,
+      0.313,
+      0.001
+    ],
+    [
+      0.494,
+      0.506,
+      0.0
+    ],
+    [
+      0.247,
+      0.753,
+      0.0
+    ],
+    [
+      0.607,
+      0.393,
+      0.0
+    ],
+    [
+      0.08,
+      0.92,
+      0.0
+    ],
+    [
+      0.872,
+      0.123,
+      0.005
+    ],
+    [
+      0.469,
+      0.53,
+      0.0
+    ],
+    [
+      0.335,
+      0.665,
+      0.0
+    ],
+    [
+      0.328,
+      0.672,
+      0.0
+    ],
+    [
+      0.493,
+      0.507,
+      0.0
+    ],
+    [
+      0.784,
+      0.214,
+      0.002
+    ],
+    [
+      0.141,
+      0.859,
+      0.0
+    ],
+    [
+      0.87,
+      0.13,
+      0.0
+    ],
+    [
+      0.508,
+      0.492,
+      0.0
+    ],
+    [
+      0.595,
+      0.403,
+      0.001
+    ],
+    [
+      0.597,
+      0.402,
+      0.0
+    ],
+    [
+      0.178,
+      0.818,
+      0.004
+    ],
+    [
+      0.415,
+      0.585,
+      0.0
+    ],
+    [
+      0.589,
+      0.41,
+      0.0
+    ],
+    [
+      0.082,
+      0.918,
+      0.0
+    ],
+    [
+      0.049,
+      0.951,
+      0.0
+    ],
+    [
+      0.454,
+      0.546,
+      0.0
+    ],
+    [
+      0.514,
+      0.485,
+      0.0
+    ],
+    [
+      0.076,
+      0.924,
+      0.0
+    ],
+    [
+      0.595,
+      0.403,
+      0.001
+    ],
+    [
+      0.679,
+      0.314,
+      0.007
+    ],
+    [
+      0.333,
+      0.667,
+      0.0
+    ],
+    [
+      0.15,
+      0.85,
+      0.0
+    ],
+    [
+      0.094,
+      0.906,
+      0.0
+    ],
+    [
+      0.296,
+      0.704,
+      0.0
+    ],
+    [
+      0.135,
+      0.865,
+      0.0
+    ],
+    [
+      0.502,
+      0.498,
+      0.0
+    ],
+    [
+      0.181,
+      0.819,
+      0.0
+    ],
+    [
+      0.719,
+      0.281,
+      0.0
+    ],
+    [
+      0.024,
+      0.976,
+      0.0
+    ],
+    [
+      0.049,
+      0.951,
+      0.0
+    ],
+    [
+      0.104,
+      0.896,
+      0.0
+    ],
+    [
+      0.742,
+      0.258,
+      0.0
+    ],
+    [
+      0.852,
+      0.148,
+      0.0
+    ],
+    [
+      0.65,
+      0.35,
+      0.0
+    ],
+    [
+      0.926,
+      0.073,
+      0.0
+    ],
+    [
+      0.155,
+      0.845,
+      0.0
+    ],
+    [
+      0.447,
+      0.553,
+      0.0
+    ],
+    [
+      0.61,
+      0.39,
+      0.0
+    ],
+    [
+      0.242,
+      0.758,
+      0.0
+    ],
+    [
+      0.153,
+      0.847,
+      0.0
+    ],
+    [
+      0.521,
+      0.479,
+      0.0
+    ],
+    [
+      0.662,
+      0.338,
+      0.0
+    ],
+    [
+      0.452,
+      0.548,
+      0.0
+    ],
+    [
+      0.278,
+      0.722,
+      0.0
+    ],
+    [
+      0.158,
+      0.842,
+      0.0
+    ],
+    [
+      0.575,
+      0.425,
+      0.0
+    ],
+    [
+      0.51,
+      0.49,
       0.0
     ],
     [
       0.062,
-      0.001,
-      0.937
+      0.938,
+      0.0
+    ],
+    [
+      0.202,
+      0.798,
+      0.0
+    ],
+    [
+      0.047,
+      0.953,
+      0.0
+    ],
+    [
+      0.464,
+      0.536,
+      0.0
+    ],
+    [
+      0.807,
+      0.193,
+      0.0
+    ],
+    [
+      0.648,
+      0.352,
+      0.0
+    ],
+    [
+      0.416,
+      0.584,
+      0.0
+    ],
+    [
+      0.696,
+      0.304,
+      0.0
+    ],
+    [
+      0.633,
+      0.367,
+      0.0
+    ],
+    [
+      0.464,
+      0.536,
+      0.0
+    ],
+    [
+      0.294,
+      0.706,
+      0.0
+    ],
+    [
+      0.807,
+      0.193,
+      0.0
+    ],
+    [
+      0.648,
+      0.352,
+      0.0
+    ],
+    [
+      0.376,
+      0.624,
+      0.0
+    ],
+    [
+      0.122,
+      0.878,
+      0.0
+    ],
+    [
+      0.342,
+      0.658,
+      0.0
+    ],
+    [
+      0.294,
+      0.706,
+      0.0
+    ],
+    [
+      0.623,
+      0.377,
+      0.0
+    ],
+    [
+      0.648,
+      0.352,
+      0.0
+    ],
+    [
+      0.696,
+      0.304,
+      0.0
+    ],
+    [
+      0.633,
+      0.367,
+      0.0
+    ],
+    [
+      0.464,
+      0.536,
+      0.0
+    ],
+    [
+      0.521,
+      0.479,
+      0.0
+    ],
+    [
+      0.912,
+      0.088,
+      0.0
+    ],
+    [
+      0.294,
+      0.706,
+      0.0
+    ],
+    [
+      0.648,
+      0.352,
+      0.0
+    ],
+    [
+      0.608,
+      0.392,
+      0.0
+    ],
+    [
+      0.021,
+      0.979,
+      0.0
+    ],
+    [
+      0.416,
+      0.584,
+      0.0
+    ],
+    [
+      0.342,
+      0.658,
+      0.0
+    ],
+    [
+      0.498,
+      0.502,
+      0.0
+    ],
+    [
+      0.221,
+      0.779,
+      0.0
+    ],
+    [
+      0.047,
+      0.953,
+      0.0
+    ],
+    [
+      0.873,
+      0.127,
+      0.0
+    ],
+    [
+      0.07,
+      0.93,
+      0.0
+    ],
+    [
+      0.868,
+      0.132,
+      0.0
+    ],
+    [
+      0.198,
+      0.802,
+      0.0
+    ],
+    [
+      0.505,
+      0.495,
+      0.0
+    ],
+    [
+      0.695,
+      0.305,
+      0.0
+    ],
+    [
+      0.843,
+      0.157,
+      0.0
+    ],
+    [
+      0.52,
+      0.48,
+      0.0
+    ],
+    [
+      0.255,
+      0.745,
+      0.0
+    ],
+    [
+      0.087,
+      0.913,
+      0.0
+    ],
+    [
+      0.846,
+      0.154,
+      0.0
+    ],
+    [
+      0.554,
+      0.446,
+      0.0
+    ],
+    [
+      0.295,
+      0.705,
+      0.0
+    ],
+    [
+      0.554,
+      0.446,
+      0.0
+    ],
+    [
+      0.43,
+      0.57,
+      0.0
+    ],
+    [
+      0.647,
+      0.353,
+      0.0
+    ],
+    [
+      0.795,
+      0.205,
+      0.0
+    ],
+    [
+      0.74,
+      0.26,
+      0.0
+    ],
+    [
+      0.554,
+      0.446,
+      0.0
+    ],
+    [
+      0.911,
+      0.089,
+      0.0
+    ],
+    [
+      0.307,
+      0.693,
+      0.0
+    ],
+    [
+      0.333,
+      0.667,
+      0.0
+    ],
+    [
+      0.397,
+      0.603,
+      0.0
+    ],
+    [
+      0.686,
+      0.314,
+      0.0
+    ],
+    [
+      0.364,
+      0.636,
+      0.0
+    ],
+    [
+      0.914,
+      0.086,
+      0.0
+    ],
+    [
+      0.846,
+      0.154,
+      0.0
     ]
   ],
-  "presisi": 0.57,
-  "presisi_negatif": 0.0,
-  "presisi_netral": 0.8,
-  "presisi_positif": 0.92,
-  "recall": 0.57,
-  "recall_negatif": 0.0,
-  "recall_netral": 0.97,
-  "recall_positif": 0.73,
+  "presisi": 0.45,
+  "presisi_negatif": 0.55,
+  "presisi_netral": 0.55,
+  "presisi_positif": 0.25,
+  "recall": 0.51,
+  "recall_negatif": 0.39,
+  "recall_netral": 0.55,
+  "recall_positif": 0.58,
   "text_list": [
-    "puas akses kendara mudah akses mobil motor",
-    "mudah akses kendara tuju lokasi mudah jalan kendala",
-    "jalan tuju lokasi tempuh guna mobil mudah",
+    "mudah jalan google maps jalan",
+    "letak pusat kota strategis mudah kunjung",
+    "mudah tuju sat sun cafe sekitar google maps patok gampang",
+    "okay tunjuk bio sosmed official sat sun sedia seluruh app navigator",
     "mudah gampang temu maps accessibility susah",
-    "bagus kembang udah mantab",
-    "strategis mudah akses jalur mana",
-    "cukup mudah jangkau mudah dapat kendara online",
-    "turut dapat sat sun almeaty service lokasi mudah akses",
+    "mudah karna titik maps nama tempat mudah lihat mudah patok kesana",
+    "mudah karna titik maps nama tempat mudah lihat mudah patok kesana",
     "turut dapat sat sun almeaty service mudah akses",
-    "aman lokasi ga ribet masuk gang area pusat kota gaperlu susah gmaps",
+    "mudah jalan gk sempit banget standart",
+    "lokasi tanya mudah akses kendara lokasi tepi jalan",
+    "amann akses gampang lokasi njelimet langgan kalo ken nongki bareng temen",
     "akses gampang banget tempat pusat kota jadi repot pake maps kawatir munyer-munyer",
-    "okee aja big deal sih akses tempatnyaa liat gmaps bntar aja kalo uda apal jalan sby",
-    "akses kesana gampang pusat kota jugaa gaperlu pusing gmapsnya",
-    "aman kokk jalan ga kecil masuk masuk gang kosanku deket aman poll gampang",
+    "gampang ajaa jalan tipe neko ala hidden gem gtu",
     "mudah nya lumayan pinggir jalan raya masuk lumayan oke",
-    "tuju lokasi lumayan gampang pake motor mobil grab gojek jalan luas",
-    "jalan tuju mudah akses kendara roda empat",
-    "akses kendara oke mobil motor masuk bolak gak gede banget jalan gk kecil",
-    "lokasi enak strategis mudah kalo akses kesana pusat kota ga bingung",
-    "- kota akses bilang mudah gak mblusuk jalan enak",
+    "mudah lumayan oke banget jalan aspal oke banget grab gojek mobil bisaa",
+    "aman cuyy akses lokasi ga ribet deketan ama stasiun strategis sihhh",
+    "akses kesana gampang pusat kota jugaa pusing pusing gmaps ampe nyasar",
+    "enak enak aja sih akses gampang jalan masuk oke mungkin pilih lokasi kota kalok oke sih",
+    "enak enak aja sih akses gampang jalan masuk oke mungkin pilih lokasi kota kalok oke sih",
     "enak enak aja sih akses gampang jalan masuk oke mungkin pilih lokasi kota kalok oke sih",
     "akses oke sihh udah gampangin customer kesana nguntungin kafe sih",
-    "akses oke sihh udah gampangin customer kesana nguntungin kafe sih",
-    "akses kesana mudah sih gak bingungin jalan gak sempit banget mungkin kota",
-    "akses oke sihh udah gampangin customer kesana nguntungin kafe sih",
-    "akses oke sihh udah gampangin customer kesana nguntungin kafe sih",
-    "enak enak aja sih akses gampang jalan masuk oke mungkin pilih lokasi kota kalok oke sih",
     "- kota akses bilang mudah gak mblusuk jalan enak",
     "enak enak aja sih akses gampang jalan masuk oke mungkin pilih lokasi kota kalok oke sih",
-    "- kota akses bilang mudah gak mblusuk jalan enak",
+    "gampang bangett aksesnyaa ngemaps bntar uda paham ga njelimet",
+    "mudahh aja kesana gmpang tipe hidden gem kudu mblusukan gtuu",
     "enak enak aja sih akses gampang jalan masuk oke mungkin pilih lokasi kota kalok oke sih",
     "akses oke sihh udah gampangin customer kesana nguntungin kafe sih",
-    "akses oke sihh udah gampangin customer kesana nguntungin kafe sih",
-    "superr gampangg akses sananyaa gada maslaah sih kalo akses",
     "- kota akses bilang mudah gak mblusuk jalan enak",
+    "- kota akses bilang mudah gak mblusuk jalan enak",
+    "akses oke sihh udah gampangin customer kesana nguntungin kafe sih",
+    "enak enak aja sih akses gampang jalan masuk oke mungkin pilih lokasi kota kalok oke sih",
+    "akses oke sihh udah gampangin customer kesana nguntungin kafe sih",
+    "enak enak aja sih akses gampang jalan masuk oke mungkin pilih lokasi kota kalok oke sih",
+    "enak enak aja sih akses gampang jalan masuk oke mungkin pilih lokasi kota kalok oke sih",
+    "enak enak aja sih akses gampang jalan masuk oke mungkin pilih lokasi kota kalok oke sih",
+    "enak enak aja sih akses gampang jalan masuk oke mungkin pilih lokasi kota kalok oke sih",
+    "akses oke sihh udah gampangin customer kesana nguntungin kafe sih",
+    "enak enak aja sih akses gampang jalan masuk oke mungkin pilih lokasi kota kalok oke sih",
+    "sat sun the almeaty service segi mudah akses kendara tuju lokasi mudaaaaaah",
     "sat sun the almeaty service segi mudah akses kendara tuju lokasi okee bangett ga macetttt",
-    "akses oke sihh udah gampangin customer kesana nguntungin kafe sih",
-    "sat sun the almeaty service segi mudah akses kendara tuju lokasi okee sihh mayan gampang akses gmaps",
-    "sat sun the almeaty service segi mudah akses kendara tuju lokasi pas pake gojek mudah sih",
-    "sat sun the almeaty service segi mudah akses kendara tuju lokasi jalan aspal",
-    "sat sun the almeaty service segi mudah akses kendara tuju lokasi mudaah",
-    "sat sun the almeaty service segi mudah akses kendara tuju lokasi accessable",
+    "sat sun the almeaty service segi mudah akses kendara tuju lokasi sempet nyasar sihh",
+    "sat sun the almeaty service segi mudah akses kendara tuju lokasi mudaah gmaps",
     "sat sun the almeaty service segi mudah akses kendara tuju lokasi mudah",
+    "sat sun the almeaty service segi mudah akses kendara tuju lokasi sempet kesasar",
+    "sat sun the almeaty service segi mudah akses kendara tuju lokasi easyyy",
+    "sat sun the almeaty service segi kualitas produk gampang sih",
+    "- kota akses bilang mudah gak mblusuk jalan enak",
     "akses oke sihh udah gampangin customer kesana nguntungin kafe sih",
+    "sat sun the almeaty service segi mudah akses kendara tuju lokasi pake grab mudahh",
     "akses oke sihh udah gampangin customer kesana nguntungin kafe sih",
-    "akses kesana gampang pusat kota jugaa gaperlu pusing gmapsnya",
-    "sat sun the almeaty service segi mudah akses kendara tuju lokasi kesasar",
-    "aksess gampangg gada sih kalo ini lokasi ga susah masuk gang naik bukit sm turun lembah wkwkw",
-    "akses tuju lokasi crowded area lintas padat",
     "- kota akses bilang mudah gak mblusuk jalan enak",
     "enak enak aja sih akses gampang jalan masuk oke mungkin pilih lokasi kota kalok oke sih",
+    "sat sun the almeaty service segi mudah akses kendara tuju lokasi mudah",
+    "sat sun the almeaty service segi mudah akses kendara tuju lokasi mudah jangkau",
+    "sat sun the almeaty service segi mudah akses kendara tuju lokasi mudah",
+    "sat sun the almeaty service segi mudah akses kendara tuju lokasi oke banget sih mudah",
+    "soal lokasi okee strategis gue gada problem sih",
     "enak enak aja sih akses gampang jalan masuk oke mungkin pilih lokasi kota kalok oke sih",
-    "akses oke sihh udah gampangin customer kesana nguntungin kafe sih",
-    "aman akses ga sihh overall pas kesana oke oke ajaaa",
     "enak enak aja sih akses gampang jalan masuk oke mungkin pilih lokasi kota kalok oke sih",
     "akses kesana gampang pusat kota jugaa gaperlu pusing gmapsnya",
-    "enak enak aja sih akses gampang jalan masuk oke mungkin pilih lokasi kota kalok oke sih",
-    "mudah jangkau ajaa sihh lokasinyaa ga ngemaps masuk gang gituu"
+    "sat sun the almeaty service segi mudah akses kendara tuju lokasi kendara online sih mudah",
+    "sat sun the almeaty service segi mudah akses kendara tuju lokasi jalan mulus",
+    "sat sun the almeaty service segi mudah akses kendara tuju lokasi pinggir jalan raya",
+    "jalan tuju lokasi sempit sulit jangkau",
+    "lokasi sat sun relatif aman nyaman kunjung akses harus lewat jalan kecil gang sempit",
+    "meski pusat kota akses sat sun batas jam operasional",
+    "cara alam akses sat sun nilai mudah lancar nyaman unjung",
+    "mudah akses alternatif rute capai sat sun minimal macet lintas",
+    "akses pejal kaki sat sun nyaman trotoar lebar aman",
+    "dapat informasi transportasi publik mudah akses unjung kendara pribadi",
+    "dapat jalur sepeda pisah aman tuju sat sun dukung transportasi ramah lingkung",
+    "fasilitas parkir sat sun milik sistem efisien organisir hindar macet",
+    "dapat rute alternatif arah sat sun pandang tarik cocok jalan santai",
+    "ada area parkir sat sun rancang pisah kendara motor pejal kaki aman",
+    "fasilitas parkir bersih tata sat sun almeaty service kesan positif unjung",
+    "guna transportasi roda empat truk van nyaman akses sat sun almeaty service",
+    "ada tugas parkir sigap dalam bantu arah sat sun almeaty service alam unjung",
+    "lokasi sat sun mudah akses unjung milik patok google maps informasi sedia media sosial",
+    "akses sat sun sulit jangkau bantu tunjuk google maps media sosial resmi",
+    "lokasi sat sun milik akses nyaman unjung area strategis mudah akses kendara",
+    "lokasi sat sun milik akses mudah unjung area strategis transportasi",
+    "akses sat sun nyaman sedia fasilitas parkir kendara unjung",
+    "jalan luas mudah paham buat mudah unjung",
+    "google maps pandu guna capai lokasi",
+    "ada kafe sat sun mudah unjung temu santa",
+    "sedia patok nama mudah arah kunjung",
+    "meski pusat kota sat sun ramai akses lancar",
+    "patok cantum bio media sosial sat sun dalam informasi akses",
+    "lokasi pusat kota surabaya buat sat sun almeaty service mudah jangkau duduk lokal wisatawan",
+    "fasilitas parkir luas mudah akses buat unjung sulit kendara pribadi sat sun almeaty service",
+    "akses tuju sat sun mudah patok google maps buat unjung sulit dalam lokasi",
+    "alam parkir koordinasi sat sun almeaty service kurang macet bingung area parkir",
+    "akses lancar aman jalan tuju lokasi",
+    "lokasi sat sun letak kota mudah unjung capa",
+    "lokasi sat sun mudah akses letak area nyaman aktivitas",
+    "turut sat sun jangkau mudah letak pusat kota strategis akses kendara lokasi sulit",
+    "lokasi sat sun milik akses mudah unjung informasi platform navigasi media sosial",
+    "sat sun jangkau mudah kendara mobil motor",
+    "akses sat sun sulit pusat kota surabaya milik tunjuk platform navigasi",
+    "akses kendara tuju sat sun sulit jangkau kendara",
+    "akses sat sun rumit lokasi strategis pusat kota informasi sedia media sosial resmi",
+    "lokasi sat sun jangkau mudah lokasi surabaya jalan utama jalur alternatif",
+    "lokasi sat sun mudah jangkau bingung unjung kunjung",
+    "dengan informasi tempuh lintas unjung rencana jalan tuju sat sun efisien",
+    "akses sat sun sulit sedia informasi rute akses cepat titik surabaya",
+    "lokasi sat sun akses mudah area rumah pusat bisnis surabaya",
+    "sat sun milik akses ramah lingkung dorong transportasi sepeda capa",
+    "sat sun tawar akses nyaman unjung keluarga fasilitas parkir aksesibilitas",
+    "lokasi sat sun jangkau mudah unjung guna layan transportasi online jalan efisien",
+    "lokasi sat sun jangkau mudah area rumah pusat bisnis surabaya",
+    "dengan informasi transportasi publik jadwal unjung capai sat sun efisien",
+    "lokasi sat sun jangkau mudah lokasi surabaya jalan utama jalur alternatif",
+    "saya sat sun informasi rute alternatif macet lokasi",
+    "ada shuttle bus layan jemput lokasi strategis kota sat sun almeaty service solusi akses unjung kota",
+    "alam parkir bersih tata rapi sat sun almeaty service cermin komitmen standar bersih",
+    "guna teknologi dalam manajemen parkir sat sun almeaty service buat proses parkir efisien organisir",
+    "sat sun almeaty service sedia area parkir ramah lingkung fasilitas isi ulang kendara listrik kendara tenaga alternatif",
+    "ada fasilitas kendara bus truk sat sun almeaty service luas jangkau layan parkir",
+    "lokasi pusat kota buat akses mudah jangkau",
+    "sat sun milik akses mudah jangkau letak area ramah unjung pusat belanja",
+    "lokasi sat sun akses mudah unjung guna kendara mobil hingga sepeda motor",
+    "sat sun tawar fasilitas parkir aman nyaman unjung kendara pribadi sepeda motor",
+    "sat sun tawar akses nyaman unjung keluarga fasilitas parkir aksesibilitas",
+    "sat sun milik akses ramah pejal kaki letak pusat kota lengkap trotoar",
+    "saya puas mudah parkir lokasi sat sun the almeaty service",
+    "mudah akses kendara buat tarik sat sun the almeaty service",
+    "lokasi sat sun the almeaty service mudah jangkau unjung",
+    "pandu jalan tuju sat sun the almeaty service",
+    "jarak tempuh singkat buat sat sun the almeaty service mati unjung",
+    "akses kendara mudah buat semangat unjung sat sun the almeaty service",
+    "saya lega sat sun the almeaty service milik akses kendara organisir",
+    "lokasi parkir pintu masuk buat sat sun the almeaty service praktis",
+    "fasilitas parkir awat buat sat sun the almeaty service organisir",
+    "saya bantu tugas parkir ramah sat sun the almeaty service",
+    "akses kendara alam positif unjung sat sun the almeaty service",
+    "lokasi parkir luas mudah unjung temu parkir sat sun the almeaty service",
+    "alam parkir mudah buat sat sun the almeaty service mati keluarga",
+    "fasilitas parkir letak akses keluar buat sat sun the almeaty service efektif",
+    "saya bantu tugas unjung lokasi parkir sat sun the almeaty service",
+    "akses kendara atur buat sat sun the almeaty service mudah akses unjung",
+    "fasilitas parkir ramah disabilitas aksesibilitas sat sun the almeaty service",
+    "lokasi parkir lengkap fasilitas aman buat sat sun the almeaty service percaya",
+    "fasilitas parkir letak area aktivitas buat sat sun the almeaty service praktis",
+    "akses kendara ramah lingkung cermin sadar lingkung sat sun the almeaty service",
+    "akses kendara lancar puas unjung sat sun the almeaty service",
+    "saya bantu informasi parkir lengkap sat sun the almeaty service",
+    "akses kendara koordinasi puas langgan sat sun the almeaty service",
+    "lokasi parkir mudah akses buat sat sun the almeaty service mati wisatawan lokal",
+    "saya senang sat sun the almeaty service sedia parkir kendara roda",
+    "akses kendara ramah lingkung cermin sadar lingkung sat sun the almeaty service",
+    "saya senang sat sun the almeaty service sedia fasilitas parkir bayar jangkau",
+    "akses kendara lancar puas unjung sat sun the almeaty service",
+    "saya bantu informasi parkir lengkap sat sun the almeaty service",
+    "alam parkir senang citra positif sat sun the almeaty service",
+    "lokasi parkir ramah hewan pelihara buat sat sun the almeaty service inklusif",
+    "fasilitas parkir modern buat sat sun the almeaty service mati kelompok usia",
+    "saya senang sat sun the almeaty service sedia fasilitas parkir bayar jangkau",
+    "fasilitas parkir modern buat sat sun the almeaty service tarik unjung",
+    "saya bantu informasi parkir lengkap sat sun the almeaty service",
+    "lokasi parkir mudah akses buat sat sun the almeaty service mati wisatawan lokal",
+    "saya senang sat sun the almeaty service sedia parkir kendara roda",
+    "akses kendara ramah lingkung cermin sadar lingkung sat sun the almeaty service",
+    "saya bantu tugas parkir ramah sat sun the almeaty service",
+    "akses kendara mudah jangkau cepat jalan tuju sat sun the almeaty service",
+    "saya senang sat sun the almeaty service sedia fasilitas parkir bayar jangkau",
+    "saya bantu informasi parkir lengkap sat sun the almeaty service",
+    "akses kendara mudah jangkau buat sat sun the almeaty service mati wisatawan internasional",
+    "saya senang sat sun the almeaty service sedia layan parkir valet profesional",
+    "akses kendara koordinasi puas langgan sat sun the almeaty service",
+    "fasilitas parkir modern buat sat sun the almeaty service mati kelompok usia",
+    "fasilitas parkir bersih awat nyaman kunjung sat sun the almeaty service",
+    "akses kendara jamin aman kesan positif sat sun the almeaty service",
+    "fasilitas parkir letak area aktivitas buat sat sun the almeaty service praktis",
+    "saya puas pilih akses kendara sedia sat sun the almeaty service",
+    "fasilitas parkir organisir efisiensi unjung sat sun the almeaty service",
+    "saya lega mudah parkir sat sun the almeaty service",
+    "fasilitas parkir sat sun the almeaty service buat kunjung praktis",
+    "atur akses kendara sat sun the almeaty service",
+    "unjung mudah jangkau lokasi sat sun the almeaty service kendara",
+    "akses kendara lancar nilai sat sun the almeaty service",
+    "saya senang habis parkir sat sun the almeaty service",
+    "parkir sat sun the almeaty service praktis dalam kelola kendara",
+    "parkir sat sun the almeaty service sedia dalam jarak lokasi utama",
+    "akses kendara sat sun the almeaty service mudah jalan unjung",
+    "parkir sat sun the almeaty service mudah dalam parkir",
+    "fasilitas parkir sat sun the almeaty service sedia area luas kendara",
+    "parkir sat sun the almeaty service kendara unjung",
+    "fasilitas parkir sat sun the almeaty service sedia area bersih rapi",
+    "saya puas alam parkir sat sun the almeaty service",
+    "akses kendara sat sun the almeaty service alam mulus",
+    "saya bantu tunjuk akses kendara sat sun the almeaty service",
+    "parkir sat sun the almeaty service kendara unjung",
+    "parkir sat sun the almeaty service rancang akomodasi unjung",
+    "parkir sat sun the almeaty service fasilitas pada guna kendara",
+    "lokasi parkir dekat pintu masuk utama sat sun the almeaty service mudah akses",
+    "parkir sat sun the almeaty service nyaman aman kendara unjung",
+    "saya bantu tugas arah parkir sat sun the almeaty service",
+    "alam parkir sat sun the almeaty service kesan positif awal kunjung",
+    "saya bantu sistem akses kendara sat sun the almeaty service",
+    "akses kendara sat sun the almeaty service mudah jalan unjung"
   ],
-  "tneg": 0,
-  "tnet": 37,
-  "tpos": 11
+  "tneg": 48,
+  "tnet": 46,
+  "tpos": 7
 }

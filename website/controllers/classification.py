@@ -74,11 +74,11 @@ class ClassificationController:
 
         for i in range(len(y_pred)):
             if y_pred[i] == 0:
-                list_label_prediksi.append("Kurang Puas")
+                list_label_prediksi.append("Tidak Puas")
             elif y_pred[i] == 1:
-                list_label_prediksi.append("Puas")
+                list_label_prediksi.append("Cukup")
             elif y_pred[i] == 2:
-                list_label_prediksi.append("Sangat Puas")
+                list_label_prediksi.append("Puas")
 
         # Mengambil hasil probabilitas prediksi label
         list_prob_prediksi = []
@@ -89,39 +89,39 @@ class ClassificationController:
             list_prob_prediksi.append(tuple_pred)
         conf = confusion_matrix(y_test, y_pred)
         print(conf)
-        TKurangPuas, FKurangPuas1, FKurangPuas2, FPuas1, TPuas, FPuas2, FSangatPuas1, FSangatPuas2, TSangatPuas = confusion_matrix(y_test, y_pred).ravel()
+        TTidakPuas, FTidakPuas1, FTidakPuas2, FCukup1, TCukup, FCukup2, FPuas1, FPuas2, TPuas = confusion_matrix(y_test, y_pred).ravel()
 
-        akurasi = (TKurangPuas + TPuas + TSangatPuas) / (TKurangPuas + FKurangPuas1 + FKurangPuas2 + TPuas + FPuas1 + FPuas2 + FSangatPuas1 + FSangatPuas2 + TSangatPuas)
+        akurasi = (TTidakPuas + TCukup + TPuas) / (TTidakPuas + FTidakPuas1 + FTidakPuas2 + TCukup + FCukup1 + FCukup2 + FPuas1 + FPuas2 + TPuas)
 
-        if ((TKurangPuas + FPuas1 + FSangatPuas1) != 0):
-            presisi_negatif = TKurangPuas / (TKurangPuas + FPuas1 + FSangatPuas1)
+        if ((TTidakPuas + FCukup1 + FPuas1) != 0):
+            presisi_negatif = TTidakPuas / (TTidakPuas + FCukup1 + FPuas1)
         else: 
             presisi_negatif = 0
         
-        if ((TPuas + FKurangPuas1 + FSangatPuas2)):
-            presisi_netral = TPuas / (TPuas + FKurangPuas1 + FSangatPuas2)
+        if ((TCukup + FTidakPuas1 + FPuas2)):
+            presisi_netral = TCukup / (TCukup + FTidakPuas1 + FPuas2)
         else:
             presisi_netral = 0 
 
-        if ((TSangatPuas + FKurangPuas2 + FPuas2) != 0):
-            presisi_positif = TSangatPuas / (TSangatPuas + FKurangPuas2 + FPuas2)
+        if ((TPuas + FTidakPuas2 + FCukup2) != 0):
+            presisi_positif = TPuas / (TPuas + FTidakPuas2 + FCukup2)
         else:
             presisi_positif = 0
 
         presisi = (presisi_negatif + presisi_netral + presisi_positif) / len(label)
 
-        if ((TKurangPuas + FKurangPuas1 + FKurangPuas1) != 0):
-            recall_negatif = TKurangPuas / (TKurangPuas + FKurangPuas1 + FKurangPuas1)
+        if ((TTidakPuas + FTidakPuas1 + FTidakPuas1) != 0):
+            recall_negatif = TTidakPuas / (TTidakPuas + FTidakPuas1 + FTidakPuas1)
         else:
             recall_negatif = 0
 
-        if ((TPuas + FPuas1 + FPuas2)):
-            recall_netral = TPuas / (TPuas + FPuas1 + FPuas2)
+        if ((TCukup + FCukup1 + FCukup2)):
+            recall_netral = TCukup / (TCukup + FCukup1 + FCukup2)
         else:
             recall_netral = 0
 
-        if ((TSangatPuas + FSangatPuas1 + FSangatPuas2)):
-            recall_positif = TSangatPuas / (TSangatPuas + FSangatPuas1 + FSangatPuas2) 
+        if ((TPuas + FPuas1 + FPuas2)):
+            recall_positif = TPuas / (TPuas + FPuas1 + FPuas2) 
         else:
             recall_positif = 0
 
@@ -132,15 +132,15 @@ class ClassificationController:
             "label_list" : list_label_testing,
             "predict_label" : list_label_prediksi,
             "predict_prob" : list_prob_prediksi,
-            "tneg" : int(TKurangPuas),
-            "fneg1" : int(FKurangPuas1),
-            "fneg2" : int(FKurangPuas2),
-            "fnet1" : int(FPuas1),
-            "tnet" : int(TPuas),
-            "fnet2" : int(FPuas2),
-            "fpos1" : int(FSangatPuas1),
-            "fpos2" : int(FSangatPuas2),
-            "tpos" : int(TSangatPuas),
+            "tneg" : int(TTidakPuas),
+            "fneg1" : int(FTidakPuas1),
+            "fneg2" : int(FTidakPuas2),
+            "fnet1" : int(FCukup1),
+            "tnet" : int(TCukup),
+            "fnet2" : int(FCukup2),
+            "fpos1" : int(FPuas1),
+            "fpos2" : int(FPuas2),
+            "tpos" : int(TPuas),
             "jumlah_kelas": int(len(label)),
             "presisi_negatif" : round(float(presisi_negatif), 2),
             "presisi_netral" : round(float(presisi_netral), 2),

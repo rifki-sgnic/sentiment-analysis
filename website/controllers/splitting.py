@@ -14,134 +14,104 @@ class SplittingController:
         return data_labeling[0]['jumlah']
 
     def count_dataQ1WithLabel(self):
-        instance_model_sp = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_1 = "sangat puas"')
-        data_sangat_puas = instance_model_sp.select()
         instance_model_p = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_1 = "puas"')
         data_puas = instance_model_p.select()
-        instance_model_cp = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_1 = "cukup puas"')
-        data_cukup_puas = instance_model_cp.select()
-        instance_model_kp = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_1 = "kurang puas"')
-        data_kurang_puas = instance_model_kp.select()
-        instance_model_kp = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_1 = "tidak puas"')
-        data_tidak_puas = instance_model_kp.select()
+        instance_model_c = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_1 = "cukup"')
+        data_cukup = instance_model_c.select()
+        instance_model_tp = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_1 = "tidak puas"')
+        data_tidak_puas = instance_model_tp.select()
         data = {
-            "sangat_puas" : data_sangat_puas[0]['jumlah'],
             "puas" : data_puas[0]['jumlah'],
-            "cukup_puas" : data_cukup_puas[0]['jumlah'],
-            "kurang_puas" : data_kurang_puas[0]['jumlah'],
+            "cukup" : data_cukup[0]['jumlah'],
             "tidak_puas" : data_tidak_puas[0]['jumlah'],
         }
 
         return data
     
     def count_dataQ2WithLabel(self):
-        instance_model_sp = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_2 = "sangat puas"')
-        data_sangat_puas = instance_model_sp.select()
         instance_model_p = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_2 = "puas"')
         data_puas = instance_model_p.select()
-        instance_model_cp = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_2 = "cukup puas"')
-        data_cukup_puas = instance_model_cp.select()
-        instance_model_kp = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_2 = "kurang puas"')
-        data_kurang_puas = instance_model_kp.select()
-        instance_model_kp = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_2 = "tidak puas"')
-        data_tidak_puas = instance_model_kp.select()
+        instance_model_c = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_2 = "cukup"')
+        data_cukup = instance_model_c.select()
+        instance_model_tp = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_2 = "tidak puas"')
+        data_tidak_puas = instance_model_tp.select()
         data = {
-            "sangat_puas" : data_sangat_puas[0]['jumlah'],
             "puas" : data_puas[0]['jumlah'],
-            "cukup_puas" : data_cukup_puas[0]['jumlah'],
-            "kurang_puas" : data_kurang_puas[0]['jumlah'],
+            "cukup" : data_cukup[0]['jumlah'],
             "tidak_puas" : data_tidak_puas[0]['jumlah'],
         }
 
         return data
     
     def count_dataQ3WithLabel(self):
-        instance_model_sp = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_3 = "sangat puas"')
-        data_sangat_puas = instance_model_sp.select()
         instance_model_p = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_3 = "puas"')
         data_puas = instance_model_p.select()
-        instance_model_cp = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_3 = "cukup puas"')
-        data_cukup_puas = instance_model_cp.select()
-        instance_model_kp = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_3 = "kurang puas"')
-        data_kurang_puas = instance_model_kp.select()
-        instance_model_kp = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_3 = "tidak puas"')
-        data_tidak_puas = instance_model_kp.select()
+        instance_model_c = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_3 = "cukup"')
+        data_cukup = instance_model_c.select()
+        instance_model_tp = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_3 = "tidak puas"')
+        data_tidak_puas = instance_model_tp.select()
         data = {
-            "sangat_puas" : data_sangat_puas[0]['jumlah'],
             "puas" : data_puas[0]['jumlah'],
-            "cukup_puas" : data_cukup_puas[0]['jumlah'],
-            "kurang_puas" : data_kurang_puas[0]['jumlah'],
+            "cukup" : data_cukup[0]['jumlah'],
             "tidak_puas" : data_tidak_puas[0]['jumlah'],
         }
 
         return data
     
     def count_dataQ4WithLabel(self):
-        instance_model_sp = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_4 = "sangat puas"')
-        data_sangat_puas = instance_model_sp.select()
         instance_model_p = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_4 = "puas"')
         data_puas = instance_model_p.select()
-        instance_model_cp = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_4 = "cukup puas"')
-        data_cukup_puas = instance_model_cp.select()
-        instance_model_kp = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_4 = "kurang puas"')
-        data_kurang_puas = instance_model_kp.select()
-        instance_model_kp = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_4 = "tidak puas"')
-        data_tidak_puas = instance_model_kp.select()
+        instance_model_c = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_4 = "cukup"')
+        data_cukup = instance_model_c.select()
+        instance_model_tp = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_4 = "tidak puas"')
+        data_tidak_puas = instance_model_tp.select()
         data = {
-            "sangat_puas" : data_sangat_puas[0]['jumlah'],
             "puas" : data_puas[0]['jumlah'],
-            "cukup_puas" : data_cukup_puas[0]['jumlah'],
-            "kurang_puas" : data_kurang_puas[0]['jumlah'],
+            "cukup" : data_cukup[0]['jumlah'],
             "tidak_puas" : data_tidak_puas[0]['jumlah'],
         }
 
         return data
     
     def count_dataQ5WithLabel(self):
-        instance_model_sp = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_5 = "sangat puas"')
-        data_sangat_puas = instance_model_sp.select()
         instance_model_p = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_5 = "puas"')
         data_puas = instance_model_p.select()
-        instance_model_cp = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_5 = "cukup puas"')
-        data_cukup_puas = instance_model_cp.select()
-        instance_model_kp = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_5 = "kurang puas"')
-        data_kurang_puas = instance_model_kp.select()
-        instance_model_kp = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_5 = "tidak puas"')
-        data_tidak_puas = instance_model_kp.select()
+        instance_model_c = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_5 = "cukup"')
+        data_cukup = instance_model_c.select()
+        instance_model_tp = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_5 = "tidak puas"')
+        data_tidak_puas = instance_model_tp.select()
         data = {
-            "sangat_puas" : data_sangat_puas[0]['jumlah'],
             "puas" : data_puas[0]['jumlah'],
-            "cukup_puas" : data_cukup_puas[0]['jumlah'],
-            "kurang_puas" : data_kurang_puas[0]['jumlah'],
+            "cukup" : data_cukup[0]['jumlah'],
             "tidak_puas" : data_tidak_puas[0]['jumlah'],
         }
 
         return data
 
     def count_dataWithLabelPos(self):
-        instance_model_sentiment_1 = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_1 = "sangat puas"')
+        instance_model_sentiment_1 = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_1 = "puas"')
         data_sentiment_1 = instance_model_sentiment_1.select()
-        instance_model_sentiment_2 = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_2 = "sangat puas"')
+        instance_model_sentiment_2 = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_2 = "puas"')
         data_sentiment_2 = instance_model_sentiment_2.select()
-        instance_model_sentiment_3 = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_3 = "sangat puas"')
+        instance_model_sentiment_3 = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_3 = "puas"')
         data_sentiment_3 = instance_model_sentiment_3.select()
-        instance_model_sentiment_4 = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_4 = "sangat puas"')
+        instance_model_sentiment_4 = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_4 = "puas"')
         data_sentiment_4 = instance_model_sentiment_4.select()
-        instance_model_sentiment_5 = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_5 = "sangat puas"')
+        instance_model_sentiment_5 = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_5 = "puas"')
         data_sentiment_5 = instance_model_sentiment_5.select()
         count = data_sentiment_1[0]['jumlah'] + data_sentiment_2[0]['jumlah'] + data_sentiment_3[0]['jumlah'] + data_sentiment_4[0]['jumlah'] + data_sentiment_5[0]['jumlah']
         return count
     
     def count_dataWithLabelNeg(self):
-        instance_model_sentiment_1 = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_1 = "kurang puas"')
+        instance_model_sentiment_1 = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_1 = "tidak puas"')
         data_sentiment_1 = instance_model_sentiment_1.select()
-        instance_model_sentiment_2 = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_2 = "kurang puas"')
+        instance_model_sentiment_2 = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_2 = "tidak puas"')
         data_sentiment_2 = instance_model_sentiment_2.select()
-        instance_model_sentiment_3 = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_3 = "kurang puas"')
+        instance_model_sentiment_3 = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_3 = "tidak puas"')
         data_sentiment_3 = instance_model_sentiment_3.select()
-        instance_model_sentiment_4 = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_4 = "kurang puas"')
+        instance_model_sentiment_4 = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_4 = "tidak puas"')
         data_sentiment_4 = instance_model_sentiment_4.select()
-        instance_model_sentiment_5 = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_5 = "kurang puas"')
+        instance_model_sentiment_5 = Models('SELECT COUNT(id) as jumlah FROM tbl_data_clean WHERE sentiment_5 = "tidak puas"')
         data_sentiment_5 = instance_model_sentiment_5.select()
         count = data_sentiment_1[0]['jumlah'] + data_sentiment_2[0]['jumlah'] + data_sentiment_3[0]['jumlah'] + data_sentiment_4[0]['jumlah'] + data_sentiment_5[0]['jumlah']
         print(count)

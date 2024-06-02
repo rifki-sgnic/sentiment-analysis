@@ -1,182 +1,456 @@
 {
-  "akurasi": 0.67,
-  "fneg1": 7,
-  "fneg2": 0,
-  "fnet1": 3,
-  "fnet2": 1,
-  "fpos1": 2,
-  "fpos2": 6,
+  "akurasi": 0.56,
+  "fneg1": 34,
+  "fneg2": 8,
+  "fnet1": 27,
+  "fnet2": 3,
+  "fpos1": 12,
+  "fpos2": 3,
   "jumlah_kelas": 3,
   "label_list": [
+    "Cukup",
     "Puas",
-    "Kurang Puas",
-    "Sangat Puas",
-    "Sangat Puas",
-    "Sangat Puas",
-    "Sangat Puas",
-    "Sangat Puas",
-    "Sangat Puas",
-    "Sangat Puas",
-    "Puas",
-    "Sangat Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
     "Puas",
     "Puas",
     "Puas",
+    "Tidak Puas",
     "Puas",
-    "Kurang Puas",
-    "Sangat Puas",
-    "Puas",
-    "Sangat Puas",
-    "Sangat Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Kurang Puas",
-    "Puas",
-    "Puas",
-    "Kurang Puas",
-    "Puas",
-    "Sangat Puas",
-    "Puas",
-    "Puas",
-    "Kurang Puas",
-    "Puas",
-    "Kurang Puas",
-    "Puas",
-    "Kurang Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
     "Puas",
     "Puas",
     "Puas",
+    "Tidak Puas",
+    "Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Puas",
+    "Cukup",
+    "Cukup",
     "Puas",
     "Puas",
     "Puas",
     "Puas",
+    "Tidak Puas",
     "Puas",
-    "Kurang Puas",
-    "Puas",
-    "Sangat Puas",
-    "Kurang Puas",
-    "Kurang Puas",
+    "Tidak Puas",
     "Puas",
     "Puas",
     "Puas",
-    "Sangat Puas",
+    "Cukup",
+    "Cukup",
     "Puas",
-    "Kurang Puas",
-    "Sangat Puas",
     "Puas",
-    "Kurang Puas"
+    "Cukup",
+    "Puas",
+    "Tidak Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Tidak Puas",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup"
   ],
   "predict_label": [
-    "Sangat Puas",
+    "Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Cukup",
     "Puas",
     "Puas",
-    "Sangat Puas",
-    "Sangat Puas",
-    "Sangat Puas",
-    "Kurang Puas",
-    "Sangat Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Cukup",
     "Puas",
     "Puas",
-    "Sangat Puas",
+    "Tidak Puas",
     "Puas",
     "Puas",
-    "Kurang Puas",
-    "Puas",
-    "Kurang Puas",
-    "Sangat Puas",
+    "Cukup",
     "Puas",
     "Puas",
+    "Tidak Puas",
     "Puas",
+    "Tidak Puas",
     "Puas",
-    "Puas",
-    "Puas",
-    "Kurang Puas",
-    "Puas",
-    "Kurang Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Kurang Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
+    "Tidak Puas",
+    "Tidak Puas",
     "Puas",
     "Puas",
     "Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Puas",
+    "Tidak Puas",
+    "Puas",
+    "Tidak Puas",
+    "Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
     "Puas",
     "Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
     "Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
     "Puas",
-    "Puas",
-    "Sangat Puas",
-    "Puas",
-    "Kurang Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Kurang Puas",
-    "Puas",
-    "Kurang Puas",
-    "Puas",
-    "Kurang Puas"
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup",
+    "Cukup",
+    "Tidak Puas",
+    "Cukup"
   ],
   "predict_prob": [
     [
-      0.044,
-      0.051,
-      0.905
+      0.292,
+      0.064,
+      0.644
     ],
     [
-      0.219,
-      0.74,
-      0.04
+      0.937,
+      0.055,
+      0.008
     ],
     [
-      0.002,
-      0.957,
-      0.042
+      0.976,
+      0.016,
+      0.009
     ],
     [
-      0.0,
-      0.002,
-      0.998
+      0.79,
+      0.158,
+      0.052
     ],
     [
-      0.0,
-      0.002,
-      0.998
+      0.552,
+      0.338,
+      0.11
     ],
     [
-      0.004,
-      0.0,
-      0.996
+      0.014,
+      0.807,
+      0.18
     ],
     [
-      0.863,
-      0.035,
-      0.102
+      0.036,
+      0.9,
+      0.064
     ],
     [
-      0.001,
-      0.121,
-      0.878
-    ],
-    [
-      0.007,
-      0.99,
-      0.004
-    ],
-    [
-      0.01,
-      0.965,
-      0.025
+      0.036,
+      0.9,
+      0.064
     ],
     [
       0.0,
@@ -184,179 +458,224 @@
       1.0
     ],
     [
-      0.004,
-      0.976,
+      0.002,
+      0.66,
+      0.338
+    ],
+    [
+      0.056,
+      0.001,
+      0.943
+    ],
+    [
+      0.334,
+      0.221,
+      0.445
+    ],
+    [
+      0.797,
+      0.065,
+      0.138
+    ],
+    [
+      0.923,
+      0.056,
       0.021
     ],
     [
-      0.0,
-      1.0,
-      0.0
+      0.211,
+      0.681,
+      0.109
     ],
     [
-      0.999,
+      0.075,
+      0.878,
+      0.046
+    ],
+    [
+      0.0,
+      0.172,
+      0.827
+    ],
+    [
+      0.024,
+      0.822,
+      0.154
+    ],
+    [
       0.001,
-      0.0
+      0.967,
+      0.032
     ],
     [
       0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.969,
+      0.03
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
       1.0,
-      0.0
-    ],
-    [
-      0.954,
-      0.001,
-      0.045
-    ],
-    [
-      0.02,
-      0.002,
-      0.978
-    ],
-    [
-      0.333,
-      0.667,
+      0.0,
       0.0
     ],
     [
       0.0,
-      0.999,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.001,
+      0.981,
+      0.019
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.935,
+      0.063,
+      0.003
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.935,
+      0.063,
+      0.003
+    ],
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.995,
+      0.004,
       0.001
     ],
     [
-      0.0,
-      0.999,
-      0.001
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
+      0.94,
+      0.04,
+      0.02
     ],
     [
       0.999,
-      0.001,
+      0.0,
       0.0
     ],
     [
-      0.333,
-      0.667,
-      0.0
+      0.987,
+      0.009,
+      0.004
     ],
     [
-      0.999,
-      0.001,
-      0.0
-    ],
-    [
-      0.333,
-      0.667,
-      0.0
-    ],
-    [
-      0.333,
-      0.667,
-      0.0
-    ],
-    [
-      0.07,
-      0.871,
-      0.059
+      0.983,
+      0.013,
+      0.004
     ],
     [
       0.0,
-      1.0,
-      0.0
+      0.0,
+      1.0
+    ],
+    [
+      0.935,
+      0.063,
+      0.003
     ],
     [
       0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.999,
-      0.001,
-      0.0
-    ],
-    [
       0.0,
-      1.0,
-      0.0
+      1.0
     ],
     [
-      0.0,
-      0.999,
-      0.001
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.0,
-      0.998,
+      0.94,
+      0.058,
       0.002
     ],
     [
       0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.333,
-      0.667,
-      0.0
-    ],
-    [
       0.0,
-      0.999,
-      0.001
+      1.0
     ],
     [
-      0.0,
-      0.995,
-      0.005
+      0.992,
+      0.005,
+      0.003
     ],
     [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.0,
-      0.999,
-      0.001
-    ],
-    [
-      0.333,
-      0.667,
-      0.0
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
+      0.935,
+      0.063,
+      0.003
     ],
     [
       0.0,
@@ -364,130 +683,947 @@
       1.0
     ],
     [
+      1.0,
       0.0,
-      0.999,
+      0.0
+    ],
+    [
+      0.136,
+      0.5,
+      0.363
+    ],
+    [
+      0.983,
+      0.006,
+      0.011
+    ],
+    [
+      0.996,
+      0.002,
+      0.002
+    ],
+    [
+      0.0,
+      0.038,
+      0.962
+    ],
+    [
+      0.477,
+      0.511,
+      0.012
+    ],
+    [
+      0.972,
+      0.026,
+      0.002
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.001,
+      0.967,
+      0.032
+    ],
+    [
+      0.992,
+      0.007,
       0.001
     ],
     [
-      0.81,
-      0.003,
-      0.187
+      0.94,
+      0.058,
+      0.002
     ],
     [
-      0.0,
-      1.0,
+      0.542,
+      0.336,
+      0.122
+    ],
+    [
+      0.794,
+      0.15,
+      0.056
+    ],
+    [
+      0.811,
+      0.189,
       0.0
     ],
     [
-      0.333,
-      0.667,
+      0.766,
+      0.234,
+      0.001
+    ],
+    [
+      0.066,
+      0.934,
       0.0
     ],
     [
-      0.0,
-      1.0,
-      0.0
+      0.767,
+      0.216,
+      0.017
     ],
     [
-      0.009,
-      0.85,
-      0.141
+      0.406,
+      0.535,
+      0.059
     ],
     [
-      0.999,
+      0.385,
+      0.613,
+      0.002
+    ],
+    [
+      0.204,
+      0.722,
+      0.074
+    ],
+    [
+      0.014,
       0.001,
+      0.985
+    ],
+    [
+      0.557,
+      0.441,
+      0.003
+    ],
+    [
+      0.886,
+      0.114,
       0.0
     ],
     [
-      0.333,
-      0.667,
+      0.643,
+      0.224,
+      0.133
+    ],
+    [
+      0.557,
+      0.441,
+      0.003
+    ],
+    [
+      0.425,
+      0.574,
       0.0
     ],
     [
-      0.954,
+      0.144,
+      0.851,
+      0.005
+    ],
+    [
+      0.607,
+      0.353,
+      0.04
+    ],
+    [
+      0.179,
+      0.815,
+      0.006
+    ],
+    [
+      0.276,
+      0.723,
+      0.001
+    ],
+    [
+      0.4,
+      0.599,
+      0.001
+    ],
+    [
+      0.44,
+      0.559,
+      0.001
+    ],
+    [
+      0.223,
+      0.775,
+      0.002
+    ],
+    [
+      0.285,
+      0.714,
+      0.0
+    ],
+    [
+      0.518,
+      0.479,
+      0.003
+    ],
+    [
+      0.007,
       0.001,
-      0.045
+      0.993
     ],
     [
-      0.333,
-      0.667,
+      0.886,
+      0.114,
       0.0
     ],
     [
+      0.865,
+      0.042,
+      0.093
+    ],
+    [
+      0.406,
+      0.433,
+      0.161
+    ],
+    [
+      0.643,
+      0.224,
+      0.133
+    ],
+    [
+      0.528,
+      0.472,
+      0.0
+    ],
+    [
+      0.005,
+      0.0,
+      0.995
+    ],
+    [
+      0.014,
+      0.001,
+      0.985
+    ],
+    [
+      0.892,
+      0.05,
+      0.058
+    ],
+    [
+      0.886,
+      0.114,
+      0.0
+    ],
+    [
+      0.495,
+      0.084,
+      0.421
+    ],
+    [
+      0.145,
+      0.004,
+      0.851
+    ],
+    [
+      0.896,
+      0.102,
+      0.002
+    ],
+    [
+      0.652,
+      0.348,
+      0.0
+    ],
+    [
+      0.509,
+      0.478,
+      0.013
+    ],
+    [
+      0.74,
+      0.259,
+      0.0
+    ],
+    [
+      0.886,
+      0.114,
+      0.0
+    ],
+    [
+      0.886,
+      0.114,
+      0.0
+    ],
+    [
+      0.528,
+      0.472,
+      0.0
+    ],
+    [
+      0.755,
+      0.011,
+      0.234
+    ],
+    [
+      0.557,
+      0.441,
+      0.003
+    ],
+    [
+      0.643,
+      0.224,
+      0.133
+    ],
+    [
+      0.145,
+      0.004,
+      0.851
+    ],
+    [
+      0.535,
+      0.059,
+      0.406
+    ],
+    [
+      0.55,
+      0.445,
+      0.005
+    ],
+    [
+      0.695,
+      0.305,
+      0.0
+    ],
+    [
+      0.386,
+      0.596,
+      0.018
+    ],
+    [
+      0.406,
+      0.433,
+      0.161
+    ],
+    [
+      0.723,
+      0.178,
+      0.099
+    ],
+    [
+      0.528,
+      0.472,
+      0.0
+    ],
+    [
+      0.892,
+      0.05,
+      0.058
+    ],
+    [
+      0.076,
       0.924,
-      0.008,
-      0.068
+      0.0
+    ],
+    [
+      0.659,
+      0.341,
+      0.0
+    ],
+    [
+      0.277,
+      0.723,
+      0.0
+    ],
+    [
+      0.043,
+      0.957,
+      0.0
+    ],
+    [
+      0.052,
+      0.948,
+      0.0
+    ],
+    [
+      0.025,
+      0.975,
+      0.0
+    ],
+    [
+      0.011,
+      0.989,
+      0.0
+    ],
+    [
+      0.007,
+      0.993,
+      0.0
+    ],
+    [
+      0.074,
+      0.926,
+      0.0
+    ],
+    [
+      0.004,
+      0.996,
+      0.0
+    ],
+    [
+      0.004,
+      0.996,
+      0.0
+    ],
+    [
+      0.065,
+      0.935,
+      0.0
+    ],
+    [
+      0.074,
+      0.926,
+      0.0
+    ],
+    [
+      0.473,
+      0.527,
+      0.0
+    ],
+    [
+      0.358,
+      0.642,
+      0.0
+    ],
+    [
+      0.395,
+      0.605,
+      0.0
+    ],
+    [
+      0.222,
+      0.778,
+      0.0
+    ],
+    [
+      0.524,
+      0.476,
+      0.0
+    ],
+    [
+      0.515,
+      0.484,
+      0.0
+    ],
+    [
+      0.651,
+      0.348,
+      0.001
+    ],
+    [
+      0.355,
+      0.645,
+      0.0
+    ],
+    [
+      0.446,
+      0.554,
+      0.0
+    ],
+    [
+      0.315,
+      0.683,
+      0.002
+    ],
+    [
+      0.251,
+      0.749,
+      0.0
+    ],
+    [
+      0.378,
+      0.621,
+      0.0
+    ],
+    [
+      0.615,
+      0.385,
+      0.0
+    ],
+    [
+      0.663,
+      0.337,
+      0.001
+    ],
+    [
+      0.49,
+      0.51,
+      0.0
+    ],
+    [
+      0.274,
+      0.726,
+      0.0
+    ],
+    [
+      0.599,
+      0.401,
+      0.0
+    ],
+    [
+      0.221,
+      0.779,
+      0.0
+    ],
+    [
+      0.333,
+      0.667,
+      0.0
+    ],
+    [
+      0.536,
+      0.464,
+      0.0
+    ],
+    [
+      0.265,
+      0.735,
+      0.0
+    ],
+    [
+      0.302,
+      0.698,
+      0.001
+    ],
+    [
+      0.186,
+      0.814,
+      0.0
+    ],
+    [
+      0.439,
+      0.561,
+      0.0
+    ],
+    [
+      0.567,
+      0.433,
+      0.0
+    ],
+    [
+      0.509,
+      0.491,
+      0.0
+    ],
+    [
+      0.448,
+      0.552,
+      0.0
+    ],
+    [
+      0.599,
+      0.401,
+      0.0
+    ],
+    [
+      0.54,
+      0.46,
+      0.0
+    ],
+    [
+      0.29,
+      0.71,
+      0.0
+    ],
+    [
+      0.655,
+      0.345,
+      0.0
+    ],
+    [
+      0.065,
+      0.934,
+      0.0
+    ],
+    [
+      0.771,
+      0.229,
+      0.0
+    ],
+    [
+      0.118,
+      0.882,
+      0.0
+    ],
+    [
+      0.78,
+      0.22,
+      0.0
+    ],
+    [
+      0.627,
+      0.373,
+      0.0
+    ],
+    [
+      0.503,
+      0.497,
+      0.0
+    ],
+    [
+      0.68,
+      0.32,
+      0.0
+    ],
+    [
+      0.044,
+      0.956,
+      0.0
+    ],
+    [
+      0.115,
+      0.885,
+      0.0
+    ],
+    [
+      0.275,
+      0.725,
+      0.0
+    ],
+    [
+      0.801,
+      0.199,
+      0.0
+    ],
+    [
+      0.066,
+      0.934,
+      0.0
+    ],
+    [
+      0.792,
+      0.208,
+      0.0
+    ],
+    [
+      0.206,
+      0.794,
+      0.0
+    ],
+    [
+      0.384,
+      0.616,
+      0.0
+    ],
+    [
+      0.374,
+      0.626,
+      0.0
+    ],
+    [
+      0.322,
+      0.678,
+      0.0
+    ],
+    [
+      0.137,
+      0.863,
+      0.0
+    ],
+    [
+      0.374,
+      0.626,
+      0.0
+    ],
+    [
+      0.384,
+      0.616,
+      0.0
+    ],
+    [
+      0.634,
+      0.366,
+      0.0
+    ],
+    [
+      0.775,
+      0.225,
+      0.0
+    ],
+    [
+      0.384,
+      0.616,
+      0.0
+    ],
+    [
+      0.438,
+      0.562,
+      0.0
+    ],
+    [
+      0.279,
+      0.721,
+      0.0
+    ],
+    [
+      0.634,
+      0.366,
+      0.0
+    ],
+    [
+      0.374,
+      0.626,
+      0.0
+    ],
+    [
+      0.438,
+      0.562,
+      0.0
+    ],
+    [
+      0.24,
+      0.76,
+      0.0
+    ],
+    [
+      0.384,
+      0.616,
+      0.0
+    ],
+    [
+      0.634,
+      0.366,
+      0.0
+    ],
+    [
+      0.384,
+      0.616,
+      0.0
+    ],
+    [
+      0.438,
+      0.562,
+      0.0
+    ],
+    [
+      0.634,
+      0.366,
+      0.0
+    ],
+    [
+      0.24,
+      0.76,
+      0.0
     ]
   ],
-  "presisi": 0.68,
-  "presisi_negatif": 0.5,
-  "presisi_netral": 0.68,
-  "presisi_positif": 0.88,
-  "recall": 0.53,
-  "recall_negatif": 0.26,
-  "recall_netral": 0.87,
-  "recall_positif": 0.47,
+  "presisi": 0.58,
+  "presisi_negatif": 0.56,
+  "presisi_netral": 0.55,
+  "presisi_positif": 0.62,
+  "recall": 0.52,
+  "recall_negatif": 0.42,
+  "recall_netral": 0.6,
+  "recall_positif": 0.55,
   "text_list": [
-    "parkir enak ga enak bayar tukang parkir ajaaaaaaaa",
-    "kurang puas segi parkir jalan parkir",
-    "nyaman dalam segi parkir muas hal sebab karna lagan parkir luas",
+    "tempat parkir padah mobil motor luas",
+    "nyaman kendala segi parkir luas",
+    "sat sun segi parkir lumayan tingkat nyaman unjung",
+    "dari segi parkir sat sun luas ramai unjung parkir sendiri",
+    "parkirarannya luas kadang penuh tukang parkir layan",
+    "turut dapat sat sun almeaty service meyediakan lahan parkir mumpuni",
     "turut dapat sat sun almeaty service mudah dapat parkir",
     "turut dapat sat sun almeaty service mudah dapat parkir",
+    "kalok motor fine aja sihh kalok mobil kalok high season gtu agak susah",
     "cukup loss pas kesini sepi ga puyeng parkir",
-    "space parkir oke kayak pas kesana rush hour agak crowded",
-    "tempat parkir luas banget gue sulit nyari parkir tempat parkir nyaman aja parkir",
-    "parkir sat and sun parkir lumayan mobil susah dalam parkit",
+    "pada guna motor mobil padat unjung susah",
+    "puas aja lahan parkir uda oke scale usaha segitu",
     "parkir lumayan luas parkir oke",
-    "mnurutku aman sih lahan parkir ga gede banget cumaa enough",
-    "oke oke aja sih alam parkir barang aman parkir gk nampung lumayan kendara",
-    "sih oke aja gak ngerasain - nyaman mungkin pakek motor oke aja sih",
+    "parkir segi tata bantu tukang parkir",
+    "parkir lumayan parkir luas ngga luas luas banget",
+    "parkir luas ga lus luas banget parkir membantuu",
+    "parkir so far gada sih kesini gantung kalo sepi ato rame sihh gw sering pas sepi aman ajaa",
+    "luass lahan parkir ga gede cumaa mnurut gw cukupp",
+    "loss lahan parkir ga gede cumaa mnurut gw cukupp lahh",
+    "udah sih turut ingat emng lahan gk luas udah oke banget kalok rame parkir pinggir jalan banget gapapa",
+    "loss lahan parkir ga gede cumaa mnurutku cukupp lahh",
     "turut parkir standart parkir kafe sih motor kalok mobil agak ribet",
-    "kesana gak alam markir gak enak sih oke oke aja seramenya dapet",
+    "oke parkir motor mobil masuk cuman kayak kalok rame agak susah kalik mobil",
+    "sih oke aja gak ngerasain - nyaman mungkin pakek motor oke aja sih",
+    "oke parkir motor mobil masuk cuman kayak kalok rame agak susah kalik mobil",
+    "oke parkir motor mobil masuk cuman kayak kalok rame agak susah kalik mobil",
+    "kalo parkir ga jugaa lega ga sempitt gtu aman",
     "kalo parkir sih turut agak luas kalo bawa mobil pas ramee",
-    "parkir jugaa amann ga kesana pas ramee bgt mah amannn",
     "oke parkir motor mobil masuk cuman kayak kalok rame agak susah kalik mobil",
-    "sat sun the almeaty service segi parkir baikkk okee luass kang parkir",
-    "sat sun the almeaty service segi parkir luas sihh cafenyaaaaa",
-    "sat sun the almeaty service segi parkir nya luass mobil",
-    "sih oke aja gak ngerasain - nyaman mungkin pakek motor oke aja sih",
+    "sat sun the almeaty service segi parkir luaaaaasssssss",
+    "turut parkir standart parkir kafe sih motor kalok mobil agak ribet",
     "sih oke aja gak ngerasain - nyaman mungkin pakek motor oke aja sih",
     "turut parkir standart parkir kafe sih motor kalok mobil agak ribet",
+    "sih oke aja gak ngerasain - nyaman mungkin pakek motor oke aja sih",
+    "sih oke aja gak ngerasain - nyaman mungkin pakek motor oke aja sih",
     "oke parkir motor mobil masuk cuman kayak kalok rame agak susah kalik mobil",
     "turut parkir standart parkir kafe sih motor kalok mobil agak ribet",
     "oke parkir motor mobil masuk cuman kayak kalok rame agak susah kalik mobil",
-    "oke parkir motor mobil masuk cuman kayak kalok rame agak susah kalik mobil",
-    "parkir oke brp satnsun gapernah parkir",
     "sih oke aja gak ngerasain - nyaman mungkin pakek motor oke aja sih",
+    "sat sun the almeaty service segi parkir luaaaaas",
     "sih oke aja gak ngerasain - nyaman mungkin pakek motor oke aja sih",
-    "turut parkir standart parkir kafe sih motor kalok mobil agak ribet",
-    "sat sun the almeaty service segi parkir oke bangett mayan luassssss",
-    "sat sun the almeaty service segi parkir okee kang parkir bayar",
-    "sat sun the almeaty service segi parkir mayan",
+    "sat sun the almeaty service segi parkir luass sihhh kereen maya mobilll",
     "sat sun the almeaty service segi parkir agak sempitt",
-    "sat sun the almeaty service segi parkir puas sih",
+    "sat sun the almeaty service segi parkir oke oke aja sihh",
+    "sat sun the almeaty service segi parkir okee mayan laaah",
+    "sat sun the almeaty service segi parkir mayan spacioussssss",
     "oke parkir motor mobil masuk cuman kayak kalok rame agak susah kalik mobil",
     "sat sun the almeaty service segi parkir luaass",
-    "sat sun the almeaty service segi parkir spacious",
-    "sat sun the almeaty service segi parkir mobil sih tempat",
-    "sih oke aja gak ngerasain - nyaman mungkin pakek motor oke aja sih",
-    "sat sun the almeaty service segi parkir oke sihh mayan luass",
-    "sat sun the almeaty service segi parkir kang parkir",
-    "oke parkir motor mobil masuk cuman kayak kalok rame agak susah kalik mobil",
-    "sih oke aja gak ngerasain - nyaman mungkin pakek motor oke aja sih",
-    "tempat parkir spacious kalo ga rame banget aman enak aja parkir",
-    "sat sun the almeaty service segi parkir luas",
-    "tempat parkir sih turut agak luas kalo bawa mobil pas crowded",
-    "sih oke aja gak ngerasain - nyaman mungkin pakek motor oke aja sih",
-    "oke parkir motor mobil masuk cuman kayak kalok rame agak susah kalik mobil",
-    "sat sun the almeaty service segi parkir puasss mayan luas",
-    "parkir oke aja mungkin kalo aga ribet pas rame aja lebih okay",
+    "tiap kesini rame agak riweuh aja parkir motor tp sebenernya cm satnsun rame aja",
+    "sat sun the almeaty service segi parkir luas memang",
     "turut parkir standart parkir kafe sih motor kalok mobil agak ribet",
+    "sat sun the almeaty service segi parkir mayan luasss",
+    "sat sun the almeaty service segi parkir luamyan luaaas",
     "oke parkir motor mobil masuk cuman kayak kalok rame agak susah kalik mobil",
+    "sih oke aja gak ngerasain - nyaman mungkin pakek motor oke aja sih",
+    "parkir aman pas ramean aga susa dikit parkir mas wajar",
+    "sat sun the almeaty service segi parkir luas sih mobil brio",
+    "sat sun the almeaty service segi parkir oke luas mayan",
+    "okay aja pas satnsun gatau rame agak reng aja tp still okay",
+    "tempat parkir nyaman padat kendara roda empat nyaman",
+    "sat sun the almeaty service segi parkir luasss",
     "kalo parkir sih turut agak luas kalo bawa mobil pas ramee",
-    "oke parkir motor mobil masuk cuman kayak kalok rame agak susah kalik mobil",
-    "parkir ga mobil abang parkir galak banget jutek"
+    "sih oke aja gak ngerasain - nyaman mungkin pakek motor oke aja sih",
+    "loss lahan parkir ga gede cumaa mnurut gw cukupp lahh",
+    "sat sun the almeaty service segi parkir luass",
+    "sat sun the almeaty service segi parkir liah luas",
+    "tempat parkir motor almeaty service jamin aman milik tukang parkir ramah parkir mobil agak luas ramai",
+    "saya harap sat sun the almeaty service kembang strategi tingkat parkir mobil alam unjung",
+    "walaupun alami sulit dalam parkir mobil puas layan fasilitas sat sun the almeaty service",
+    "dari segi parkir sat sun the almeaty service mudah unjung kendara",
+    "lahan parkir luas organisir lengkap tugas parkir nyaman aman kendara",
+    "area parkir luas aman kendara motor mobil",
+    "tempat parkir luas unjung",
+    "area parkir luas jaga parkir kendara",
+    "alam parkir lahan parkir luas",
+    "tempat parkir mobil sat sun almeaty service pada agak sempit padat",
+    "alam parkir sat sun almeaty service positif hambat",
+    "di sat sun almeaty service parkir motor jamin aman",
+    "parkir sat sun almeaty service mudah akses perhati padat",
+    "alam parkir sat sun almeaty service positif hambat",
+    "tempat parkir luas aman buat nyaman tukang parkir",
+    "parkir dukung tukang parkir buat parkir mudah",
+    "parkir luas mudah akses tukang parkir",
+    "parkir luas aman hadir tukang parkir ramah",
+    "parkir luas aman bantu tukang parkir layan",
+    "parkir luas tukang parkir ramah nyaman parkir kendara",
+    "parkir luas aman tukang parkir nyaman parkir kendara",
+    "tempat parkir spacious tukang parkir aman parkir kendara",
+    "parkir aman luas jaga layan nyaman parkir",
+    "tempat parkir luas tata rapi tukang parkir aman parkir",
+    "lahan parkir pada motor mobil mungkin agak sesak ramai",
+    "di sat sun almeaty service parkir motor jamin aman",
+    "bagi guna motor parkir pada khawatir",
+    "tempat parkir luas tampung kendara",
+    "parkir sat sun almeaty service mudah akses perhati padat",
+    "tempat parkir motor sat sun almeaty service organisir aman nyaman",
+    "tempat parkir mobil sat sun almeaty service andal agak sempit padat",
+    "tempat parkir mobil sat sun almeaty service pada agak sempit padat",
+    "seluruh parkir sat sun almeaty service muas luas",
+    "di sat sun almeaty service parkir motor jamin aman",
+    "seluruh parkir sat sun almeaty service muas meski ramai sabar",
+    "parkir mobil sat sun almeaty service agak batas penuh",
+    "di sat sun almeaty service parkir motor jamin",
+    "parkir motor sat sun almeaty service nyaman aman jaga parkir",
+    "alam parkir sat sun almeaty service positif hambat signifikan",
+    "parkir motor sat sun almeaty service nyaman jamin jaga parkir",
+    "di sat sun almeaty service parkir motor jamin aman",
+    "di sat sun almeaty service parkir motor jamin aman",
+    "tempat parkir motor sat sun almeaty service organisir aman nyaman",
+    "seluruh parkir sat sun almeaty service muas batas ramai",
+    "alam parkir sat sun almeaty service positif hambat",
+    "parkir sat sun almeaty service mudah akses perhati padat",
+    "parkir mobil sat sun almeaty service agak batas penuh",
+    "parkir mudah akses luas motor mobil",
+    "alam parkir senang kendala",
+    "parkir motor sat sun almeaty service nyaman jamin lengkap jaga parkir",
+    "tempat parkir luas strategis cocok kendara pribadi",
+    "tempat parkir luas tampung kendara",
+    "parkir nyaman mungkin agak sesak unjung",
+    "tempat parkir motor sat sun almeaty service organisir aman nyaman",
+    "seluruh parkir sat sun almeaty service muas luas",
+    "banding parkir sat sun the almeaty service atur awat area parkir bersih tata cipta kesan positif unjung awal datang",
+    "lama unjung sat sun the almeaty service alami kendala kait parkir semua jalan lancar ekspektasi unjung",
+    "saya bantu tugas parkir sat sun the almeaty service informasi arah masuk keluar area parkir",
+    "tempat parkir sat sun the almeaty service rancang akomodasi unjung butuh sedia area parkir difabel keluarga anak kecil",
+    "tugas parkir sat sun the almeaty service profesional dalam atur lintas kendara arah unjung",
+    "atur parkir sat sun the almeaty service organisir efisien undang unjung kelola parkir atas padat",
+    "fasilitas parkir sat sun the almeaty service lengkap tanda parkir mudah ikut hal mudah unjung temu kendara pulang",
+    "layan tugas parkir sat sun the almeaty service sigap dalam bantu arah mereka unjung atas kait parkir",
+    "informasi fasilitas parkir sat sun the almeaty service lengkap mudah akses website brosur sedia lokasi hal unjung paham prosedur parkir",
+    "tugas parkir sat sun the almeaty service profesional dalam atur lintas kendara arah unjung mereka jaga lancar proses parkir",
+    "saya bantu informasi jam operasional parkir sat sun the almeaty service hal atur jadwal kunjung",
+    "suasana parkir sat sun the almeaty service bersih tata cipta kesan positif unjung awal datang hal tambah nyaman parkir",
+    "informasi fasilitas parkir sat sun the almeaty service lengkap mudah akses website brosur sedia lokasi hal unjung paham prosedur parkir",
+    "saya aman tinggal kendara parkir sat sun the almeaty service",
+    "bersih area parkir sat sun the almeaty service jaga",
+    "tugas parkir sat sun the almeaty service ramah",
+    "atur parkir efisien sat sun the almeaty service buat lintas lancar",
+    "parkir sat sun the almeaty service alam positif",
+    "sistem bayar parkir sat sun the almeaty service mudah cepat",
+    "tempat parkir mudah akses sandang disabilitas sat sun the almeaty service apresiasi",
+    "bersih rapi area parkir sat sun the almeaty service buat kes",
+    "ada tugas parkir sigap sat sun the almeaty service buat unjung jaga",
+    "tarif parkir wajar sat sun the almeaty service nilai",
+    "tempat parkir aman jaga sat sun the almeaty service percaya",
+    "atur parkir sistematis sat sun the almeaty service cipta lingkung tertib",
+    "sedia area parkir pada unjung sat sun the almeaty service",
+    "parkir sat sun the almeaty service mudah akses keluar",
+    "alam parkir lancar sat sun the almeaty service nyaman kunjung",
+    "area parkir rancang aman privasi sat sun the almeaty service",
+    "parkir sat sun the almeaty service alam mudah nyaman",
+    "tidak sulit dalam parkir cocok kendara sat sun the almeaty service",
+    "area parkir tata rapi bersih sat sun the almeaty service cipta kesan positif",
+    "parkir sat sun the almeaty service nyaman awal kunjung",
+    "area parkir awat sat sun the almeaty service cermin perhati detail",
+    "parkir sat sun the almeaty service kesan profesionalitas",
+    "area parkir bersih awat sat sun the almeaty service",
+    "atur parkir efisien sat sun the almeaty service hemat unjung",
+    "tidak dalam keluar masuk area parkir sat sun the almeaty service",
+    "parkir sat sun the almeaty service aman kunjung",
+    "parkir sat sun the almeaty service kesan positif",
+    "parkir sat sun the almeaty service alam mudah nyaman",
+    "area parkir ramah sandang disabilitas sat sun the almeaty service",
+    "parkir sat sun the almeaty service solusi efektif unjung",
+    "area parkir desain kurang macet sat sun the almeaty service",
+    "sat sun the almeaty service milik sistem parkir efisien makan",
+    "alam unjung sat sun the almeaty service senang akses mudah tuju parkir sedia",
+    "saya lega sat sun the almeaty service sedia parkir repot parkir area",
+    "tempat parkir bersih atur sat sun the almeaty service perhati nyaman unjung segi fasilitas sedia",
+    "saya senang pilih parkir sedia sat sun the almeaty service mudah akses unjung kendara",
+    "tempat parkir luas aman sat sun the almeaty service buat puas alam kunjung nyaman atur",
+    "saya bantu sedia shuttle bus tuju area parkir sat sun the almeaty service mudah unjung kendara",
+    "atur parkir sat sun the almeaty service cermin profesionalisme kelola dalam layan unjung",
+    "dengan sedia area parkir bersih sat sun the almeaty service unjung nikmat suasana nyaman organisir kunjung",
+    "tempat parkir mudah akses sat sun the almeaty service nyaman tambah unjung kendara",
+    "dengan tunjuk arah tuju parkir sat sun the almeaty service percaya dalam jajah area",
+    "saya bantu fasilitas parkir ramah lingkung sat sun the almeaty service komitmen lanjut",
+    "saya bantu area parkir strategis sat sun the almeaty service mudah navigasi unjung kunjung",
+    "dengan area parkir ramah keluarga sat sun the almeaty service unjung nikmat keluarga nyaman",
+    "saya bantu sedia area parkir fasilitas utama sat sun the almeaty service mudah akses unjung",
+    "dengan tugas parkir handal sat sun the almeaty service aman tinggal kendara kunjung",
+    "tempat parkir bersih nyaman sat sun the almeaty service nilai alam kunjung senang",
+    "dengan area parkir bersih awat sat sun the almeaty service buat harga unjung",
+    "dengan tugas parkir handal sat sun the almeaty service aman tinggal kendara kunjung",
+    "saya bantu sedia area parkir fasilitas utama sat sun the almeaty service mudah akses unjung",
+    "alam parkir lancar sat sun the almeaty service buat puas nyaman kunjung",
+    "saya bantu sedia fasilitas parkir ramah disabilitas sat sun the almeaty service peduli aksesibilitas",
+    "saya bantu sedia area parkir fasilitas utama sat sun the almeaty service mudah akses unjung",
+    "ada area parkir ramah hewan pelihara sat sun the almeaty service inklusivitas unjung",
+    "dengan fasilitas parkir lengkap sat sun the almeaty service buat unjung bantu organisir kunjung",
+    "alam parkir lancar sat sun the almeaty service buat puas nyaman kunjung",
+    "dengan tugas parkir handal sat sun the almeaty service aman tinggal kendara kunjung",
+    "ada area parkir ramah hewan pelihara sat sun the almeaty service inklusivitas unjung",
+    "tempat parkir bersih nyaman sat sun the almeaty service nilai alam kunjung senang organisir",
+    "saya bantu sedia area parkir fasilitas utama sat sun the almeaty service mudah akses unjung",
+    "alam parkir lancar sat sun the almeaty service buat puas nyaman kunjung",
+    "saya bantu sedia area parkir fasilitas utama sat sun the almeaty service mudah akses unjung",
+    "ada area parkir ramah hewan pelihara sat sun the almeaty service inklusivitas unjung",
+    "alam parkir lancar sat sun the almeaty service buat puas nyaman kunjung",
+    "tempat parkir bersih nyaman sat sun the almeaty service nilai alam kunjung senang organisir"
   ],
-  "tneg": 5,
-  "tnet": 27,
-  "tpos": 7
+  "tneg": 50,
+  "tnet": 45,
+  "tpos": 18
 }
