@@ -1,42 +1,42 @@
 {
   "jumlah_tweets": 998,
-  "jumlah_sp": [
+  "jumlah_p": [
     419,
     373,
     410,
     503,
     412
   ],
-  "jumlah_p": [
-    519,
+  "jumlah_c": [
+    520,
     460,
     554,
     476,
     498
   ],
-  "jumlah_kp": [
-    60,
+  "jumlah_tp": [
+    59,
     165,
     34,
     19,
     88
   ],
-  "persentase_sp": [
+  "persentase_p": [
     41.98,
     37.37,
     41.08,
     50.4,
     41.28
   ],
-  "persentase_p": [
-    52.0,
+  "persentase_c": [
+    52.1,
     46.09,
     55.51,
     47.7,
     49.9
   ],
-  "persentase_kp": [
-    6.01,
+  "persentase_tp": [
+    5.91,
     16.53,
     3.41,
     1.9,
@@ -107,63 +107,63 @@
   "frekuensi_neg": [
     [
       "makan",
-      675
+      345
     ],
     [
       "sun",
-      642
+      326
     ],
     [
       "sat",
-      638
+      325
     ],
     [
       "almeaty",
-      603
+      298
     ],
     [
       "the",
-      591
+      289
     ],
     [
       "service",
-      575
+      279
     ],
     [
       "porsi",
-      387
-    ],
-    [
-      "kualitas",
-      374
+      219
     ],
     [
       "harga",
-      362
-    ],
-    [
-      "unjung",
       206
     ],
     [
-      "alam",
-      185
+      "kualitas",
+      189
+    ],
+    [
+      "unjung",
+      105
     ],
     [
       "besar",
-      170
+      99
     ],
     [
-      "enak",
-      167
+      "alam",
+      95
     ],
     [
       "muas",
-      136
+      76
     ],
     [
       "hidang",
-      125
+      75
+    ],
+    [
+      "buat",
+      62
     ]
   ]
 }

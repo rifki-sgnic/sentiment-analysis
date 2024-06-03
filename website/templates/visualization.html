@@ -63,7 +63,7 @@
             <div class="row row-cols-3 justify-content-center">
               {% for i in range(0, 5) %}
               <div class="col">
-                <h5 class="text-center">Pie Chart sentimen pada data Q{{ loop.index }}. <br />{{ data.jumlah_sp[i] }} sentimen Sangat Puas ({{ data.persentase_sp[i] }} %) <br /> {{ data.jumlah_p[i] }} sentimen Puas ({{ data.persentase_p[i] }} %) <br /> {{ data.jumlah_kp[i] }} sentimen Kurang Puas ({{ data.persentase_kp[i] }} %)</h5>
+                <h5 class="text-center">Pie Chart sentimen pada data Q{{ loop.index }}. <br />{{ data.jumlah_p[i] }} sentimen Puas ({{ data.persentase_p[i] }} %) <br /> {{ data.jumlah_c[i] }} sentimen Cukup ({{ data.persentase_c[i] }} %) <br /> {{ data.jumlah_tp[i] }} sentimen Tidak Puas ({{ data.persentase_tp[i] }} %)</h5>
                 <div>
                   <img src="../static/visualisasi/pie_sentimen_{{ loop.index }}.png" alt="piechart sentimen" class="img-fluid mx-auto d-block">
                 </div>

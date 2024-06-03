@@ -103,60 +103,35 @@ var table_dataPreprocessing = $('#table_dataPreprocessing').DataTable({
             data: null,
             className: 'text-left',
             "render": function (data, type, full, meta) {
-                return data.clean_answer_1 +`<br />
-                <div class="d-flex justify-content-center">
-                    <button type="button" value="modalTweetAsli" class="btn btn-primary btn-sm mt-2">
-                        <i class="bx bx-search"></i> Detail Teks
-                    </button>
-                </div>`
+                return data.clean_answer_1
             },
         },
         {
             data: null,
             className: 'text-left',
             "render": function (data, type, full, meta) {
-                return data.clean_answer_2 +`<br />
-                <div class="d-flex justify-content-center">
-                    <button type="button" value="modalTweetAsli" class="btn btn-primary btn-sm mt-2">
-                        <i class="bx bx-search"></i> Detail Teks
-                    </button>
-                </div>`
+                return data.clean_answer_2
             },
         },
         {
             data: null,
             className: 'text-left',
             "render": function (data, type, full, meta) {
-                return data.clean_answer_3 +`<br />
-                <div class="d-flex justify-content-center">
-                    <button type="button" value="modalTweetAsli" class="btn btn-primary btn-sm mt-2">
-                        <i class="bx bx-search"></i> Detail Teks
-                    </button>
-                </div>`
+                return data.clean_answer_3
             },
         },
         {
             data: null,
             className: 'text-left',
             "render": function (data, type, full, meta) {
-                return data.clean_answer_4 +`<br />
-                <div class="d-flex justify-content-center">
-                    <button type="button" value="modalTweetAsli" class="btn btn-primary btn-sm mt-2">
-                        <i class="bx bx-search"></i> Detail Teks
-                    </button>
-                </div>`
+                return data.clean_answer_4
             },
         },
         {
             data: null,
             className: 'text-left',
             "render": function (data, type, full, meta) {
-                return data.clean_answer_5 +`<br />
-                <div class="d-flex justify-content-center">
-                    <button type="button" value="modalTweetAsli" class="btn btn-primary btn-sm mt-2">
-                        <i class="bx bx-search"></i> Detail Teks
-                    </button>
-                </div>`
+                return data.clean_answer_5
             },
         },
         { 
@@ -388,7 +363,7 @@ var table_dataWithLabel = $('#table_dataWithLabel').DataTable({
                 return data.clean_text +`<br />
                 <div class="d-flex justify-content-center">
                     <button type="button" value="modalTweetAsli" class="btn btn-primary btn-sm mt-2">
-                        <i class="bx bx-search"></i> Lihat Tweet Asli
+                        <i class="bx bx-search"></i> Lihat Teks Asli
                     </button>
                 </div>
                 `
@@ -533,12 +508,7 @@ var table_dataTrain = $('#table_dataTrainQ1').DataTable({
             data: null,
             className: 'text-left',
             "render": function (data, type, full, meta) {
-                return data.clean_text +`<br />
-                <div class="d-flex justify-content-center">
-                    <button type="button" value="modalTweetAsli" class="btn btn-primary btn-sm float-right mt-2">
-                        <i class="fa fa-search"></i> Lihat Tweet Asli
-                    </button>
-                </div>`
+                return data.clean_text
             },
         },
         { 
@@ -597,12 +567,7 @@ var table_dataTrain = $('#table_dataTrainQ2').DataTable({
             data: null,
             className: 'text-left',
             "render": function (data, type, full, meta) {
-                return data.clean_text +`<br />
-                <div class="d-flex justify-content-center">
-                    <button type="button" value="modalTweetAsli" class="btn btn-primary btn-sm float-right mt-2">
-                        <i class="fa fa-search"></i> Lihat Tweet Asli
-                    </button>
-                </div>`
+                return data.clean_text
             },
         },
         { 
@@ -662,12 +627,7 @@ var table_dataTrain = $('#table_dataTrainQ3').DataTable({
             data: null,
             className: 'text-left',
             "render": function (data, type, full, meta) {
-                return data.clean_text +`<br />
-                <div class="d-flex justify-content-center">
-                    <button type="button" value="modalTweetAsli" class="btn btn-primary btn-sm float-right mt-2">
-                        <i class="fa fa-search"></i> Lihat Tweet Asli
-                    </button>
-                </div>`
+                return data.clean_text
             },
         },
         { 
@@ -727,12 +687,7 @@ var table_dataTrain = $('#table_dataTrainQ4').DataTable({
             data: null,
             className: 'text-left',
             "render": function (data, type, full, meta) {
-                return data.clean_text +`<br />
-                <div class="d-flex justify-content-center">
-                    <button type="button" value="modalTweetAsli" class="btn btn-primary btn-sm float-right mt-2">
-                        <i class="fa fa-search"></i> Lihat Tweet Asli
-                    </button>
-                </div>`
+                return data.clean_text
             },
         },
         { 
@@ -792,12 +747,7 @@ var table_dataTrain = $('#table_dataTrainQ5').DataTable({
             data: null,
             className: 'text-left',
             "render": function (data, type, full, meta) {
-                return data.clean_text +`<br />
-                <div class="d-flex justify-content-center">
-                    <button type="button" value="modalTweetAsli" class="btn btn-primary btn-sm float-right mt-2">
-                        <i class="fa fa-search"></i> Lihat Tweet Asli
-                    </button>
-                </div>`
+                return data.clean_text
             },
         },
         { 
@@ -858,12 +808,7 @@ var table_dataTest = $('#table_dataTestQ1').DataTable({
             data: null,
             className: 'text-left',
             "render": function (data, type, full, meta) {
-                return data.clean_text +`<br />
-                <div class="d-flex justify-content-center">
-                    <button type="button" value="modalTweetAsli" class="btn btn-primary btn-sm float-right mt-2">
-                        <i class="fa fa-search"></i> Lihat Tweet Asli
-                    </button>
-                </div>`
+                return data.clean_text
             },
         },
         { 
@@ -923,12 +868,7 @@ var table_dataTest = $('#table_dataTestQ2').DataTable({
             data: null,
             className: 'text-left',
             "render": function (data, type, full, meta) {
-                return data.clean_text +`<br />
-                <div class="d-flex justify-content-center">
-                    <button type="button" value="modalTweetAsli" class="btn btn-primary btn-sm float-right mt-2">
-                        <i class="fa fa-search"></i> Lihat Tweet Asli
-                    </button>
-                </div>`
+                return data.clean_text
             },
         },
         { 
@@ -988,12 +928,7 @@ var table_dataTest = $('#table_dataTestQ3').DataTable({
             data: null,
             className: 'text-left',
             "render": function (data, type, full, meta) {
-                return data.clean_text +`<br />
-                <div class="d-flex justify-content-center">
-                    <button type="button" value="modalTweetAsli" class="btn btn-primary btn-sm float-right mt-2">
-                        <i class="fa fa-search"></i> Lihat Tweet Asli
-                    </button>
-                </div>`
+                return data.clean_text
             },
         },
         { 
@@ -1053,12 +988,7 @@ var table_dataTest = $('#table_dataTestQ4').DataTable({
             data: null,
             className: 'text-left',
             "render": function (data, type, full, meta) {
-                return data.clean_text +`<br />
-                <div class="d-flex justify-content-center">
-                    <button type="button" value="modalTweetAsli" class="btn btn-primary btn-sm float-right mt-2">
-                        <i class="fa fa-search"></i> Lihat Tweet Asli
-                    </button>
-                </div>`
+                return data.clean_text
             },
         },
         { 
@@ -1118,12 +1048,7 @@ var table_dataTest = $('#table_dataTestQ5').DataTable({
             data: null,
             className: 'text-left',
             "render": function (data, type, full, meta) {
-                return data.clean_text +`<br />
-                <div class="d-flex justify-content-center">
-                    <button type="button" value="modalTweetAsli" class="btn btn-primary btn-sm float-right mt-2">
-                        <i class="fa fa-search"></i> Lihat Tweet Asli
-                    </button>
-                </div>`
+                return data.clean_text
             },
         },
         { 
