@@ -199,6 +199,9 @@ class SplittingController:
         elif rasio == '2:8':
             rasio_train = 0.8
 
+        elif rasio == '3:7':
+            rasio_train = 0.7
+
         # Select data Q berlabel
         instance_model = Models('SELECT * FROM tbl_data_clean WHERE sentiment_1 IS NOT NULL AND sentiment_2 IS NOT NULL AND sentiment_3 IS NOT NULL AND sentiment_4 IS NOT NULL AND sentiment_5 IS NOT NULL')
         data_withLabel = instance_model.select()

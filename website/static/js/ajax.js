@@ -1100,7 +1100,7 @@ $('#split_data').click(function() {
     // validasi data split
     $('#validasi_split').addClass('d-none');
     $('#validasi_rasio').addClass('d-none');
-    if(jumlah_data_with_label > 0 && form_dataArray[0]['name'].trim() == 'rasio' && (form_dataArray[0]['value'] == '1:9' || form_dataArray[0]['value'] == '2:8')) {
+    if(jumlah_data_with_label > 0 && form_dataArray[0]['name'].trim() == 'rasio' && (form_dataArray[0]['value'] == '1:9' || form_dataArray[0]['value'] == '2:8' || form_dataArray[0]['value'] == '3:7')) {
         var content =	"";
         
         $.ajax({

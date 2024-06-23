@@ -26,10 +26,10 @@ function cariRasio(kode) {
   var rasio_hasil_test = 0;
   var rasio_hasil_train = 0;
 
-  if (kode == "2:8") {
-    // 2:8
-    rasio_hasil_test = Math.floor(jumlah_data * 0.2);
-    rasio_hasil_train = Math.ceil(jumlah_data * 0.8);
+  if (kode == "3:7") {
+    // 3:7
+    rasio_hasil_test = Math.floor(jumlah_data * 0.3);
+    rasio_hasil_train = Math.ceil(jumlah_data * 0.7);
     $("#rasio1-hasil").html(
       '<i class="fa fa-arrow-right mr-3"></i>' +
         rasio_hasil_test +
@@ -38,12 +38,27 @@ function cariRasio(kode) {
         " Data Latih"
     );
     $("#rasio2-hasil").empty();
+    $("#rasio3-hasil").empty();
+  } else if (kode == "2:8") {
+    // 1:9
+    rasio_hasil_test = Math.floor(jumlah_data * 0.2);
+    rasio_hasil_train = Math.ceil(jumlah_data * 0.8);
+    $("#rasio1-hasil").empty();
+    $("#rasio3-hasil").empty();
+    $("#rasio2-hasil").html(
+      '<i class="fa fa-arrow-right mr-3"></i>' +
+        rasio_hasil_test +
+        " Data Uji & " +
+        rasio_hasil_train +
+        " Data Latih"
+    );
   } else if (kode == "1:9") {
     // 1:9
     rasio_hasil_test = Math.floor(jumlah_data * 0.1);
     rasio_hasil_train = Math.ceil(jumlah_data * 0.9);
     $("#rasio1-hasil").empty();
-    $("#rasio2-hasil").html(
+    $("#rasio2-hasil").empty();
+    $("#rasio3-hasil").html(
       '<i class="fa fa-arrow-right mr-3"></i>' +
         rasio_hasil_test +
         " Data Uji & " +

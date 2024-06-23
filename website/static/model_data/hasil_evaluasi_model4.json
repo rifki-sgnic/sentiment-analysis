@@ -1,81 +1,19 @@
 {
-  "akurasi": 0.54,
-  "fneg1": 34,
-  "fneg2": 3,
-  "fnet1": 49,
-  "fnet2": 2,
+  "akurasi": 0.53,
+  "fneg1": 22,
+  "fneg2": 0,
+  "fnet1": 23,
+  "fnet2": 0,
   "fpos1": 2,
-  "fpos2": 2,
+  "fpos2": 0,
   "jumlah_kelas": 3,
   "label_list": [
-    "Puas",
     "Cukup",
-    "Puas",
-    "Cukup",
-    "Cukup",
-    "Puas",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Puas",
-    "Puas",
-    "Cukup",
-    "Puas",
-    "Cukup",
-    "Cukup",
-    "Puas",
-    "Cukup",
-    "Cukup",
-    "Puas",
-    "Cukup",
-    "Cukup",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Cukup",
-    "Puas",
-    "Cukup",
-    "Puas",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Puas",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Puas",
-    "Tidak Puas",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Puas",
-    "Puas",
     "Tidak Puas",
     "Cukup",
     "Puas",
-    "Puas",
     "Cukup",
     "Cukup",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Cukup",
-    "Cukup",
-    "Puas",
-    "Puas",
-    "Cukup",
-    "Puas",
-    "Puas",
-    "Puas",
     "Cukup",
     "Cukup",
     "Puas",
@@ -85,26 +23,23 @@
     "Puas",
     "Cukup",
     "Puas",
+    "Cukup",
     "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Cukup",
+    "Puas",
+    "Puas",
+    "Puas",
+    "Cukup",
     "Tidak Puas",
-    "Puas",
-    "Cukup",
-    "Puas",
     "Cukup",
     "Cukup",
-    "Puas",
-    "Cukup",
-    "Cukup",
-    "Puas",
-    "Puas",
-    "Tidak Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Cukup",
-    "Puas",
-    "Puas",
-    "Puas",
     "Puas",
     "Puas",
     "Cukup",
@@ -112,6 +47,8 @@
     "Puas",
     "Cukup",
     "Cukup",
+    "Cukup",
+    "Puas",
     "Puas",
     "Cukup",
     "Cukup",
@@ -122,28 +59,8 @@
     "Cukup",
     "Puas",
     "Cukup",
-    "Cukup",
-    "Puas",
     "Puas",
     "Cukup",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Puas",
-    "Puas",
-    "Cukup",
-    "Cukup",
-    "Puas",
-    "Puas",
-    "Cukup",
-    "Cukup",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
     "Cukup",
     "Cukup",
     "Puas",
@@ -152,39 +69,13 @@
     "Cukup",
     "Cukup",
     "Cukup",
-    "Cukup",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Puas",
-    "Cukup",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Cukup",
-    "Puas",
-    "Puas",
-    "Cukup",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Puas",
-    "Cukup",
-    "Puas",
-    "Puas",
-    "Cukup",
-    "Puas",
-    "Cukup",
     "Puas",
     "Cukup",
     "Cukup",
     "Puas",
     "Puas",
-    "Puas",
+    "Cukup",
+    "Cukup",
     "Puas",
     "Puas",
     "Cukup",
@@ -196,104 +87,54 @@
     "Cukup",
     "Cukup",
     "Puas",
+    "Puas",
+    "Puas",
+    "Puas",
     "Cukup",
     "Puas",
     "Puas",
     "Puas",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Cukup",
+    "Puas",
     "Puas",
     "Cukup",
     "Puas",
     "Cukup",
-    "Puas",
-    "Puas",
     "Cukup",
-    "Cukup"
+    "Puas",
+    "Puas",
+    "Puas",
+    "Puas"
   ],
   "predict_label": [
     "Tidak Puas",
-    "Puas",
     "Tidak Puas",
-    "Tidak Puas",
-    "Tidak Puas",
-    "Cukup",
-    "Tidak Puas",
     "Cukup",
-    "Puas",
     "Tidak Puas",
-    "Cukup",
     "Tidak Puas",
-    "Puas",
     "Tidak Puas",
     "Tidak Puas",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Cukup",
     "Cukup",
-    "Cukup",
-    "Puas",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Tidak Puas",
-    "Tidak Puas",
-    "Tidak Puas",
     "Tidak Puas",
     "Tidak Puas",
     "Tidak Puas",
-    "Tidak Puas",
-    "Tidak Puas",
-    "Tidak Puas",
     "Cukup",
-    "Cukup",
-    "Tidak Puas",
-    "Tidak Puas",
     "Tidak Puas",
-    "Tidak Puas",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Cukup",
     "Cukup",
     "Cukup",
-    "Cukup",
-    "Cukup",
-    "Cukup",
     "Tidak Puas",
-    "Puas",
-    "Cukup",
-    "Cukup",
     "Tidak Puas",
-    "Cukup",
-    "Cukup",
-    "Cukup",
-    "Cukup",
     "Tidak Puas",
     "Cukup",
-    "Tidak Puas",
-    "Tidak Puas",
     "Cukup",
     "Tidak Puas",
     "Tidak Puas",
     "Cukup",
     "Cukup",
-    "Tidak Puas",
-    "Tidak Puas",
-    "Tidak Puas",
     "Cukup",
-    "Tidak Puas",
-    "Tidak Puas",
     "Tidak Puas",
     "Cukup",
     "Tidak Puas",
@@ -302,324 +143,103 @@
     "Tidak Puas",
     "Tidak Puas",
     "Tidak Puas",
-    "Tidak Puas",
     "Cukup",
     "Tidak Puas",
-    "Tidak Puas",
+    "Cukup",
     "Tidak Puas",
     "Tidak Puas",
     "Tidak Puas",
     "Cukup",
     "Tidak Puas",
-    "Cukup",
     "Tidak Puas",
     "Tidak Puas",
     "Cukup",
     "Tidak Puas",
-    "Tidak Puas",
     "Cukup",
-    "Tidak Puas",
     "Tidak Puas",
     "Tidak Puas",
     "Tidak Puas",
-    "Tidak Puas",
-    "Tidak Puas",
-    "Tidak Puas",
     "Cukup",
-    "Tidak Puas",
-    "Tidak Puas",
     "Cukup",
     "Cukup",
     "Cukup",
-    "Tidak Puas",
-    "Tidak Puas",
-    "Tidak Puas",
     "Cukup",
     "Tidak Puas",
     "Tidak Puas",
     "Tidak Puas",
-    "Tidak Puas",
     "Cukup",
-    "Tidak Puas",
-    "Tidak Puas",
     "Cukup",
     "Cukup",
     "Tidak Puas",
-    "Tidak Puas",
     "Cukup",
-    "Tidak Puas",
-    "Tidak Puas",
-    "Tidak Puas",
     "Cukup",
     "Tidak Puas",
+    "Cukup",
     "Tidak Puas",
     "Tidak Puas",
     "Tidak Puas",
     "Tidak Puas",
     "Cukup",
-    "Tidak Puas",
     "Tidak Puas",
-    "Tidak Puas",
     "Cukup",
-    "Tidak Puas",
-    "Tidak Puas",
-    "Tidak Puas",
-    "Tidak Puas",
-    "Tidak Puas",
     "Tidak Puas",
     "Tidak Puas",
-    "Cukup",
     "Tidak Puas",
-    "Tidak Puas",
     "Cukup",
     "Cukup",
+    "Tidak Puas",
     "Tidak Puas",
     "Cukup",
     "Tidak Puas",
     "Tidak Puas",
     "Cukup",
-    "Cukup",
-    "Cukup",
+    "Tidak Puas",
     "Cukup",
     "Cukup",
-    "Tidak Puas",
     "Cukup",
-    "Tidak Puas",
     "Cukup",
     "Cukup",
-    "Tidak Puas",
     "Cukup",
-    "Tidak Puas",
     "Cukup",
-    "Tidak Puas",
     "Cukup",
-    "Tidak Puas",
     "Cukup",
     "Cukup",
-    "Tidak Puas",
     "Cukup",
-    "Tidak Puas",
-    "Tidak Puas",
     "Cukup",
-    "Tidak Puas",
-    "Tidak Puas",
     "Cukup",
-    "Tidak Puas",
-    "Tidak Puas",
-    "Tidak Puas",
     "Cukup",
     "Cukup",
     "Cukup"
   ],
   "predict_prob": [
     [
-      0.781,
-      0.214,
-      0.005
+      0.433,
+      0.204,
+      0.364
     ],
     [
-      0.146,
-      0.066,
-      0.787
+      0.551,
+      0.046,
+      0.402
     ],
     [
-      0.681,
-      0.172,
-      0.147
-    ],
-    [
-      0.594,
-      0.391,
-      0.015
-    ],
-    [
-      0.762,
-      0.009,
-      0.228
-    ],
-    [
-      0.176,
-      0.824,
+      0.483,
+      0.516,
       0.001
     ],
     [
-      0.66,
-      0.34,
+      0.687,
+      0.313,
       0.0
     ],
     [
-      0.0,
-      0.72,
-      0.28
-    ],
-    [
-      0.0,
-      0.031,
-      0.969
-    ],
-    [
-      0.815,
-      0.185,
-      0.0
-    ],
-    [
-      0.001,
-      0.999,
-      0.0
-    ],
-    [
-      0.941,
-      0.033,
-      0.025
-    ],
-    [
-      0.447,
-      0.004,
-      0.549
-    ],
-    [
-      0.577,
-      0.0,
-      0.423
+      0.925,
+      0.045,
+      0.031
     ],
     [
       1.0,
       0.0,
-      0.0
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.054,
-      0.946,
-      0.0
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.253,
-      0.747,
-      0.0
-    ],
-    [
-      0.01,
-      0.99,
-      0.0
-    ],
-    [
-      0.01,
-      0.99,
-      0.0
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.0,
-      0.669,
-      0.331
-    ],
-    [
-      0.0,
-      0.092,
-      0.908
-    ],
-    [
-      0.01,
-      0.99,
-      0.0
-    ],
-    [
-      0.235,
-      0.765,
-      0.0
-    ],
-    [
-      0.235,
-      0.765,
-      0.0
-    ],
-    [
-      0.235,
-      0.765,
-      0.0
-    ],
-    [
-      0.01,
-      0.99,
-      0.0
-    ],
-    [
-      0.253,
-      0.747,
-      0.0
-    ],
-    [
-      0.253,
-      0.747,
-      0.0
-    ],
-    [
-      0.235,
-      0.765,
-      0.0
-    ],
-    [
-      0.01,
-      0.99,
-      0.0
-    ],
-    [
-      0.976,
-      0.024,
-      0.0
-    ],
-    [
-      0.972,
-      0.028,
-      0.0
-    ],
-    [
-      0.986,
-      0.014,
-      0.0
-    ],
-    [
-      1.0,
-      0.0,
-      0.0
-    ],
-    [
-      0.95,
-      0.05,
-      0.0
-    ],
-    [
-      0.95,
-      0.05,
-      0.0
-    ],
-    [
-      1.0,
-      0.0,
-      0.0
-    ],
-    [
-      0.914,
-      0.086,
       0.0
     ],
     [
@@ -628,88 +248,43 @@
       0.0
     ],
     [
-      0.235,
-      0.765,
+      0.13,
+      0.87,
       0.0
     ],
     [
-      0.103,
-      0.886,
-      0.011
-    ],
-    [
-      1.0,
-      0.0,
+      0.856,
+      0.144,
       0.0
     ],
     [
-      0.994,
-      0.006,
+      0.856,
+      0.144,
       0.0
     ],
     [
-      0.98,
-      0.02,
+      0.921,
+      0.079,
       0.0
     ],
     [
-      0.948,
-      0.052,
+      0.353,
+      0.647,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.856,
+      0.144,
       0.0
     ],
     [
-      0.0,
-      1.0,
+      0.13,
+      0.87,
       0.0
     ],
     [
-      0.369,
-      0.631,
-      0.0
-    ],
-    [
-      0.0,
-      0.981,
-      0.018
-    ],
-    [
-      0.01,
-      0.99,
-      0.0
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.253,
-      0.747,
-      0.0
-    ],
-    [
-      0.258,
-      0.742,
-      0.0
-    ],
-    [
-      0.253,
-      0.747,
-      0.0
-    ],
-    [
-      0.0,
-      1.0,
-      0.0
-    ],
-    [
-      0.001,
-      0.999,
+      0.13,
+      0.87,
       0.0
     ],
     [
@@ -718,373 +293,193 @@
       0.0
     ],
     [
-      0.001,
+      0.958,
+      0.042,
+      0.0
+    ],
+    [
+      0.856,
+      0.144,
+      0.0
+    ],
+    [
+      0.353,
+      0.647,
+      0.0
+    ],
+    [
+      0.353,
+      0.647,
+      0.0
+    ],
+    [
+      0.856,
+      0.144,
+      0.0
+    ],
+    [
+      0.856,
+      0.144,
+      0.0
+    ],
+    [
       0.0,
-      0.999
-    ],
-    [
-      0.032,
-      0.562,
-      0.406
-    ],
-    [
-      0.472,
-      0.528,
+      1.0,
       0.0
     ],
     [
-      0.626,
-      0.374,
+      0.095,
+      0.905,
       0.0
     ],
     [
-      0.196,
-      0.804,
-      0.0
-    ],
-    [
-      0.152,
-      0.848,
-      0.0
-    ],
-    [
-      0.485,
-      0.515,
-      0.0
-    ],
-    [
-      0.186,
-      0.814,
-      0.0
-    ],
-    [
-      0.794,
-      0.206,
-      0.0
-    ],
-    [
-      0.478,
-      0.522,
-      0.0
-    ],
-    [
-      0.822,
-      0.178,
-      0.0
-    ],
-    [
-      0.869,
-      0.131,
-      0.0
-    ],
-    [
-      0.44,
-      0.56,
-      0.0
-    ],
-    [
-      0.77,
-      0.23,
-      0.0
-    ],
-    [
-      0.552,
-      0.448,
-      0.0
-    ],
-    [
-      0.008,
-      0.992,
-      0.0
-    ],
-    [
-      0.472,
-      0.528,
-      0.0
-    ],
-    [
-      0.836,
-      0.164,
-      0.0
-    ],
-    [
-      0.794,
-      0.206,
-      0.0
-    ],
-    [
-      0.579,
-      0.421,
-      0.0
-    ],
-    [
-      0.133,
-      0.867,
-      0.0
-    ],
-    [
-      0.705,
-      0.295,
-      0.0
-    ],
-    [
-      0.746,
-      0.254,
-      0.0
-    ],
-    [
-      0.687,
-      0.313,
-      0.0
-    ],
-    [
-      0.429,
-      0.571,
-      0.0
-    ],
-    [
-      0.676,
-      0.324,
-      0.0
-    ],
-    [
-      0.622,
-      0.378,
-      0.0
-    ],
-    [
-      0.719,
-      0.281,
-      0.0
-    ],
-    [
-      0.656,
-      0.344,
-      0.0
-    ],
-    [
-      0.819,
-      0.181,
-      0.0
-    ],
-    [
-      0.691,
-      0.309,
-      0.0
-    ],
-    [
-      0.8,
-      0.2,
-      0.0
-    ],
-    [
-      0.052,
-      0.948,
-      0.0
-    ],
-    [
-      0.742,
-      0.258,
-      0.0
-    ],
-    [
-      0.713,
-      0.287,
-      0.0
-    ],
-    [
-      0.8,
-      0.2,
+      0.432,
+      0.568,
       0.0
     ],
     [
       0.977,
-      0.023,
+      0.011,
+      0.012
+    ],
+    [
+      0.124,
+      0.876,
       0.0
     ],
     [
-      0.699,
-      0.301,
+      0.753,
+      0.239,
+      0.008
+    ],
+    [
+      0.645,
+      0.355,
       0.0
     ],
     [
-      0.167,
-      0.833,
+      0.857,
+      0.143,
       0.0
     ],
     [
-      0.548,
-      0.452,
+      0.857,
+      0.143,
       0.0
     ],
     [
-      0.472,
-      0.528,
+      0.606,
+      0.394,
       0.0
     ],
     [
-      0.933,
-      0.067,
+      0.72,
+      0.28,
       0.0
     ],
     [
-      0.536,
-      0.464,
+      0.364,
+      0.636,
       0.0
     ],
     [
-      0.328,
-      0.672,
+      0.56,
+      0.44,
       0.0
     ],
     [
-      0.732,
-      0.268,
+      0.129,
+      0.871,
       0.0
     ],
     [
-      0.797,
-      0.203,
+      0.711,
+      0.289,
       0.0
     ],
     [
-      0.345,
-      0.655,
+      0.801,
+      0.199,
       0.0
     ],
     [
-      0.748,
-      0.252,
+      0.754,
+      0.246,
       0.0
     ],
     [
-      0.592,
-      0.408,
+      0.342,
+      0.658,
       0.0
     ],
     [
-      0.786,
-      0.214,
+      0.594,
+      0.406,
       0.0
     ],
     [
-      0.598,
-      0.402,
-      0.0
-    ],
-    [
-      0.59,
-      0.41,
-      0.0
-    ],
-    [
-      0.719,
-      0.281,
-      0.0
-    ],
-    [
-      0.71,
-      0.29,
-      0.0
-    ],
-    [
-      0.463,
-      0.537,
-      0.0
-    ],
-    [
-      0.749,
-      0.251,
-      0.0
-    ],
-    [
-      0.786,
-      0.214,
-      0.0
-    ],
-    [
-      0.24,
-      0.76,
-      0.0
-    ],
-    [
-      0.434,
-      0.566,
-      0.0
-    ],
-    [
-      0.139,
-      0.861,
-      0.0
-    ],
-    [
-      0.84,
-      0.16,
-      0.0
-    ],
-    [
-      0.905,
-      0.095,
-      0.0
-    ],
-    [
-      0.521,
-      0.479,
-      0.0
-    ],
-    [
-      0.264,
       0.736,
+      0.264,
       0.0
     ],
     [
-      0.51,
-      0.49,
+      0.737,
+      0.263,
       0.0
     ],
     [
-      0.798,
-      0.202,
+      0.324,
+      0.676,
       0.0
     ],
     [
-      0.931,
-      0.069,
+      0.588,
+      0.412,
       0.0
     ],
     [
-      0.661,
-      0.339,
+      0.203,
+      0.797,
       0.0
     ],
     [
-      0.065,
-      0.935,
+      0.641,
+      0.359,
       0.0
     ],
     [
-      0.944,
-      0.056,
+      0.525,
+      0.475,
       0.0
     ],
     [
-      0.828,
-      0.172,
+      0.737,
+      0.263,
       0.0
     ],
     [
-      0.237,
-      0.763,
+      0.228,
+      0.772,
       0.0
     ],
     [
-      0.27,
-      0.73,
+      0.253,
+      0.747,
       0.0
     ],
     [
-      0.928,
-      0.072,
+      0.458,
+      0.542,
+      0.0
+    ],
+    [
+      0.071,
+      0.929,
+      0.0
+    ],
+    [
+      0.198,
+      0.802,
       0.0
     ],
     [
@@ -1093,68 +488,93 @@
       0.0
     ],
     [
-      0.381,
-      0.619,
+      0.686,
+      0.314,
       0.0
     ],
     [
-      0.582,
-      0.418,
+      0.573,
+      0.427,
       0.0
     ],
     [
-      0.632,
-      0.368,
+      0.498,
+      0.502,
       0.0
     ],
     [
-      0.611,
-      0.389,
+      0.112,
+      0.888,
       0.0
     ],
     [
-      0.428,
-      0.572,
+      0.295,
+      0.705,
       0.0
     ],
     [
-      0.677,
-      0.323,
+      0.928,
+      0.072,
       0.0
     ],
     [
-      0.75,
-      0.25,
+      0.338,
+      0.662,
       0.0
     ],
     [
-      0.566,
-      0.434,
+      0.463,
+      0.537,
       0.0
     ],
     [
-      0.529,
-      0.471,
+      0.851,
+      0.149,
       0.0
     ],
     [
-      0.602,
-      0.398,
+      0.438,
+      0.562,
       0.0
     ],
     [
-      0.278,
-      0.722,
+      0.558,
+      0.442,
       0.0
     ],
     [
-      0.608,
-      0.392,
+      0.683,
+      0.317,
       0.0
     ],
     [
-      0.556,
-      0.444,
+      0.646,
+      0.354,
+      0.0
+    ],
+    [
+      0.626,
+      0.374,
+      0.0
+    ],
+    [
+      0.18,
+      0.82,
+      0.0
+    ],
+    [
+      0.607,
+      0.393,
+      0.0
+    ],
+    [
+      0.41,
+      0.59,
+      0.0
+    ],
+    [
+      0.514,
+      0.486,
       0.0
     ],
     [
@@ -1163,78 +583,33 @@
       0.0
     ],
     [
-      0.455,
-      0.545,
+      0.538,
+      0.462,
       0.0
     ],
     [
-      0.67,
-      0.33,
+      0.493,
+      0.507,
       0.0
     ],
     [
-      0.602,
-      0.398,
+      0.447,
+      0.553,
       0.0
     ],
     [
-      0.556,
-      0.444,
+      0.842,
+      0.158,
       0.0
     ],
     [
-      0.655,
-      0.345,
+      0.531,
+      0.469,
       0.0
     ],
     [
-      0.585,
-      0.415,
-      0.0
-    ],
-    [
-      0.684,
-      0.316,
-      0.0
-    ],
-    [
-      0.666,
-      0.334,
-      0.0
-    ],
-    [
-      0.3,
-      0.7,
-      0.0
-    ],
-    [
-      0.593,
-      0.407,
-      0.0
-    ],
-    [
-      0.575,
-      0.425,
-      0.0
-    ],
-    [
-      0.046,
-      0.954,
-      0.0
-    ],
-    [
-      0.014,
-      0.986,
-      0.0
-    ],
-    [
-      0.669,
-      0.331,
-      0.0
-    ],
-    [
-      0.121,
-      0.879,
+      0.281,
+      0.719,
       0.0
     ],
     [
@@ -1243,163 +618,88 @@
       0.0
     ],
     [
-      0.568,
-      0.432,
+      0.511,
+      0.489,
       0.0
     ],
     [
-      0.019,
-      0.981,
+      0.233,
+      0.767,
       0.0
     ],
     [
-      0.135,
-      0.865,
+      0.744,
+      0.256,
       0.0
     ],
     [
-      0.117,
-      0.883,
+      0.005,
+      0.995,
       0.0
     ],
     [
-      0.135,
-      0.865,
+      0.491,
+      0.509,
       0.0
     ],
     [
-      0.036,
-      0.964,
+      0.018,
+      0.982,
       0.0
     ],
     [
-      0.55,
-      0.45,
+      0.03,
+      0.97,
       0.0
     ],
     [
-      0.135,
-      0.865,
+      0.268,
+      0.732,
       0.0
     ],
     [
-      0.541,
-      0.459,
+      0.268,
+      0.732,
       0.0
     ],
     [
-      0.036,
-      0.964,
+      0.491,
+      0.509,
       0.0
     ],
     [
-      0.135,
-      0.865,
+      0.03,
+      0.97,
       0.0
     ],
     [
-      0.541,
-      0.459,
+      0.03,
+      0.97,
       0.0
     ],
     [
-      0.135,
-      0.865,
+      0.018,
+      0.982,
       0.0
     ],
     [
-      0.642,
-      0.358,
+      0.268,
+      0.732,
       0.0
     ],
     [
-      0.117,
-      0.883,
+      0.08,
+      0.92,
       0.0
     ],
     [
-      0.642,
-      0.358,
+      0.018,
+      0.982,
       0.0
     ],
     [
-      0.117,
-      0.883,
-      0.0
-    ],
-    [
-      0.541,
-      0.459,
-      0.0
-    ],
-    [
-      0.135,
-      0.865,
-      0.0
-    ],
-    [
-      0.036,
-      0.964,
-      0.0
-    ],
-    [
-      0.687,
-      0.313,
-      0.0
-    ],
-    [
-      0.135,
-      0.865,
-      0.0
-    ],
-    [
-      0.541,
-      0.459,
-      0.0
-    ],
-    [
-      0.642,
-      0.358,
-      0.0
-    ],
-    [
-      0.135,
-      0.865,
-      0.0
-    ],
-    [
-      0.55,
-      0.45,
-      0.0
-    ],
-    [
-      0.541,
-      0.459,
-      0.0
-    ],
-    [
-      0.135,
-      0.865,
-      0.0
-    ],
-    [
-      0.687,
-      0.313,
-      0.0
-    ],
-    [
-      0.55,
-      0.45,
-      0.0
-    ],
-    [
-      0.577,
-      0.423,
-      0.0
-    ],
-    [
-      0.136,
-      0.864,
+      0.03,
+      0.97,
       0.0
     ],
     [
@@ -1408,222 +708,122 @@
       0.0
     ],
     [
-      0.36,
-      0.64,
+      0.334,
+      0.666,
       0.0
     ]
   ],
-  "presisi": 0.37,
-  "presisi_negatif": 0.53,
-  "presisi_netral": 0.58,
+  "presisi": 0.35,
+  "presisi_negatif": 0.51,
+  "presisi_netral": 0.55,
   "presisi_positif": 0.0,
-  "recall": 0.32,
-  "recall_negatif": 0.46,
-  "recall_netral": 0.5,
+  "recall": 0.3,
+  "recall_negatif": 0.37,
+  "recall_netral": 0.54,
   "recall_positif": 0.0,
   "text_list": [
-    "layan dapat ramah begitu jelas product rekomendasi pesan cepat",
-    "mbak arab cantik minum khas enak cepat saji standar baristanya ramah akrab ajak ngobrol enak nyambung",
-    "layan helpful kecewa tahan hospitality beri",
-    "layan ramah costumer bahasa mudah erti",
-    "sut sun segi layan liput product knowledge cepat saji bagus muas",
-    "sangat ramah informasi produk lengkap saji cepat buat konsumen puas",
+    "ramaah saji standar cepat layak burger product knowledge tawar produk best seller",
+    "dari segi layan bagus pegawai ramah sabar jawab customer produck sedia cepat saji ok tingkat",
+    "customer beri informasi tanggap ramah layan sana muas cepat saji muas",
     "turut dapat sat sun almeaty service milik layan kualitas",
-    "staffnya super ramahh love it solutif banget kalo problem tangan oke banget lahh pokok mungkin minus agak dikit saji big deal sih",
-    "overall oke konsep resto ala s american gw asik nongki layan staffnya oke gada ngga nya mnurut gw si relatif kalo mesen dish riweuh kalo rame",
-    "layan tahu produk jual meski tunggu kru ramah banget",
-    "staffnya oke banget sih ramah ramah salty makan standar aja saji ga banget ato",
     "untuk layan paham product knowledgenya buat cepat saji alam agak tp acceptable also crew are so friendly",
-    "dadi segi layan bagus jual jelas produk jual customer",
-    "ramah product knowledge dapat cepat saji lumayan okee good attitude good looking oke bangetttt",
     "sat sun the almeaty service segi layan baikk ramah good attitude good serviceeee",
-    "gw salut bangett sih staff nya ramah ramahh ga salty kalo tolongin makan cepet nyampe ga bego nunggunya",
-    "sukak sih buku menu udah dijelasin menu gak ngawang pas mesen makan minum",
-    "agak dikit saji tapi big deal sihh ga lamaaaa pake banget kalo hospitality sm service staffnya satnsun juara sih mnurutku",
-    "staff nya ramah ramahh ga salty kalo tolongin makan cepet nyampenya oke banget pokok servicenya",
-    "pegawai ramah layan cepet terang menu udah tera enak aja sih kalok mesen",
-    "pegawai banget pas ditanyain layanin suka banget sih menu deskripsi gak bingung pas mesen",
-    "pegawai banget pas ditanyain layanin suka banget sih menu deskripsi gak bingung pas mesen",
-    "salut bangett staff nya ramah ramahh ga salty kalo tolongin makan cepet nyampenyaa kalo rame aga dikit tp big deal",
-    "top bgt sihh karyawannya ramah smuaa bener bener responsif banget sm customernyaa nyajiinnya okeee",
-    "top star sihh ini best tuh staffnya ramahh n gecee bgttt nyajiinnya ga lamaa smpe bikin keroncongann",
-    "pegawai banget pas ditanyain layanin suka banget sih menu deskripsi gak bingung pas mesen",
+    "saji cepet mas mbak ramah banget sih kalok tanyak desc menu oke",
     "poin plus banget bawah nama menu desc menu mudahin tau menu layan ramah banget jawabin",
-    "poin plus banget bawah nama menu desc menu mudahin tau menu layan ramah banget jawabin",
-    "poin plus banget bawah nama menu desc menu mudahin tau menu layan ramah banget jawabin",
-    "pegawai banget pas ditanyain layanin suka banget sih menu deskripsi gak bingung pas mesen",
     "pegawai ramah layan cepet terang menu udah tera enak aja sih kalok mesen",
     "pegawai ramah layan cepet terang menu udah tera enak aja sih kalok mesen",
-    "poin plus banget bawah nama menu desc menu mudahin tau menu layan ramah banget jawabin",
+    "sat sun the almeaty service segi layan dapat okeee ramah bangett hatiii",
     "pegawai banget pas ditanyain layanin suka banget sih menu deskripsi gak bingung pas mesen",
-    "sat sun the almeaty service segi layan dapat baikk bangett cuy keren hrd nya",
-    "sat sun the almeaty service segi layan dapat ramaaah tau butuh customer jugaaa",
-    "sat sun the almeaty service segi layan dapat ramah ramah judge customer tau",
-    "sat sun the almeaty service segi layan dapat layan baikkkk mas mba",
-    "sat sun the almeaty service segi layan dapat pad semaaa",
+    "pegawai ramah layan cepet terang menu udah tera enak aja sih kalok mesen",
+    "poin plus banget bawah nama menu desc menu mudahin tau menu layan ramah banget jawabin",
+    "poin plus banget bawah nama menu desc menu mudahin tau menu layan ramah banget jawabin",
+    "sat sun the almeaty service segi layan dapat sopan semuaa baikk jawab cutomer",
     "sat sun the almeaty service segi layan dapat baikbaikkkkk semuaaanya",
-    "sat sun the almeaty service segi layan dapat okeee sihh mba mas baikkk ramah jugaaaa",
-    "sat sun the almeaty service segi layan dapat okee puas ramah ramahhhhhhhhh",
-    "sat sun the almeaty service segi layan dapat layan ramah hospitality mantaap",
-    "poin plus banget bawah nama menu desc menu mudahin tau menu layan ramah banget jawabin",
-    "service staff oke banget gw saji gw mas improve tempat panas trs makan dateng poin eval sih",
-    "at sun the almeaty service segi layan dapat has good hospitality super helpful",
-    "sat sun the almeaty service segi layan dapat servicenya oke banget super duper helpful",
-    "sat sun the almeaty service segi bersih layan okee karyawannya baikkkkkkkkkk",
-    "sat sun the almeaty service segi layan dapat oke banget good hospitalityy parah",
-    "staff nya need a raise ramah gece gada resek sih layan makan cepet",
-    "buat layan staff nya gue kasi jempol asli ga boong staffnya proper smua sop nya mantep sih makan ga banget",
-    "kualitas layan beri ramah produk beri puas saji cepat",
-    "agak aja dateng makan tp klo ramah dkk sih mnurutku aman aman ajaa yaaa gada maslaah",
-    "pegawai banget pas ditanyain layanin suka banget sih menu deskripsi gak bingung pas mesen",
-    "poin plus staffnya sihh mnurutku sregep ramah solutif klo kendala or keluh makan ga cepet banget tp ga banget aman",
     "pegawai ramah layan cepet terang menu udah tera enak aja sih kalok mesen",
-    "sat sun the almeaty service segi layan dapat ramahh nya dapet bangett keren sat and sunnn",
+    "pegawai banget pas ditanyain layanin suka banget sih menu deskripsi gak bingung pas mesen",
+    "pegawai banget pas ditanyain layanin suka banget sih menu deskripsi gak bingung pas mesen",
+    "pegawai ramah layan cepet terang menu udah tera enak aja sih kalok mesen",
     "pegawai ramah layan cepet terang menu udah tera enak aja sih kalok mesen",
     "salut bangett staff nya ramah ramahh ga salty kalo tolongin makan cepet nyampenyaa kalo rame aga dikit tp big deal",
-    "soal layan gada komplain jugaa all good saji makan cepet waitersnya ramah n responsif banget aman sih",
-    "sat sun the almeaty service segi layan dapat semuaaa good atitude manner",
-    "konsep resto unik hadir suasana fast-food ala amerika -an tarik kalang anak muda",
-    "bersih area customer toilet bar jaga cermin kualitas layan",
-    "karyawan sat sun almeaty service milik mampu produk detail langgan buat putus",
-    "layan ramah profesional buat langgan harga perhati cipta suasana nyaman kesan puas langgan",
-    "informasi lengkap transparan menu langgan dalam buat pilih preferensi butuh",
+    "layan ramah informatif dalam buat rekomendasi pesan cepat",
+    "meski tunggu alam layan muas kecewa puas langgan",
+    "konsep restoran unik beda alam kuliner beda tarik unjung",
     "layan responsif tanggap butuh langgan komitmen puas langgan",
-    "layan beri sat sun almeaty service cermin komitmen kualitas puas langgan",
-    "staf sat sun the almeaty service kompeten dalam muas unjung ahli dalam bidang layan",
+    "cepat dalam proses mesan saji profesionalisme tim restoran",
     "tahu produk milik staf sat sun the almeaty service buat kesan positif unjung percaya langgan",
-    "unjung puas tahu produk milik staf sat sun the almeaty service mudah dalam pilih menu",
-    "proses saji sat sun the almeaty service alam makan efisien buat unjung buru",
+    "unjung nilai positif ramah staf sat sun the almeaty service faktor dalam pilih restoran",
     "proses saji sat sun the almeaty service jalan lancar tunda dalam saji hidang",
-    "staf sat sun the almeaty service jelas lengkap proses buat hidang unjung tarik",
-    "unjung senang variasi pilih hidang sedia sat sun the almeaty service",
-    "cepat saji sat sun the almeaty service alam makan efisien unjung milik jadwal padat",
-    "unjung bantu opsi makan ramah diet sat sun the almeaty service cakup butuh diet",
-    "staf sat sun the almeaty service rekomendasi selera preferensi unjung puas makan",
-    "cepat saji sat sun the almeaty service optimal makan unjung korban alam makan kualitas",
+    "cepat saji sat sun the almeaty service alam makan efisien korban kualitas",
     "cepat saji sat sun the almeaty service alam makan santai buat unjung buru",
-    "staf sat sun the almeaty service saran harga unjung bingung dalam pilih menu",
-    "staf sat sun the almeaty service responsif butuh unjung jadi alam langgan senang",
-    "cepat saji sat sun the almeaty service menu saji cepat buat unjung tunggu",
-    "cepat saji sat sun the almeaty service nilai kesan unjung puas tunggu singkat",
-    "alam sat sun the almeaty service kesan positif staf ramah",
-    "staf sat sun the almeaty service rekomendasi unjung tahu dalam produk",
-    "cepat saji sat sun the almeaty service nilai efisien meski restoran ramai layan jaga",
-    "staf sat sun the almeaty service informasi lengkap sedia menu varian tawar",
-    "staf sat sun the almeaty service ramah hangat alam makan",
-    "cepat saji sat sun the almeaty service jaga unjung tunggu hidang",
-    "cepat saji sat sun the almeaty service optimal unjung alam makan gesa",
-    "cepat saji sat sun the almeaty service jaga unjung buru makan",
-    "unjung harga variasi menu preferensi sat sun the almeaty service",
-    "unjung bantu opsi saji fleksibel sat sun the almeaty service penuh butuh makan",
-    "staf sat sun the almeaty service perhati konsisten meja jamin kualitas layan",
-    "ramah staf sat sun the almeaty service cipta suasana ramah senang unjung buat harga",
-    "unjung harga sedia staf sat sun the almeaty service",
-    "staf sat sun the almeaty service milik mampu situasi duga tenang profesional",
-    "staf sat sun the almeaty service rekomendasi menu preferensi unjung tambah nilai alam makan",
-    "cepat saji sat sun the almeaty service tahan kualitas hidang meski proses saji cepat hadir alam muas",
-    "cepat saji sat sun the almeaty service unjung hemat cocok makan siang istirahat kerja",
-    "staf sat sun the almeaty service rekomendasi selera preferensi unjung puas makan",
-    "staf sat sun the almeaty service milik mampu antisipasi butuh unjung layan harap",
-    "unjung harga pilih menu variatif kualitas sat sun the almeaty service",
-    "cepat saji sat sun the almeaty service timbang makan unjung jaga kualitas hidang",
-    "staf sat sun the almeaty service milik mampu sesuai layan butuh unjung",
-    "staf sat sun the almeaty service informasi komprehensif saji hidang unjung",
-    "unjung senang variasi pilih menu sehat lezat sat sun the almeaty service",
-    "cepat saji sat sun the almeaty service alam makan lancar korban kualitas hidang",
-    "unjung bantu opsi makan preferensi sat sun the almeaty service",
-    "cepat saji sat sun the almeaty service perhati tunggu unjung kurang ketidaknyamanan",
-    "cepat saji sat sun the almeaty service alam makan efisien samping kualitas hidang",
-    "staf sat sun the almeaty service layan personal responsif alam makan unjung",
-    "staf sat sun the almeaty service ramah hangat alam makan",
-    "staf sat sun the almeaty service informasi menu unjung buat putus",
+    "unjung bantu opsi hidang sesuai selera anak sat sun the almeaty service",
+    "staf sat sun the almeaty service milik tahu produk informasi guna unjung",
+    "unjung puas tahu staf sat sun the almeaty service rekomendasi selera unjung",
+    "cepat saji sat sun the almeaty service nilai muas menu saji efisien korban kualitas",
+    "unjung nilai ramah staf sat sun the almeaty service cipta langgan staf",
+    "cepat saji sat sun the almeaty service nilai efektif unjung tunggu pesan",
     "staf sat sun the almeaty service perhati unjung cipta atmosfer senang",
-    "staf sat sun the almeaty service informasi guna unjung buat pilih",
-    "cepat saji sat sun the almeaty service perhati tunggu unjung kurang ketidaknyamanan",
-    "cepat saji sat sun the almeaty service perhati kualitas makan meski proses cepat alam makan muas",
-    "unjung puas variasi pilih menu sesuai musim sat sun the almeaty service",
-    "unjung bantu opsi makan ramah alergi sat sun the almeaty service akomodasi butuh",
-    "staf sat sun the almeaty service solusi efisien minta unjung",
-    "ketika unjung sat sun the almeaty service kes ramah staf mereka ramah senyum hangat",
+    "cepat saji sat sun the almeaty service perhati kualitas hidang meski proses cepat nilai unjung",
+    "staf sat sun the almeaty service perhati konsisten meja jamin kualitas layan",
+    "staf sat sun the almeaty service milik mampu sesuai tempo saji preferensi unjung nyaman makan",
+    "unjung puas variasi pilih hidang sesuai selera sat sun the almeaty service",
+    "staf sat sun the almeaty service milik mampu sesuai saji butuh puas langgan",
+    "unjung senang variasi pilih menu sehat lezat sat sun the almeaty service",
+    "ramah staf sat sun the almeaty service cipta hangat sahabat unjung buat harga",
+    "unjung bantu pilih hidang sesuai musim sat sun the almeaty service",
+    "cepat saji sat sun the almeaty service perhati makan unjung hindar nanti lebih",
+    "unjung puas variasi pilih hidang gizi sat sun the almeaty service",
+    "unjung bantu opsi makan preferensi sat sun the almeaty service",
+    "staf sat sun the almeaty service layan personal responsif alam makan unjung",
+    "unjung bantu rekomendasi makan selera sat sun the almeaty service",
+    "unjung harga tahu staf sat sun the almeaty service sedia menu vegetarian vegan",
+    "staf sat sun the almeaty service milik mampu situasi kompleks tenang profesional",
+    "unjung bantu menu cantum sat sun the almeaty service kurang bingung mes",
+    "staf sat sun the almeaty service milik mampu solusi butuh unjung puas",
     "layan sat sun the almeaty service staf terampil dalam produk detail solusi butuh",
     "alam sat sun the almeaty service senang staf milik tahu produk dalam cepat pilih menu selera",
-    "alam sat sun the almeaty service muas staf ramah hadir makan cepat korban kualitas",
-    "alam sat sun the almeaty service senang staf ramah informasi guna produk",
-    "ketika unjung sat sun the almeaty service puas layan terima staf profesional ramah",
-    "layan sat sun the almeaty service benar staf jaga standar tinggi dalam ramah efisiensi",
-    "saya kes tahu produk milik staf sat sun the almeaty service mereka jawab sabar",
-    "ketika unjung sat sun the almeaty service senang layan terima staf ramah profesional",
-    "product knowledge milik staf sat sun the almeaty service sungguh muas informasi pilih menu selera",
-    "saya harga langgan sat sun the almeaty service staf perhati butuh",
-    "cepat saji makan sat sun the almeaty service cermin efisiensi kualitas dalam hidang saji",
-    "cepat saji makan sat sun the almeaty service kelola layan alam makan lancar",
-    "layan sat sun the almeaty service kesan positif buat rekomendasi teman",
-    "cepat saji makan sat sun the almeaty service layan cepat responsif",
-    "saya nyaman layan sat sun the almeaty service staf perhati langgan",
-    "cepat saji makan sat sun the almeaty service layan efisien samping kualitas hidang",
+    "ketika unjung sat sun the almeaty service puas cepat saji makan meski ramai makan",
+    "sat sun the almeaty service alam layan staf senyum",
+    "layan sat sun the almeaty service perhati langgan komitmen puas langgan",
+    "staf sat sun the almeaty service makan saji milik wawas dalam saji alam makan senang",
+    "cepat saji makan sat sun the almeaty service bukti layan cepat korban kualitas imbang dua",
+    "staf sat sun the almeaty service layan ramah penuh perhati langgan",
+    "staf sat sun the almeaty service milik tahu dalam daging saji baik",
+    "staf sat sun the almeaty service saran guna kombinasi hidang alam makan",
+    "cepat saji makan sat sun the almeaty service mampu dalam kelola layan langgan efisien",
+    "cepat saji makan sat sun the almeaty service layan kurang kualitas hidang",
+    "saya kes layan penuh perhati ramah sat sun the almeaty service buat kunjung senang",
+    "cepat saji makan sat sun the almeaty service layan cepat efisien korban kualitas hidang",
+    "staf sat sun the almeaty service pandang menu dalam buat pilih",
     "saya senang alam makan sat sun the almeaty service layan kualitas makan muas",
-    "layan sat sun the almeaty service buat harga perhati langgan",
-    "staf sat sun the almeaty service jelas lengkap saji uni hidang",
-    "staf sat sun the almeaty service informasi guna saji uni hidang",
-    "cepat saji makan sat sun the almeaty service layan cepat korban kualitas hidang",
-    "cepat saji makan sat sun the almeaty service layan cepat kurang nilai hidang",
-    "layan sat sun the almeaty service alam makan muas kesan",
-    "staf sat sun the almeaty service rekomendasi hidang selera",
-    "layan sat sun the almeaty service komitmen alam makan langgan",
-    "cepat saji makan sat sun the almeaty service layan cepat samping kualitas hidang",
     "layan sat sun the almeaty service komitmen alam makan istimewa langgan",
-    "saya kes layan ramah staf sat sun the almeaty service buat kunjung senang",
-    "staf sat sun the almeaty service informasi menu buat putus",
-    "layan sat sun the almeaty service alam makan muas kesan",
-    "cepat saji makan sat sun the almeaty service layan cepat samping kualitas hidang",
-    "staf sat sun the almeaty service pandu menu dalam pilih hidang",
+    "layan sat sun the almeaty service komitmen alam makan langgan",
     "staf sat sun the almeaty service saran harga kombinasi hidang harmonis",
-    "layan sat sun the almeaty service cipta suasana hangat ramah buat alam makan kesan",
-    "layan sat sun the almeaty service alam makan muas",
+    "layan sat sun the almeaty service dedikasi alam makan muas langgan",
+    "saya senang layan ramah efektif sat sun the almeaty service staf latih",
+    "saya puas layan kualitas makan sat sun the almeaty service alam makan unik",
     "saya harga perhati sat sun the almeaty service staf perhati langgan",
-    "cepat saji makan sat sun the almeaty service jaga layan efisien korban aspek kualitas",
-    "layan sat sun the almeaty service tawar alam makan muas kesan langgan",
-    "layan sat sun the almeaty service responsif butuh langgan jadi kunjung senang",
-    "layan sat sun the almeaty service perhati detail jadi makan tarik gugah selera",
-    "staf sat sun the almeaty service informasi perinci hidang langgan dalam buat pilih",
-    "cepat saji makan sat sun the almeaty service jaga meski dalam situasi padat jaga efisiensi kualitas",
-    "cepat saji makan sat sun the almeaty service utama kualitas layan samping aspek cepat",
-    "saya puas kualitas produk sat sun the almeaty service rasa makan lezat buat meski harga mahal banding kualitas alam dapat",
+    "cepat saji makan sat sun the almeaty service layan cepat samping kualitas hidang",
+    "cepat saji makan sat sun the almeaty service jaga buat langgan tunggu",
+    "saya harga langgan sat sun the almeaty service buat kunjung",
+    "layan sat sun the almeaty service cipta suasana hangat senang langgan nyaman makan",
     "turut kualitas produk sat sun the almeaty service patut acung jempol rasa makan gugah selera porsi harga tawar memang agak padan kualitas",
-    "turut kualitas produk sat sun the almeaty service kecewa rasa makan lezat porsi meski harga agak mahal padan kualitas",
+    "dapat kualitas produk sat sun the almeaty service positif rasa makan enak porsi meski harga mahal padan kualitas beri",
+    "turut kualitas produk sat sun the almeaty service patut acung jempol rasa makan lezat buat porsi memang harga tawar masuk akal",
     "saya puas kualitas produk sat sun the almeaty service rasa makan gugah selera porsi harga tawar memang agak padan alam kuliner dapat",
-    "turut kualitas produk sat sun the almeaty service kecewa rasa makan lezat porsi meski harga agak mahal padan kualitas",
+    "saya milik pandang positif kualitas produk sat sun the almeaty service rasa makan autentik unik buat porsi memang harga tawar padan kualitas",
+    "saya milik pandang positif kualitas produk sat sun the almeaty service rasa makan autentik unik buat porsi memang harga tawar padan kualitas",
+    "dapat kualitas produk sat sun the almeaty service positif rasa makan enak porsi meski harga mahal padan kualitas beri",
+    "saya puas kualitas produk sat sun the almeaty service rasa makan gugah selera porsi harga tawar memang agak padan alam kuliner dapat",
+    "saya puas kualitas produk sat sun the almeaty service rasa makan gugah selera porsi harga tawar memang agak padan alam kuliner dapat",
     "turut kualitas produk sat sun the almeaty service patut acung jempol rasa makan lezat buat porsi memang harga tawar masuk akal",
     "saya milik pandang positif kualitas produk sat sun the almeaty service rasa makan autentik unik buat porsi memang harga tawar padan kualitas",
     "turut kualitas produk sat sun the almeaty service kecewa rasa makan lezat porsi meski harga agak mahal padan kualitas",
-    "dapat kualitas produk sat sun the almeaty service positif rasa makan enak porsi meski harga mahal padan kualitas beri",
     "turut kualitas produk sat sun the almeaty service patut acung jempol rasa makan lezat buat porsi memang harga tawar masuk akal",
-    "turut kualitas produk sat sun the almeaty service kecewa rasa makan lezat porsi meski harga agak mahal padan kualitas",
-    "dapat kualitas produk sat sun the almeaty service positif rasa makan enak porsi meski harga mahal padan kualitas beri",
-    "turut kualitas produk sat sun the almeaty service kecewa rasa makan lezat porsi meski harga agak mahal padan kualitas",
-    "saya kes kualitas produk sat sun the almeaty service rasa makan autentik porsi harga tawar memang agak mahal padan alam kuliner dapat",
-    "saya puas kualitas produk sat sun the almeaty service rasa makan gugah selera porsi harga tawar memang agak padan alam kuliner dapat",
-    "saya kes kualitas produk sat sun the almeaty service rasa makan autentik porsi harga tawar memang agak mahal padan alam kuliner dapat",
-    "saya puas kualitas produk sat sun the almeaty service rasa makan gugah selera porsi harga tawar memang agak padan alam kuliner dapat",
-    "dapat kualitas produk sat sun the almeaty service positif rasa makan enak porsi meski harga mahal padan kualitas beri",
-    "turut kualitas produk sat sun the almeaty service kecewa rasa makan lezat porsi meski harga agak mahal padan kualitas",
-    "turut kualitas produk sat sun the almeaty service patut acung jempol rasa makan lezat buat porsi memang harga tawar masuk akal",
-    "alam unjung sat sun the almeaty service muas segi kualitas produk rasa makan nikmat porsi meski harga mahal padan kualitas beri",
-    "turut kualitas produk sat sun the almeaty service kecewa rasa makan lezat porsi meski harga agak mahal padan kualitas",
-    "dapat kualitas produk sat sun the almeaty service positif rasa makan enak porsi meski harga mahal padan kualitas beri",
-    "saya kes kualitas produk sat sun the almeaty service rasa makan autentik porsi harga tawar memang agak mahal padan alam kuliner dapat",
-    "turut kualitas produk sat sun the almeaty service kecewa rasa makan lezat porsi meski harga agak mahal padan kualitas",
-    "saya milik pandang positif kualitas produk sat sun the almeaty service rasa makan autentik unik buat porsi memang harga tawar padan kualitas",
-    "dapat kualitas produk sat sun the almeaty service positif rasa makan enak porsi meski harga mahal padan kualitas beri",
-    "turut kualitas produk sat sun the almeaty service kecewa rasa makan lezat porsi meski harga agak mahal padan kualitas",
-    "alam unjung sat sun the almeaty service muas segi kualitas produk rasa makan nikmat porsi meski harga mahal padan kualitas beri",
-    "saya milik pandang positif kualitas produk sat sun the almeaty service rasa makan autentik unik buat porsi memang harga tawar padan kualitas",
-    "cepat saji makan sat sun the almeaty service jaga tunggu makan singkat alam makan",
+    "saya puas kualitas produk sat sun the almeaty service rasa makan gugah selera porsi",
     "saya puas kualitas layan makan sat sun the almeaty service jadi kunjung muas",
-    "cepat saji makan sat sun the almeaty service jaga meski dalam situasi padat jaga efisiensi kualitas",
-    "layan sat sun the almeaty service cipta atmosfer hangat ramah jadi alam makan senang"
+    "saya harga perhati staf sat sun the almeaty service buat alam makan"
   ],
-  "tneg": 58,
-  "tnet": 50,
+  "tneg": 26,
+  "tnet": 27,
   "tpos": 0
 }

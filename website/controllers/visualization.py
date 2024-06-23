@@ -45,11 +45,13 @@ class VisualizationController:
                 list_persentase_tp.append(persentase_tp)
 
                 list_countSentiment = [persentase_p, persentase_c, persentase_tp]
+                list_label = ["Puas", "Cukup Puas", "Tidak Puas"]
 
                 plt.subplots(figsize=(10, 10))
-                plt.pie(list_countSentiment, labels=['Puas ('+ str(persentase_p) +'%)', 'Cukup ('+ str(persentase_c) +'%)', 'Tidak Puas ('+ str(persentase_tp) +'%)'], colors=['#00c853', '#CACACA', '#ff1744'], startangle=90)
+                # plt.pie(list_countSentiment, labels=['Puas ('+ str(persentase_p) +'%)', 'Cukup ('+ str(persentase_c) +'%)', 'Tidak Puas ('+ str(persentase_tp) +'%)'], colors=['#00c853', '#CACACA', '#ff1744'], startangle=90)
+                plt.bar(list_label, list_countSentiment, color=['#00c853', '#CACACA', '#ff1744'])
                 plt.legend(title="Data Tipe Sentimen")
-                plt.savefig(f'website/static/visualisasi/pie_sentimen_{num}.png')
+                plt.savefig(f'website/static/visualisasi/bar_sentimen_{num}.png')
 
                 plt.cla()
                 plt.clf()
@@ -79,10 +81,10 @@ class VisualizationController:
                 os.remove('website/static/visualisasi/histogram_dist_waktu.png')
             else:
                 print('\nFile histogram tidak ditemukan')
-            if os.path.exists('website/static/visualisasi/pie_sentimen.png'):
-                os.remove('website/static/visualisasi/pie_sentimen.png')
+            if os.path.exists('website/static/visualisasi/bar_sentimen.png'):
+                os.remove('website/static/visualisasi/bar_sentimen.png')
             else:
-                print('\nFile piechart tidak ditemukan')
+                print('\nFile bar chart tidak ditemukan')
             return {'error': 'Terjadi Kesalahan'}
 
         counts = {}
