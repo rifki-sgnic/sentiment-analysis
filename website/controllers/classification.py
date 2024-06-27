@@ -3,7 +3,8 @@ from sklearn.calibration import LabelEncoder
 from sklearn.metrics import confusion_matrix
 from website.models import Models
 from sklearn.feature_extraction.text import CountVectorizer
-from flask import flash, json
+from sklearn.naive_bayes import GaussianNB
+from flask import flash, json, request
 import pickle
 import os
 import numpy as np
@@ -21,6 +22,9 @@ class ClassificationController:
 
         # instance_model = Models("SELECT COUNT(id) as negatif FROM tbl_data_train WHERE clean_text IS NOT NULL AND sentiment = 'negatif'")
         # sentiment_negatif = instance_model.select()
+
+        mdl = request.form["model"]
+        print(mdl)
 
         # Data Training
         list_text_training = []
@@ -57,7 +61,11 @@ class ClassificationController:
         label = labelEncoder.classes_
 
         # TRAIN MULTINOMIAL NAIVE BAYES
-        model = MultiNB()
+        if mdl == "mnb" :
+            model = MultiNB()
+        else :
+            model = GaussianNB()
+
         model.fit(X_train, y_train)
 
         # SAVE MODEL as PKL
@@ -83,10 +91,15 @@ class ClassificationController:
         # Mengambil hasil probabilitas prediksi label
         list_prob_prediksi = []
 
-        predict_prob = model.predict_proba
+        if mdl == "mnb":
+            predict_prob = model.predict_proba
+        else:
+            predict_prob = model.predict_proba(X_train)
+
         for i in range(len(predict_prob)):
             tuple_pred = (round(float(predict_prob[i][0]), 3), round(float(predict_prob[i][1]), 3), round(float(predict_prob[i][2]), 3))
             list_prob_prediksi.append(tuple_pred)
+
         conf = confusion_matrix(y_test, y_pred)
         print(conf)
         TTidakPuas, FTidakPuas1, FTidakPuas2, FCukup1, TCukup, FCukup2, FPuas1, FPuas2, TPuas = confusion_matrix(y_test, y_pred).ravel()

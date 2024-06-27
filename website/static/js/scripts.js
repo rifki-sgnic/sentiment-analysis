@@ -15,9 +15,9 @@ $(document).ready(function () {
   $("#table_dataPredict-5").DataTable();
 });
 
-$(document).ready(function() {
-  $('#q1').addClass('active');
-})
+$(document).ready(function () {
+  $("#q1").addClass("active");
+});
 
 // Mencari rasio data tes dan data latih
 function cariRasio(kode) {
@@ -68,72 +68,70 @@ function cariRasio(kode) {
   }
 }
 
-var jumlah_data_crawling = $('#countDataCrawling').html();
-var jumlah_data_preprocess = $('#countDataPreprocess').html()
-var jumlah_data_with_label = $('#countDataLabel').html();
-var jumlah_data_train = $('#countDataTrain').html();
-var jumlah_data_test = $('#countDataTest').html();
-var jumlah_data_positif = $('#countDataLabelPos').html();
-var jumlah_data_negatif = $('#countDataLabelNeg').html();
-var jumlah_data_slangword = $('#countDataSlangword').html();
-var jumlah_data_stopword = $('#countDataStopword').html();
+var jumlah_data_crawling = $("#countDataCrawling").html();
+var jumlah_data_preprocess = $("#countDataPreprocess").html();
+var jumlah_data_with_label = $("#countDataLabel").html();
+var jumlah_data_train = $("#countDataTrain").html();
+var jumlah_data_test = $("#countDataTest").html();
+var jumlah_data_positif = $("#countDataLabelPos").html();
+var jumlah_data_negatif = $("#countDataLabelNeg").html();
+var jumlah_data_slangword = $("#countDataSlangword").html();
+var jumlah_data_stopword = $("#countDataStopword").html();
 
-const ctx = document.getElementById('myChart');
+const ctx = document.getElementById("myChart");
 const myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['Crawling', 'Preprocess', 'Label', 'Slangword', 'Stopword'],
-        datasets: [{
-            label: 'Data',
-            data: [
-              jumlah_data_crawling, 
-              jumlah_data_preprocess, 
-              jumlah_data_with_label, 
-              jumlah_data_slangword, 
-              jumlah_data_stopword
-            ],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(255, 159, 64, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(255, 159, 64, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-        }]
+  type: "bar",
+  data: {
+    labels: ["Crawling", "Preprocess", "Label", "Slangword", "Stopword"],
+    datasets: [
+      {
+        label: "Data",
+        data: [
+          jumlah_data_crawling,
+          jumlah_data_preprocess,
+          jumlah_data_with_label,
+          jumlah_data_slangword,
+          jumlah_data_stopword,
+        ],
+        backgroundColor: [
+          "rgba(255, 99, 132, 0.2)",
+          "rgba(54, 162, 235, 0.2)",
+          "rgba(255, 206, 86, 0.2)",
+          "rgba(255, 159, 64, 0.2)",
+          "rgba(255, 159, 64, 0.2)",
+        ],
+        borderColor: [
+          "rgba(255, 99, 132, 1)",
+          "rgba(54, 162, 235, 1)",
+          "rgba(255, 206, 86, 1)",
+          "rgba(255, 159, 64, 1)",
+          "rgba(255, 159, 64, 1)",
+        ],
+        borderWidth: 1,
+      },
+    ],
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true,
+      },
     },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
-    }
+  },
 });
 
-const ctxSplit = document.getElementById('chart-split-data').getContext('2d');
+const ctxSplit = document.getElementById("chart-split-data").getContext("2d");
 const chartSplit = new Chart(ctxSplit, {
-    type: 'doughnut',
-    data: {
-      labels: [
-        'Train',
-        'Test'
-      ],
-      datasets: [{
-        label: 'Pembagian Data',
+  type: "doughnut",
+  data: {
+    labels: ["Train", "Test"],
+    datasets: [
+      {
+        label: "Pembagian Data",
         data: [jumlah_data_train, jumlah_data_test],
-        backgroundColor: [
-          'rgb(54, 162, 235)',
-          'rgb(255, 99, 132)'
-        ],
-        hoverOffset: 4
-      }]
-    }
+        backgroundColor: ["rgb(54, 162, 235)", "rgb(255, 99, 132)"],
+        hoverOffset: 4,
+      },
+    ],
+  },
 });

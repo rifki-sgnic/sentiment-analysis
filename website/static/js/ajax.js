@@ -1148,39 +1148,46 @@ $('#split_data').click(function() {
  *  AJAX CLASSIFICATION
  */
 
- $('#classification').click(function() {
-    
-    var content =	"";
-        
-        $.ajax({
-            url         : "/classification",
-            data		: $('form').serialize(),
-            type        : "POST",
-            beforeSend: function() {
-                content +=	`
-                                <div class="bs-callout bs-callout-primary mt-0">
-                                    <div class="d-inline-flex">
-                                        <h3>Klasifikasi Data</h3>
+$('#classification').click(function() {
+
+    const form_dataArray = $("form").serialize().split("=");
+    $('#validasi_model').addClass('d-none');
+    if(form_dataArray[0].trim() == 'model' && (form_dataArray[1] == 'mnb' || form_dataArray[1] == 'gnb')) {
+        var content =	"";
+            
+            $.ajax({
+                url         : "/classification",
+                data		: $('form').serialize(),
+                type        : "POST",
+                beforeSend: function() {
+                    content +=	`
+                                    <div class="bs-callout bs-callout-primary mt-0">
+                                        <div class="d-inline-flex">
+                                            <h3>Klasifikasi Data</h3>
+                                        </div>
+                                        <p class="text-muted">Membuat Model Latih dengan Data Latih dan Melakukan Klasifikasi</p>
                                     </div>
-                                    <p class="text-muted">Membuat Model Latih dengan Data Latih dan Melakukan Klasifikasi</p>
-                                </div>
-                                <br />
-                                <div class="loaderDiv my-5 m-auto"></div>
-                            `;
-                            
-                $('#content_classification').html(content);
-                $('.modal-backdrop').remove();
-                $(".loaderDiv").show();
-            },
-            success     : function(response) {
-                if(response) {
-                    window.location = "/classification";
+                                    <br />
+                                    <div class="loaderDiv my-5 m-auto"></div>
+                                `;
+                                
+                    $('#content_classification').html(content);
+                    $('.modal-backdrop').remove();
+                    $(".loaderDiv").show();
+                },
+                success     : function(response) {
+                    if(response) {
+                        window.location = "/classification";
+                    }
+                },
+                error     : function(x) {
+                    console.log(x.responseText);
                 }
-            },
-            error     : function(x) {
-                console.log(x.responseText);
-            }
-        });
+            });
+    } else {
+        $('#validasi_model').removeClass('d-none');
+    }
+    
 });
 
 
